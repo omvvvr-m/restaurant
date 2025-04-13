@@ -20,8 +20,8 @@ body {
 
 .navbar {
 
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+
+
     height: 103px;
     margin-bottom: 0px;
     background-color: var(--primary-color);
@@ -31,6 +31,9 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
+
+
 .navbar:hover {
     transform: scale(1.0);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -38,6 +41,10 @@ body {
 
 
 
+.logo {
+    display: flex;
+    margin-left: 16%;
+}
 
 .logo-img {
     width: 115px;
@@ -50,17 +57,13 @@ body {
 
 }
 
-/* .site-name {
-    display: flex;
-    text-decoration: none;
-    margin: 10px;
-} */
 
 .nav-links {
+    margin-right: 16%;
     font-weight: 200;
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 1rem;
 }
 
 .nav-links li a {
