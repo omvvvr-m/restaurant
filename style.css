@@ -19,7 +19,6 @@ body {
 }
 
 .navbar {
-
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
     height: 103px;
@@ -40,6 +39,7 @@ body {
 
 
 .logo-img {
+    display: flex;
     width: 115px;
     height: 115px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -50,11 +50,7 @@ body {
 
 }
 
-/* .site-name {
-    display: flex;
-    text-decoration: none;
-    margin: 10px;
-} */
+
 
 .nav-links {
     font-weight: 200;
