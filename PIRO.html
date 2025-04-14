@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Order</title>
+    <link rel="stylesheet" href="css/PIRO.css">
+    <script src="PIRO.js"></script>
+ </head>
+<body>
+  <h1>Order</h1>
+  <!-- label br input
+   or label input -->
+     
+<form>
+    <fieldset>
+    <div> 
+            <label for="name" >Name</label><br>
+        <input id="name"  type="text" name="username" required>
+    </div>
+        <br>
+    <div> 
+        <!-- check -->
+        <label for="num" >Phone number</label><br>
+        <input  id="num" type="tel" name=" number" required>
+    </div>
+       <br>
+ 
+    <div>
+      <label>Governorate</label>
+      <input list="governorate" name="gov">
+       <!-- change -->
+        <datalist id="governorate">
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+            <option value="cairo"> 
+         </datalist>
+    </div>
+    <br>
+        <label >Address</label><br>
+        <input type="text" name=" address" placeholder="city,street,building number">
+    </div>
+  </fieldset>
+ 
+        <!-- paymethod css -->
+         <fieldset>
+<legend>Pay Method</legend> 
+    <div>
+        <input type="radio"  id="cash" name="pay" value="cash">
+        <label for="cash">cash</label><br>
+     <!-- css&js -->
+        <input type="radio"  id="visa" name="pay" value="visa">
+        <label for="visa">visa</label>
+        <img src="img/visa-classic-new-800x450.webp" width="20" height="10">
+    </div>
+         
+         <!-- css&js -->
+        <div class="visaform">
+        <form >
+          <div>
+            <label for="vnum" >Card Number</label>
+            <input id="vnum" type="tel" name="Card Name">
+            <img src="img/9054473_bx_credit_card_icon.png" width="20" height="20">
+          </div><br>
+            <label for="date">Expiry Date</label>
+            <input id="date" type="month" name="Expiry Date">
+            <label for="cvv" >CVV</label>
+            <input  id="cvv" type="number" name="CVV">
+            <br><br>
+            <label for="vname">Card Holder Name </label>
+            <input  id="vname" type=" text" name="Card Holder Name"><br>
+        </div>
+        </fieldset>
+        
+
+        <!-- <input type="radio"  id="vodafone" name="pay" value=" vodafone">
+        <label for="vodafone">vodafone</label> -->
+
+        <!-- <input type="radio"  id="instapay" name="pay" value="instapay">
+         <label for="instapay">InstaPay</label> -->
+        
+
+        <p>Notes:</p>
+        <textarea name="notes" style="width: 300px;height: 50px;">
+         write your notes on order
+        </textarea><br>
+
+        <!-- <p>order summary <summary</summary></p> -->
+
+
+
+
+        <input type="button" value="Confirm Order">
+        <input type="reset" value="reset">
+
+
+
+        
+        
+        
+
+
+
+        
+
+        
+
+    </form>
+</body>
