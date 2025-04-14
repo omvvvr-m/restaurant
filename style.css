@@ -179,7 +179,7 @@ body {
     gap: 10px;
     height: 900px;
     /* justify-content: space-around; */
-    
+
 }
 
 .card1 {
@@ -197,10 +197,12 @@ body {
     grid-column: 2;
     grid-row: 1;
 }
+
 .card3 {
     /* background-image: url(/imgs/quality.jpeg); */
     grid-column: 2;
     grid-row: 2;
 
 }
+
 /* ============================== Section Divider ==========================  */
