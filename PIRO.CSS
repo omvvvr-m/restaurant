@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #443627;
+    --secondary-color: #e4a444;
+    /* --accent-color: #DAF7A6; */
+    --background-color: #F2F6D0;
+    --text-color: #EFDCAB;
+    --text-hover-color: rgb(250, 235, 104);
+    --main-padding: 300px;
+}
+ 
+body
+{
+    font-family: "Oswald", sans-serif;
+    background-color: var(--background-color);
+}
+
+.visaform
+{
+    display: none;
+}
+
+h1
+{
+    text-align: center;
+    /* padding: 20px; */
+}
+/* h1:hover
+{
+    color:var(--secondary-color)
+} */
+.nam label
+{
+    display: block;
+}
+
+.numb label
+{
+ display: block;
+}
+
+.add2 label
+{
+    display: block;
+}
+.go
+{
+    display: block;
+}
+.user
+{
+    width:70% ;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px ;
+    /*     border-style:solid ;
+    border-color: #443627;
+    border-width: 3px;
+     */
+     border: 3px solid var(--primary-color);
+   
+    
+}
+.paymethod
+{
+    display: block;
+    width:70% ;
+    margin-left:auto;
+    margin-right:auto ;
+    border: 3px solid var(--primary-color);}
+     
+/* .note
+{
+    display: block;
+    width:70% ;
+    margin-left:auto;
+    margin-right:auto ;
+    margin-bottom: 15px;
+} */
+
+.butt1
+{
+    display: block;
+    width:30% ;
+    margin-left:auto;
+    margin-right:auto ;
+    background-color: var(--text-color)
+     
+}
+.butt1:hover
+{
+    background-color: var(--text-hover-color);
+    transform: scale(1.5);
+    transition-duration: 1s;
+    transition-delay:0.2s;
+    /* transition-property:all ; */
+    /* transition-property:margin-left,margin-right ; */
+}
+ 
