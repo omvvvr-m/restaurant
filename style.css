@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: "Oswald", sans-serif;
     margin: 0px;
     background-color: var(--background-color);
     padding: 0px;
@@ -152,4 +153,54 @@ body {
 }
 
 
+/* ============================== Section Divider ==========================  */
+.why-us {
+    margin: 0px;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin: 0px;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 64px;
+    text-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.cards-container {
+    margin: 0px;
+    padding: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 900px;
+    /* justify-content: space-around; */
+    
+}
+
+.card1 {
+    /* background-image: url(/imgs/Variety.png); */
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.card1 .img-1 {
+    width: 600px;
+}
+
+.card2 {
+    /* background-image: url(/imgs/taste.jpeg); */
+    grid-column: 2;
+    grid-row: 1;
+}
+.card3 {
+    /* background-image: url(/imgs/quality.jpeg); */
+    grid-column: 2;
+    grid-row: 2;
+
+}
 /* ============================== Section Divider ==========================  */
