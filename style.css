@@ -100,10 +100,6 @@ body {
 
 }
 
-.main-blanket:hover {
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
-}
-
 
 .main-section .main-blanket p {
 
@@ -183,11 +179,6 @@ body {
 
 }
 
-.card1 {
-    /* background-image: url(/imgs/Variety.png); */
-    grid-column: 1 /span 2;
-    grid-row: 1 / span 2;
-}
 
 .card img {
     width: 100%;
@@ -197,11 +188,54 @@ body {
     overflow: hidden;
 }
 
+.card {
+    position: relative;
+}
+.text {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+
+}
+
+
+.card1 {
+    /* background-image: url(/imgs/Variety.png); */
+    grid-column: 1 /span 2;
+    grid-row: 1 / span 2;
+    position: relative;
+}
+
+
+.variety-text {
+    margin: 0px;
+    top: 30px;
+    left: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.variety-text .choices-word {
+    /* top: 10px; */
+    display: block;
+    margin-left: 0.05em;
+    font-size: 36px;
+    
+}
+
+
+
 
 .card2 {
     /* background-image: url(/imgs/taste.jpeg); */
     grid-column: 3;
     grid-row: 1;
+    position: relative;
+
+}
+
+.taste-text {
+    top: 10px;
+    left: 10px;
 }
 
 
@@ -209,7 +243,11 @@ body {
     /* background-image: url(/imgs/quality.jpeg); */
     grid-column: 3;
     grid-row: 2;
+    position: relative;
+}
 
+.quality-text {
+    top: 10px;
 }
 
 /* ============================== Section Divider ==========================  */
