@@ -1,9 +1,9 @@
 *{
-    background-color:gray
+    background-color:rgb(255, 81, 0);
 }
 
 .photo{
-width: 250px;
+width: 230px;
 height: auto;
 margin-top: 40px;
 position: absolute;
@@ -15,10 +15,6 @@ margin-left: 40px;
 font-weight: 400;
 font-size: larger;
 }
-
-
-
-
 hr{
 
 opacity:20% ;
@@ -118,7 +114,7 @@ margin-left: 40px;
     color: gold;
   }
   .review-section{
-line-height: 0.95;
+line-height: 1.8;
     margin: 40px;
 }
 #reviewInput,
@@ -128,11 +124,35 @@ line-height: 0.95;
 border: solid black;
 
 }
+
+.photo4{
+
+width: 500px;
+height: 250px;
+margin-left: 800px;
+position: absolute;
+
+}
+
+
+
+
+
 .photo2{
 
-width:250px ;
+width:230px ;
 margin-left:500px ;
 height: auto;
 position: absolute;
 margin-top: 40px;
 }
+.photo3{
+
+
+    width:230px ;
+    margin-left:960px ;
+    height: auto;
+    position: absolute;
+    margin-top: 40px;
+    }
+
