@@ -6,6 +6,7 @@
     --text-color: #EFDCAB;
     --text-hover-color: rgb(250, 235, 104);
     --main-padding: 300px;
+    --main-radius: 36px;
 }
 
 body {
@@ -175,19 +176,16 @@ body {
     margin: auto;
     /* padding: 75px; */
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    /* height: 100%; */
-    /* width: 500px;
-    height: 500px;*/
+    gap: 20px;
     max-width: 1000px;
 
 }
 
 .card1 {
     /* background-image: url(/imgs/Variety.png); */
-    grid-column: 1;
+    grid-column: 1 /span 2;
     grid-row: 1 / span 2;
 }
 
@@ -195,11 +193,19 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* border-radius: 16px; */
+}
+
+.card1 .img-1 {
+    /* border-bottom-left-radius: var(--main-radius) ;
+    border-top-left-radius: var(--main-radius) ; */
+    border-radius: var(--main-radius);
+    overflow: hidden;
 }
 
 .card2 {
     /* background-image: url(/imgs/taste.jpeg); */
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
 }
 
@@ -262,11 +268,21 @@ body {
     grid-row: 1;
 }
 
+.card2 .img-2 {
+    /* border-top-right-radius: var(--main-radius); */
+    border-radius: var(--main-radius);
+}
+
 .card3 {
     /* background-image: url(/imgs/quality.jpeg); */
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
 
+}
+
+.card3 .img-3 {
+    /* border-bottom-right-radius: var(--main-radius); */
+    border-radius: var(--main-radius);
 }
 
 
