@@ -6,9 +6,11 @@
     --text-color: #EFDCAB;
     --text-hover-color: rgb(250, 235, 104);
     --main-padding: 300px;
+    --main-radius: 36px;
 }
 
 body {
+    font-family: "Oswald", sans-serif;
     margin: 0px;
     background-color: var(--background-color);
     padding: 0px;
@@ -19,8 +21,7 @@ body {
 }
 
 .navbar {
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+
     height: 103px;
     margin-bottom: 0px;
     background-color: var(--primary-color);
@@ -35,11 +36,12 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-
-
+.logo {
+    display: flex;
+    margin-left: 16%;
+}
 
 .logo-img {
-    display: flex;
     width: 115px;
     height: 115px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -51,12 +53,12 @@ body {
 }
 
 
-
 .nav-links {
+    margin-right: 16%;
     font-weight: 200;
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 1rem;
 }
 
 .nav-links li a {
@@ -99,7 +101,7 @@ body {
 }
 
 .main-blanket:hover {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
 }
 
 
@@ -151,5 +153,124 @@ body {
     z-index: 1;
 }
 
+
+/* ============================== Section Divider ==========================  */
+.why-us {
+    margin: 0px;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin: 0px;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 64px;
+    text-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.cards-container {
+    align-items: stretch;
+    margin: auto;
+    /* padding: 75px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+
+}
+
+.card1 {
+    /* background-image: url(/imgs/Variety.png); */
+    grid-column: 1 /span 2;
+    grid-row: 1 / span 2;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 16px; */
+}
+
+.card1 .img-1 {
+    /* border-bottom-left-radius: var(--main-radius) ;
+    border-top-left-radius: var(--main-radius) ; */
+    border-radius: var(--main-radius);
+    overflow: hidden;
+}
+
+.card2 {
+    /* background-image: url(/imgs/taste.jpeg); */
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.card2 .img-2 {
+    /* border-top-right-radius: var(--main-radius); */
+    border-radius: var(--main-radius);
+}
+
+.card3 {
+    /* background-image: url(/imgs/quality.jpeg); */
+    grid-column: 3;
+    grid-row: 2;
+
+}
+
+.card3 .img-3 {
+    /* border-bottom-right-radius: var(--main-radius); */
+    border-radius: var(--main-radius);
+}
+
+/* ============================== Section Divider ==========================  */
+.best-selling {
+    margin-top: 64px;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bs-section-title {
+    color: var(--primary-color);
+    margin: 0px;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 64px;
+    text-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.bs-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bscard:hover {
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.bscard {
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 16px;
+    background-color: var(--background-color);
+    width: 400px;
+    height: 600px;
+    border-radius: var(--main-radius);
+    transition: box-shadow 0.3s ease;
+}
+
+.bscard .card-title {
+
+    font-size: 32px;
+}
 
 /* ============================== Section Divider ==========================  */
