@@ -7,6 +7,7 @@
     --text-hover-color: rgb(250, 235, 104);
     --main-padding: 300px;
     --main-radius: 36px;
+    --main-button-color: rgb(232, 50, 50);
 }
 
 body {
@@ -235,6 +236,7 @@ body {
 }
 
 .bs-section-title {
+    margin-bottom: auto;
     color: var(--primary-color);
     margin: 0px;
     font-weight: bolder;
@@ -246,7 +248,7 @@ body {
 .bs-cards-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 
@@ -258,19 +260,93 @@ body {
 .bscard {
     margin: 32px;
     display: flex;
-    justify-content: center;
-    align-items: top;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
     padding: 16px;
-    background-color: var(--background-color);
+    /* background-color: var(---color); */
     width: 400px;
     height: 600px;
+    padding: 12px;
     border-radius: var(--main-radius);
     transition: box-shadow 0.3s ease;
 }
 
-.bscard .card-title {
+.bscard.card1 img {
+    position: relative;
+    margin-top: -100px;
+    width: 420px;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
 
+.bscard .card-title {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-family: "Merienda", cursive;
     font-size: 32px;
 }
+
+.bscard .card-description {
+
+    color: var(--primary-color);
+    font-size: 20px;
+
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -60px;
+
+}
+
+.bscard button {
+    background-color: var(--main-button-color);
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Oswald";
+    padding: 3px 7px;
+    margin-top: auto;
+    margin-bottom: 7px;
+    width: 210px;
+    height: 70px;
+    border: none;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: transform 0.6s ease-out;
+}
+
+.bscard button::before {
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: rgb(117, 1, 41);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 0.2s ease-out;
+}
+
+.bscard button:hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+
+.bscard button:hover {
+    transform: scale(1.03);
+}
+
+
 
 /* ============================== Section Divider ==========================  */
