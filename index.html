@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+       
+       <link rel="stylesheet" href="master.css"/>    
+          <title>About us - Buns&Blaze</title>
+       
 </head>
-
 <body>
-    Hello, World!!!!!!!!!!!
-    From PC
-    Collab test from pc 12
-    Added from laptop
-    البابا سيف هاني
-    
-</body>
+       <hr class="line"/>
+<section class="story">
+<h1 class="merienda">Our story </h1>
+<img  class="place"  src="restraunt.png" alt="puns">
+<p>At Buns & Blaze, we're not just serving burgers we're igniting a
+        flavor revolution.
+</p>
 
+  <p> Founded with a passion for flame-grilled perfection and handcrafted quality,
+        Buns & Blaze was born from the idea that every burger should be an experience.
+         Our name reflects our essence: "Buns" that are freshly baked, soft yet bold, and "Blaze" 
+         that symbolizes our signature open-flame grilling, where every patty meets fire and flavor in perfect harmony.
+</p>     
+
+
+<p>We’re proud to be among the first restaurants in New York City to offer 100% halal certified meat a mission we pursued with dedication and purpose. In a city as diverse as NYC, we recognized the need for a burger experience that’s not only bold and unforgettable, but also inclusive and accessible to everyone.
+</p>
+<p>
+       From locally sourced ingredients to innovative recipes that push the boundaries of tradition, our mission is simple to deliver burgers that are memorable, mouthwatering, and made with uncompromising quality.
+   
+</p>
+<p> Whether you're here for a quick bite or a shared moment with friends, Buns & Blaze is where good food meets good fire and everyone is welcome at the table.
+</p>
+<hr class="line1"/>
+</section>
+
+<h2>What our coustmers say ??</h2>
+       <section class="hh">
+    <div class="review">
+        <strong>Mohammed Kareem.</strong>
+
+        <div class="star"> ★★★★☆</div>
+        
+        <p>Buns & Blaze is not just food, it’s an experience. I always leave full and happy. Highly recommend the spicy flame burger!</p>
+    </div >
+        <strong>Leila H.</strong>
+        <div class="star"> ★★★★★</div>
+
+    <p>I love how fresh everything tastes. The buns are soft, the grill marks on the patty are perfect, and the sauces wow!</p>
+  </div>
+</div>
+    <strong>Mostafa.E</strong>
+    <div class="star"> ★★★☆☆</div>
+     
+    <section class="review-section">
+       <h2>Review Us</h2>
+       <div class="stars">
+       <span class="stary" data-value="1">&#9733;</span>
+       <span class="stary" data-value="2">&#9733;</span>
+       <span class="stary" data-value="3">&#9733;</span>
+       <span class="stary" data-value="4">&#9733;</span>
+       <span class="stary" data-value="5">&#9733;</span>
+
+     </div>
+
+       <textarea id="reviewInput" placeholder="Write your review here..."></textarea><br>
+       <button class="click" onclick="submitReview()">Submit review</button>
+   
+       <div class="submitted-reviews" id="reviewList">
+              <!-- Reviews will appear here -->
+       </div>
+    </section>
+    <script>
+       function submitReview() {
+         const input = document.getElementById('reviewInput');
+const reviewText=input .value .trim() ; 
+if (reviewText) {
+        const reviewList = document.getElementById('reviewList');
+        const newReview = document.createElement('div');
+        newReview.className = 'review-item';
+        newReview.textContent = reviewText;
+        reviewList.prepend(newReview); // Add to top
+        input.value = ''; // Clear the input
+      } else {
+       alert("Please write something before submitting.");
+      }
+    }
+    let selectedRating = 0;
+const stars = document.querySelectorAll('.stary');
+
+stars.forEach(stary => {
+  stary.addEventListener('click', function () {
+    selectedRating = parseInt(this.getAttribute('data-value'));
+    stars.forEach(s => {
+      const val = parseInt(s.getAttribute('data-value'));
+      s.classList.toggle('selected', val <= selectedRating);
+    });
+  });
+});
+
+
+
+
+  </script>
+
+
+
+    <p >Finally, a place in NYC with halal burgers that taste incredible. Super friendly staff and the vibe is amazing. 10/10!</p>
+    </P>
+    <hr />
+       </section>
+       <h3 class="ii"> Our accomplishemnt</h3>
+       <img src="restraunt..png" class="photo">
+       <img src="C:\Users\hesha\Downloads\restraunt...png"  class="photo2">
+       
+       <section class="tt">We are proud to have been certified by Servsafe Food Safety, wishing more success for us. </section>
+</body>
 </html>

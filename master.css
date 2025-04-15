@@ -1,0 +1,138 @@
+*{
+    background-color:gray
+}
+
+.photo{
+width: 250px;
+height: auto;
+margin-top: 40px;
+position: absolute;
+margin-left: 40px;
+
+
+}
+.rate{
+font-weight: 400;
+font-size: larger;
+}
+
+
+
+
+hr{
+
+opacity:20% ;
+color: white;}
+.rating{
+
+align-items: center;
+display:flex;
+justify-content:space-around ;}
+
+
+
+h1,h2{
+    font-family:cursive; 
+font-weight: 700;
+}
+
+.place{
+
+width: 450px;
+height: 480px;
+position: absolute;
+top: 35px;
+right: 50px;
+
+
+
+}
+.story{
+line-height: 1.4;
+max-width: 600px;
+overflow-wrap: break-word;
+
+    font-style: normal;
+ 
+    font-optical-sizing: auto;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    }
+ 
+
+strong{
+
+font-family: cursive;
+font-weight: 700;
+font-style: italic;
+margin-left: 40px;
+
+}
+ 
+
+.star{
+
+    color: #FFD700;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+
+
+
+.hh p {
+
+    font-family: sans-serif;
+    font-weight: 400;
+    max-width:600 ;
+    margin-left: 40px;
+    
+}
+
+
+
+.ii{
+
+font-family: cursive;
+font-weight: 700;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-left: 40px;
+}
+.tt{
+
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.stary {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .stary.selected {
+    color: gold;
+  }
+  .review-section{
+line-height: 0.95;
+    margin: 40px;
+}
+#reviewInput,
+.click
+
+{
+border: solid black;
+
+}
+.photo2{
+
+width:250px ;
+margin-left:500px ;
+height: auto;
+position: absolute;
+margin-top: 40px;
+}
