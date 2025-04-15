@@ -193,14 +193,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 16px; */
-}
-
-.card1 .img-1 {
-    /* border-bottom-left-radius: var(--main-radius) ;
-    border-top-left-radius: var(--main-radius) ; */
     border-radius: var(--main-radius);
-    overflow: hidden;
 }
 
 .card2 {
@@ -208,17 +201,11 @@ body {
     grid-column: 3;
     grid-row: 1;
 }
-.card2 .img-2 {
-    /* border-top-right-radius: var(--main-radius); */
-    border-radius: var(--main-radius);
-}
+
 .card3 {
     /* background-image: url(/imgs/quality.jpeg); */
     grid-column: 3;
     grid-row: 2;
 
 }
-.card3 .img-3 {
-    /* border-bottom-right-radius: var(--main-radius); */
-    border-radius: var(--main-radius);
-}   /* ============================== Section Divider ==========================  */
+/* ============================== Section Divider ==========================  */
