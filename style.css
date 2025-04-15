@@ -208,85 +208,17 @@ body {
     grid-column: 3;
     grid-row: 1;
 }
-
-.card3 {
-    /* background-image: url(/imgs/quality.jpeg); */
-    grid-column: 2;
-    grid-row: 2;
-
-}
-
-/* ============================== Section Divider ==========================  */
-
-
-.why-us {
-    margin: 0px;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.section-title {
-    color: var(--primary-color);
-    margin: 0px;
-    font-weight: bolder;
-    display: inline-block;
-    font-size: 64px;
-    text-shadow: 2px 2px 0px var(--secondary-color);
-}
-
-.cards-container {
-    align-items: stretch;
-    margin: auto;
-    /* padding: 75px; */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    /* height: 100%; */
-    /* width: 500px;
-    height: 500px;*/
-    max-width: 1000px;
-
-}
-
-.card1 {
-    /* background-image: url(/imgs/Variety.png); */
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card2 {
-    /* background-image: url(/imgs/taste.jpeg); */
-    grid-column: 2;
-    grid-row: 1;
-}
-
 .card2 .img-2 {
     /* border-top-right-radius: var(--main-radius); */
     border-radius: var(--main-radius);
 }
-
 .card3 {
     /* background-image: url(/imgs/quality.jpeg); */
     grid-column: 3;
     grid-row: 2;
 
 }
-
 .card3 .img-3 {
     /* border-bottom-right-radius: var(--main-radius); */
     border-radius: var(--main-radius);
-}
-
-
-
-
-
-/* ============================== Section Divider ==========================  */
+}   /* ============================== Section Divider ==========================  */
