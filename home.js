@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
 
 
 function showSections(div) {
-    const section = div.nextElementSibling;
+    // const section = div
     section.style.visibility = 'visible';
 }
 

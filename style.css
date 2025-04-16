@@ -1,5 +1,6 @@
 :root {
     --primary-color: #443627;
+    --text-shadow-color: #251d14;
     --secondary-color: #e4a444;
     /* --accent-color: #DAF7A6; */
     --background-color: #F2F6D0;
@@ -241,7 +242,7 @@ body {
     font-family: "Oswald", sans-serif;
     color: var(--background-color);
     position: absolute;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+
     margin: 0px;
 }
 
