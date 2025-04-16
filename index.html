@@ -23,7 +23,21 @@
 
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="home">HOME</a></li>
+                <li>
+
+                    <a href="index.html" class="home" onmouseover="showSections(this)"
+                        onmouseout="hideSections(this)">HOME
+
+
+
+                    </a>
+                    <div class="home-sections">
+                        <a href="#">Section 1</a>
+                        <a href="#">Section 2</a>
+                        <a href="#">Section 3</a>
+                    </div>
+
+                </li>
                 <li><a href="" class="offers" target="_blank">OFFERS</a></li>
                 <li><a href="" class="menu" target="_blank">MENU</a></li>
                 <li><a href="" class="order" target="_blank">ORDER</a></li>
@@ -66,7 +80,7 @@
         <div class="bs-cards-container">
 
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card1" id="card">
                 <p class="card-title">
                     DOUBLE SMASH BURGER
                 </p>
@@ -84,14 +98,14 @@
             </div>
             <!-- ------------ CARD ------------>
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card2" id="card">
                 <p class="card-title">
-                    DOUBLE SMASH BURGER
+                    THE ATLANTIC COD BURGER
                 </p>
-                <img class="" src="/imgs/double-smash-cheese.png" alt="double-smash-cheese">
+                <img class="" src="/imgs/the-atlantic-cod-burger.webp" alt="double-smash-cheese">
                 <p class="card-description">
-                    Double Smash Cheeseburger – two juicy beef patties, layers of melted cheese, and bold, unbeatable
-                    flavor in every bite.
+                    Crafted with a succulent flaky Atlantic Cod fillet, lightly breaded and perfectly fried to a golden
+                    crisp and topped with our signature in-house tartar sauce.
                 </p>
                 <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
                     13.99$
@@ -102,17 +116,16 @@
             </div>
             <!-- ------------ CARD ------------>
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card3" id="card">
                 <p class="card-title">
-                    DOUBLE SMASH BURGER
+                    THE FESTIVE BURGER
                 </p>
-                <img class="" src="/imgs/double-smash-cheese.png" alt="double-smash-cheese">
+                <img class="" src="/imgs/the-festive-burger.webp" alt="the-festive-burger">
                 <p class="card-description">
-                    Double Smash Cheeseburger – two juicy beef patties, layers of melted cheese, and bold, unbeatable
-                    flavor in every bite.
+                    A celebration in every bite — bold, crave-worthy, and unforgettable. No wonder it’s our best-seller!
                 </p>
                 <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
-                    8.99$
+                    14.99$
                 </button>
                 <div class="card-container">
 

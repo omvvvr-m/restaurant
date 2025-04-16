@@ -34,7 +34,7 @@ body {
 
 .navbar:hover {
     transform: scale(1.0);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
 }
 
 .logo {
@@ -79,6 +79,21 @@ body {
     /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); */
 }
 
+.nav-links .home-sections {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40px;
+    height: 100px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    background-color: red;
+    visibility: visible;
+    z-index: 2;
+    transition: display 0.9s ease-out;
+}
 
 /* ============================== Section Divider ==========================  */
 
@@ -277,6 +292,9 @@ body {
 }
 
 .bscard {
+
+    opacity: 0;
+    transform: translateY(50px);
     margin: 32px;
     display: flex;
     flex-direction: column;
@@ -288,15 +306,59 @@ body {
     height: 600px;
     padding: 12px;
     border-radius: var(--main-radius);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
-.bscard.card1 img {
+
+@keyframes getAlive {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bscard.show {
+    animation: getAlive 0.6s ease-out forwards;
+}
+
+
+
+.bscard img {
     position: relative;
-    margin-top: -100px;
     width: 420px;
     filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
 }
+
+.bscard.card1 img {
+    margin-top: -100px;
+    width: 420px;
+}
+
+.bscard.card2 img {
+    margin-top: -100px;
+    width: 420px;
+}
+
+.bscard.card3 img {
+    margin-top: -50px;
+    width: 420px;
+}
+
+.bscard.card1 {
+    animation-delay: 0.2s;
+}
+
+.bscard.card2 {
+    animation-delay: 0.6s;
+}
+
+.bscard.card3 {
+    animation-delay: 1.0s;
+}
+
+
+
 
 .bscard .card-title {
     font-weight: 900;
@@ -309,7 +371,6 @@ body {
 
     color: var(--primary-color);
     font-size: 20px;
-
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -353,19 +414,21 @@ body {
     left: 0;
     z-index: -1;
     transition: height 0.2s ease-out;
+    overflow: hidden;
+
 }
 
 .bscard button:hover:before {
     content: "";
     width: 100%;
     height: 100%;
+    overflow: hidden;
+
 }
 
 
 .bscard button:hover {
     transform: scale(1.03);
 }
-
-
 
 /* ============================== Section Divider ==========================  */
