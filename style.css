@@ -102,6 +102,7 @@ body {
 }
 
 
+
 .main-section .main-blanket p {
 
 
@@ -168,102 +169,80 @@ body {
     text-shadow: 2px 2px 0px var(--secondary-color);
 }
 
-.cards-container {
-    align-items: stretch;
+.cards-horizontal-container {
     margin: auto;
-    /* padding: 75px; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 20px;
-    max-width: 1000px;
-
 }
 
+.cards-vertical-container {
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.card img {
+.why-us .card1 {
+    border-radius: var(--main-radius);
+    width: 700px;
+    height: 800px;
+    background-image: url('/imgs/Variety.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.why-us .card2 {
+    border-radius: var(--main-radius);
+    width: 500px;
+    height: 390px;
+    background-image: url('/imgs/taste.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.why-us .card3 {
+    border-radius: var(--main-radius);
+    width: 500px;
+    height: 390px;
+    background-image: url('/imgs/quality.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 16px; */
 }
 
 .card1 .img-1 {
-    /* border-bottom-left-radius: var(--main-radius) ;
-    border-top-left-radius: var(--main-radius) ; */
     border-radius: var(--main-radius);
     overflow: hidden;
 }
 
-.card {
-    position: relative;
-}
-.text {
-    position: absolute;
-    font-family: "Oswald", sans-serif;
-
-}
-
-
-.card1 {
-    /* background-image: url(/imgs/Variety.png); */
-    grid-column: 1 /span 2;
-    grid-row: 1 / span 2;
-    position: relative;
-}
-
-
-.variety-text {
-    margin: 0px;
-    top: 30px;
-    left: 10px;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.variety-text .choices-word {
-    /* top: 10px; */
-    display: block;
-    margin-left: 0.05em;
-    font-size: 36px;
-    
-}
-
-
-
-
 .card2 {
-    /* background-image: url(/imgs/taste.jpeg); */
     grid-column: 3;
     grid-row: 1;
-    position: relative;
-
-}
-
-.taste-text {
-    top: 10px;
-    left: 10px;
 }
 
 .card2 .img-2 {
-    /* border-top-right-radius: var(--main-radius); */
     border-radius: var(--main-radius);
 }
 
 .card3 {
-    /* background-image: url(/imgs/quality.jpeg); */
     grid-column: 3;
     grid-row: 2;
-    position: relative;
-}
 
-.quality-text {
-    top: 10px;
-    left: 10px;
-}
+} */
 
 .card3 .img-3 {
-    /* border-bottom-right-radius: var(--main-radius); */
     border-radius: var(--main-radius);
 }
 
