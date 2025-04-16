@@ -23,7 +23,21 @@
 
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="home">HOME</a></li>
+                <li>
+
+                    <a href="index.html" class="home" onmouseover="showSections(this)"
+                        onmouseout="hideSections(this)">HOME
+
+
+
+                    </a>
+                    <div class="home-sections">
+                        <a href="#">Section 1</a>
+                        <a href="#">Section 2</a>
+                        <a href="#">Section 3</a>
+                    </div>
+
+                </li>
                 <li><a href="" class="offers" target="_blank">OFFERS</a></li>
                 <li><a href="" class="menu" target="_blank">MENU</a></li>
                 <li><a href="" class="order" target="_blank">ORDER</a></li>
@@ -44,16 +58,20 @@
         <div class="cards-horizontal-container">
             <div class="card card1">
                 <!-- <img src="/imgs/Variety.png" alt="Variety-img" class="img-1"> -->
-                <p class="text-1"> A MENU FULL OF CHOICES!</p>
+                    <p class="text variety-text"> A MENU FULL OF</p>
+                    <h1 class="text choices-word">CHOICES!</h1>
             </div>
             <div class="cards-vertical-container">
                 <div class=" card card2">
                     <!-- <img src="/imgs/taste.jpeg" alt="taste-img" class="img-2"> -->
-                    <p class="text-2">BIG FLAVOR IN EVERY BITE.</p>
+                    <p class="text taste-text">BIG FLAVOR</p>
+                    <h4 class="text bite-word">IN EVERY BITE.</h4>
                 </div>
                 <div class=" card card3">
                     <!-- <img src="/imgs/quality.jpeg" alt="quality-img" class="img-3"> -->
-                    <p class="text-3">FRESH, TASTY, AFFORDABLE!</p>
+                    <h1 class="text quality-text fresh">FRESH,</h1>
+                    <h1 class="text quality-text tasty">TASTY,</h1>
+                    <h1 class="text quality-text affordable">AFFORDABLE!</h1>
                 </div>
             </div>
         </div>
@@ -66,7 +84,7 @@
         <div class="bs-cards-container">
 
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card1" id="card">
                 <p class="card-title">
                     DOUBLE SMASH BURGER
                 </p>
@@ -84,14 +102,14 @@
             </div>
             <!-- ------------ CARD ------------>
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card2" id="card">
                 <p class="card-title">
-                    DOUBLE SMASH BURGER
+                    THE ATLANTIC COD BURGER
                 </p>
-                <img class="" src="/imgs/double-smash-cheese.png" alt="double-smash-cheese">
+                <img class="" src="/imgs/the-atlantic-cod-burger.webp" alt="double-smash-cheese">
                 <p class="card-description">
-                    Double Smash Cheeseburger – two juicy beef patties, layers of melted cheese, and bold, unbeatable
-                    flavor in every bite.
+                    Crafted with a succulent flaky Atlantic Cod fillet, lightly breaded and perfectly fried to a golden
+                    crisp and topped with our signature in-house tartar sauce.
                 </p>
                 <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
                     13.99$
@@ -102,17 +120,16 @@
             </div>
             <!-- ------------ CARD ------------>
             <!-- ------------ CARD ------------ -->
-            <div class="bscard card1">
+            <div class="bscard card3" id="card">
                 <p class="card-title">
-                    DOUBLE SMASH BURGER
+                    THE FESTIVE BURGER
                 </p>
-                <img class="" src="/imgs/double-smash-cheese.png" alt="double-smash-cheese">
+                <img class="" src="/imgs/the-festive-burger.webp" alt="the-festive-burger">
                 <p class="card-description">
-                    Double Smash Cheeseburger – two juicy beef patties, layers of melted cheese, and bold, unbeatable
-                    flavor in every bite.
+                    A celebration in every bite — bold, crave-worthy, and unforgettable. No wonder it’s our best-seller!
                 </p>
                 <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
-                    8.99$
+                    14.99$
                 </button>
                 <div class="card-container">
 
