@@ -187,34 +187,96 @@ body {
 }
 
 .why-us .card1 {
-    border-radius: var(--main-radius);
+    position: relative;
+    background-image: url('/imgs/Variety.png');
+    overflow: hidden;
     width: 700px;
     height: 800px;
-    background-image: url('/imgs/Variety.png');
+    border-radius: var(--main-radius);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .why-us .card2 {
-    border-radius: var(--main-radius);
+    position: relative;
+    background-image: url('/imgs/taste.jpeg');
+    overflow: hidden;
     width: 500px;
     height: 390px;
-    background-image: url('/imgs/taste.jpeg');
+    border-radius: var(--main-radius);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .why-us .card3 {
-    border-radius: var(--main-radius);
+    position: relative;
+    background-image: url('/imgs/quality.jpeg');
+    overflow: hidden;
     width: 500px;
     height: 390px;
-    background-image: url('/imgs/quality.jpeg');
+    border-radius: var(--main-radius);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.text {
+    font-family: "Oswald", sans-serif;
+    color: var(--background-color);
+    position: absolute;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+    margin: 0px;
+}
+
+
+.variety-text {
+    font-size: 45px;
+    font-weight: bold;
+    bottom: 115px;
+    left: 25px;
+}
+
+.choices-word {
+    font-size: 100px;
+    font-weight: bolder;
+    bottom: 0px;
+    left: 10px;
+}
+
+.taste-text {
+    font-size: 45px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+}
+
+.bite-word {
+    font-size: 70px;
+    font-weight: bolder;
+    top: 50px;
+    left: 10px;
+}
+
+.quality-text {
+    font-size: 36px;
+    font-weight: bolder;
+}
+.fresh {
+    top: 10px;
+    left: 10px;
+}
+.tasty {
+    top: 150px;
+    left: 200px;
+}
+.affordable {
+    bottom: 10px;
+    right: 10px;
+}
+
+
 
 /* .card img {
     width: 100%;
@@ -242,9 +304,9 @@ body {
 
 } */
 
-.card3 .img-3 {
+/* .card3 .img-3 {
     border-radius: var(--main-radius);
-}
+} */
 
 /* ============================== Section Divider ==========================  */
 .best-selling {
@@ -365,6 +427,14 @@ body {
 .bscard button:hover {
     transform: scale(1.03);
 }
+
+
+
+/* ============================== Section Divider ==========================  */
+
+
+
+
 
 
 
