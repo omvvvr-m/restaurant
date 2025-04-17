@@ -24,16 +24,14 @@ window.addEventListener('scroll', () => {
 });
 
 
-function showSections(div) {
-    // const section = div
-    section.style.visibility = 'visible';
-}
-
-function hideSections(div) {
-    const section = div.nextElementSibling;
-    section.style.visibility = 'hidden';
-}
-
+// function show(div) {
+//     var homeSections = div.nextElementSibling;
+//     homeSections.style.visibility = 'visible';
+// }
+// function hide(div) {
+//     var homeSections = div.nextElementSibling;
+//     homeSections.style.visibility = 'hidden';
+// }
 
 
 

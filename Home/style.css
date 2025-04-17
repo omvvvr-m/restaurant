@@ -1,7 +1,7 @@
 :root {
     --primary-color: #443627;
     --text-shadow-color: #251d14;
-    --secondary-color: #e4a444;
+    --secondary-color: #eabb76;
     /* --accent-color: #DAF7A6; */
     --background-color: #F2F6D0;
     --text-color: #EFDCAB;
@@ -9,6 +9,10 @@
     --main-padding: 300px;
     --main-radius: 36px;
     --main-button-color: rgb(232, 50, 50);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -77,23 +81,38 @@ body {
 .nav-links li a:hover {
     color: var(--text-hover-color);
     transform: scale(1.1);
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); */
+}
+
+.home {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    z-index: 99;
 }
 
 .nav-links .home-sections {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 40px;
-    height: 100px;
-    display: flex;
-    display: flex;
+    display: none;
+    right: 0px;
+    justify-content: center;
+
     flex-direction: column;
-    align-items: top;
-    background-color: red;
-    visibility: visible;
-    z-index: 2;
-    transition: display 0.9s ease-out;
+    align-items: center;
+    border: #251d14;
+    position: absolute;
+
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 16px;
+}
+
+
+.home:hover .home-sections {
+    display: flex;
+}
+
+.home .home-sections a {
+    padding: 4px;
 }
 
 /* ============================== Section Divider ==========================  */
@@ -103,6 +122,7 @@ body {
 }
 
 .main-section .main-blanket {
+    position: relative;
 
     z-index: -2;
     display: flex;
@@ -114,7 +134,6 @@ body {
     height: 800px;
     background-color: var(--secondary-color);
     transition: box-shadow 0.3s ease;
-
 }
 
 
@@ -150,18 +169,18 @@ body {
     to {
         opacity: 1;
         transform: translate(0px);
-        filter: blur(0px);
+        filter: blur(0);
     }
 
 }
 
 .main-section .main-blanket img {
+    position: relative;
     /* Animation properties */
     opacity: 0;
     transform: translateX(60px);
     animation: intro 0.6s ease-out forwards;
     filter: blur(5px);
-
     width: 750px;
     height: 750px;
     z-index: 1;
@@ -280,7 +299,7 @@ body {
     font-weight: bold;
     bottom: 80px;
     left: 12px;
-    
+
 }
 
 .affordable {
@@ -338,6 +357,23 @@ body {
     display: inline-block;
     font-size: 64px;
     text-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.bs-description {
+    margin-left: 32%;
+    margin-right: 32%;
+    padding: 12px;
+    outline: #251d14;
+    border: 2px dashed var(--primary-color);
+
+}
+
+.bs-description .bs-description-text {
+
+    font-size: 23px;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    color: var(--primary-color);
 }
 
 .bs-cards-container {
@@ -411,11 +447,11 @@ body {
 }
 
 .bscard.card2 {
-    animation-delay: 0.6s;
+    animation-delay: 0.45s;
 }
 
 .bscard.card3 {
-    animation-delay: 1.0s;
+    animation-delay: 0.7s;
 }
 
 

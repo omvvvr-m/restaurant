@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <title>BUN & BLAZE!!!</title>
+
+
 </head>
 
 <body>
@@ -24,18 +26,15 @@
             </a>
             <ul class="nav-links">
                 <li>
-
-                    <a href="index.html" class="home" onmouseover="showSections(this)"
-                        onmouseout="hideSections(this)">HOME
-
-
-
-                    </a>
-                    <div class="home-sections">
-                        <a href="#">Section 1</a>
-                        <a href="#">Section 2</a>
-                        <a href="#">Section 3</a>
+                    <div class="home">
+                        <a href="index.html" class="home-link">HOME
+                        </a>
+                        <div class="home-sections">
+                            <a href="#why-us">WHY US</a>
+                            <a href="#chefs-choice">CHEF'S CHOICE</a>
+                        </div>
                     </div>
+
 
                 </li>
                 <li><a href="" class="offers" target="_blank">OFFERS</a></li>
@@ -53,13 +52,13 @@
         </div>
     </section>
     <!-------------------------- SECTION DIVIDER ---------------------------->
-    <section class="why-us">
+    <section class="why-us" id="why-us">
         <h1 class="section-title">WHY US ?</h1>
         <div class="cards-horizontal-container">
             <div class="card card1">
                 <!-- <img src="/imgs/Variety.png" alt="Variety-img" class="img-1"> -->
-                    <p class="text variety-text"> A MENU FULL OF</p>
-                    <h1 class="text choices-word">CHOICES!</h1>
+                <p class="text variety-text"> A MENU FULL OF</p>
+                <h1 class="text choices-word">CHOICES!</h1>
             </div>
             <div class="cards-vertical-container">
                 <div class=" card card2">
@@ -78,8 +77,15 @@
     </section>
     <!-------------------------- SECTION DIVIDER ---------------------------->
 
-    <section class="best-selling">
-        <h1 class="bs-section-title">BEST SELLING</h1>
+    <section class="best-selling" id="chefs-choice">
+        <h1 class="bs-section-title">CHEF'S CHOICE</h1>
+        <div class="bs-description">
+            <h2 class="bs-description-text">Discover our most popular picks—these crowd favorites are the talk of the
+                table and
+                guaranteed to satisfy. Tried, tested, and totally irresistible!
+
+            </h2>
+        </div>
         <div class="bs-cards-container">
 
             <!-- ------------ CARD ------------ -->
@@ -139,6 +145,7 @@
 
     </section>
     <!-------------------------- SECTION DIVIDER ---------------------------->
+
 
 </body>
 
