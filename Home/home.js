@@ -14,12 +14,21 @@ function resetText(button) {
 
 
 window.addEventListener('scroll', () => {
-    const boxes = document.querySelectorAll('.bscard');
-    boxes.forEach(element => {
+    const bsboxes = document.querySelectorAll('.bscard');
+    bsboxes.forEach(element => {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight) {
             element.classList.add('show');
         }
+    })
+
+    const lsboxes = document.querySelectorAll('.lscard');
+    lsboxes.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            element.classList.add('show');
+        }
+
     })
 });
 

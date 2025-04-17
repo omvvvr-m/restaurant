@@ -529,3 +529,197 @@ body {
 }
 
 /* ============================== Section Divider ==========================  */
+
+
+
+
+
+
+/* ============================== Section Divider ==========================  */
+.light-side {
+    margin-top: 64px;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ls-section-title {
+    margin-bottom: auto;
+    color: var(--primary-color);
+    margin: 0px;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 64px;
+    text-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.ls-description {
+    margin-left: 32%;
+    margin-right: 32%;
+    padding: 12px;
+    outline: #251d14;
+    border: 2px dashed var(--primary-color);
+
+}
+
+.ls-description .ls-description-text {
+
+    font-size: 23px;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    color: var(--primary-color);
+}
+
+.ls-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+
+.lscard:hover {
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.lscard {
+
+    opacity: 0;
+    transform: translateY(50px);
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 16px;
+    /* background-color: var(---color); */
+    width: 400px;
+    height: 600px;
+    padding: 12px;
+    border-radius: var(--main-radius);
+    transition: box-shadow 0.3s ease, transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+
+@keyframes getAlive {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lscard.show {
+    animation: getAlive 0.6s ease-out forwards;
+}
+
+
+
+.lscard img {
+    position: relative;
+    width: 420px;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
+
+.lscard.card1 img {
+    margin-top: -100px;
+    width: 420px;
+}
+
+.lscard.card2 img {
+    margin-top: -100px;
+    width: 420px;
+}
+
+.lscard.card3 img {
+    margin-top: -50px;
+    width: 420px;
+}
+
+.lscard.card1 {
+    animation-delay: 0.2s;
+}
+
+.lscard.card2 {
+    animation-delay: 0.45s;
+}
+
+.lscard.card3 {
+    animation-delay: 0.7s;
+}
+
+
+
+
+.lscard .card-title {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-family: "Merienda", cursive;
+    font-size: 32px;
+}
+
+.lscard .card-description {
+
+    color: var(--primary-color);
+    font-size: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -60px;
+
+}
+
+.lscard button {
+    background-color: var(--main-button-color);
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Oswald";
+    padding: 3px 7px;
+    margin-top: auto;
+    margin-bottom: 7px;
+    width: 210px;
+    height: 70px;
+    border: none;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: transform 0.6s ease-out;
+}
+
+.lscard button::before {
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: rgb(117, 1, 41);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 0.2s ease-out;
+    overflow: hidden;
+
+}
+
+.lscard button:hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+.lscard button:hover {
+    transform: scale(1.03);
+}
+
+/* ============================== Section Divider ==========================  */
