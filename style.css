@@ -22,6 +22,9 @@
     /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); */
 }
   /*end of nav*/
+  body{
+    background-color: #F2F6D0;
+  }
   .topp{
     background-color: #D98324;
   }
@@ -49,37 +52,59 @@
     white-space: normal;
     vertical-align: middle;
     height: 50px;
-} 
-.imB {
-    display: inline-block;
-    border: 10px solid #EFDCAB (0 , 0% , 60%);
-    margin: 5%;
-}    
-.imB .discribtion {
-    padding: 10px;
-    text-align: center;
 }
 
-.M2 {
-    display: inline-block;
-    border: 10px solid #EFDCAB (0 , 0% , 60%);
-    margin: 5%;
-}    
-.M2 .discribtion {
-    padding: 10px;
+.container {
+    display: flex;
+    flex-wrap:wrap; 
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F6D0;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 500px;
+    height: auto;
     text-align: center;
-}
-
-.M3 {
-    display: inline-block;
-    border: 10px solid #EFDCAB (0 , 0% , 60%);
-    margin: 5%;
-}    
-.M3 .discribtion {
     padding: 10px;
-    text-align: center;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .card .description {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
 
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #a83232;
+  }
 
 @keyframes moveIn {
     from {
