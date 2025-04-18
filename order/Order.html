@@ -1,109 +1,154 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Order</title>
-    <link rel="stylesheet" href="css/PIRO.css">
-    <script src="PIRO.js"></script>
- </head>
+    <link rel="stylesheet" href="Order.CSS">
+    <script src=" "></script>
+</head>
+
 <body>
-  <h1>Order</h1>
- <form>
-    <fieldset class="user">
-    <div class="nam"> 
-            <label for="name" >Name</label> 
-        <input id="name"  type="text" name="username" required>
-    </div>
-        <br>
-    <div class="numb"> 
-        <!-- check -->
-        <label for="num" >Phone number</label> 
-        <input  id="num" type="tel" name=" number" required>
-    </div>
-       <br>
- <div class="add">
-    <div>
-      <label class="go">Governorate</label>
-      <input list="governorate" name="gov">
-       <!-- change -->
-        <datalist id="governorate">
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-            <option value="cairo"> 
-         </datalist>
-    </div>
-    
-    <br>
-    <div class="add2">
-        <label >Address</label>
-        <input type="text" name=" address" placeholder="city,street,building number">
-    </div>
-</div>
-  </fieldset>
- 
-        <!-- paymethod css -->
-         <fieldset class="paymethod">
-<legend>Pay Method</legend> 
-    <div>
-        <input type="radio"  id="cash" name="pay" value="cash">
-        <label for="cash">cash</label><br>
-     <!-- css&js -->
-        <input type="radio"  id="visa" name="pay" value="visa">
-        <label for="visa">visa</label>
-        <img src="img/visa-classic-new-800x450.webp" width="20" height="10">
-    </div>
-         
-         <!-- css&js -->
-        <div class="visaform">
-        <form >
-          <div>
-            <label for="vnum" >Card Number</label>
-            <input id="vnum" type="tel" name="Card Name">
-            <img src="img/9054473_bx_credit_card_icon.png" width="20" height="20">
-          </div><br>
-            <label for="date">Expiry Date</label>
-            <input id="date" type="month" name="Expiry Date">
-            <label for="cvv" >CVV</label>
-            <input  id="cvv" type="number" name="CVV">
-            <br><br>
-            <label for="vname">Card Holder Name </label>
-            <input  id="vname" type=" text" name="Card Holder Name"><br>
+
+    <!-- ------------------------------------------------------------------section1(الصورة+الجملة)------------------------------------------------------------------------- -->
+
+    <header class="header">
+        <!-- --------------------------------------------------------------- -->
+        <div class="header-content">
+            <!-- -------------------------------------------------- -->
+            <div class="image-container">
+                <img src="" alt="">
+            </div>
+            <!-- ---------------- -->
+            <div class="text-container">
+                <!-- <p>Our Burgers have  a story to tell , 
+                    AND It all begins with your order.</p> -->
+
+                <h1>Our Burgers have a story to tell ,</h1>
+                <h2> AND It all begins with your order.</h2>
+            </div>
+            <!-- -------------------------------------------------- -->
         </div>
-        </fieldset>
-        
+        <!-- --------------------------------------------------------------- -->
+    </header>
 
-        <!-- <input type="radio"  id="vodafone" name="pay" value=" vodafone">
-        <label for="vodafone">vodafone</label> -->
+    <!-- ------------------------------------------------------------section2(بيانات العميل+الدفع)----------------------------------------------------------------------------- -->
 
-        <!-- <input type="radio"  id="instapay" name="pay" value="instapay">
-         <label for="instapay">InstaPay</label> -->
-        
-    <!-- <div class="note">
-        <p >Notes:</p>
-        <textarea class="texare"  name="notes" style="width: 300px;height: 50px;">
-         write your notes on order
-        </textarea>
-    </div> -->
+    <section class="order-form">
+        <form id="OrderForm">
+            <!---------------------- بيانات العميل ---------------------->
+            <div class="customer-info">
+                <h3>Customer Information</h3>
 
-        <!-- <p>order summary <summary</summary></p> -->
-<div>
-        <input  class="butt1" type="button" value="Confirm Order">
-        <!-- <input type="button" value="reset"> -->
-    </div>
+                <div class="m">
 
-</form>
+                    <div class="f">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="username" required>
+                    </div>
+
+                    <div class="f">
+                        <label for="num">phone number</label>
+                        <input id="num" type="tel" name=" number" required>
+                    </div>
+
+                </div>
+
+                <div class="m">
+
+                    <div class="f">
+                        <label>governorate</label>
+                        <input list="governorate" name="gov">
+                        <datalist id="governorate">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                            <option value="cairo">
+                        </datalist>
+
+                        <!-- <label>governorate</label>
+                        <input id="governorate" type="text" name="governorate"> -->
+                    </div>
+
+                    <div class="f">
+                        <label for="address">address</label>
+                        <input id="address" type="text" name=" address" placeholder="city,street,building number">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- --------------------بيانات الدفع ---------------------- -->
+            <div class="payment-info">
+                <h3>payment Methods</h3>
+
+                <div class="payment-method">
+                    <input type="radio" id="cash" name="pay" value="cash">
+                    <label for="cash">cash</label>
+
+                    <input type="radio" id="visa" name="pay" value="visa">
+                    <label for="visa">visa</label>
+
+                    <!-- <label>
+                        <input type="radio" id="cash" name="pay" value="cash">
+                        cash
+                    </label> -->
+                </div>
+                <!-- ------------------------------------ -->
+                <div class="visa-info">
+                    <div class="f">
+                        <label for="Card Number">Card Number</label>
+                        <input id="Card Number" type="tel" name="Card Name">
+                    </div>
+
+                    <div class="f">
+                        <label for="Expiry Date">Expiry Date(MM/YY)</label>
+                        <input id="Expiry Date" type="month" name="Expiry Date">
+                    </div>
+
+                    <div class="f">
+                        <label for="cvv">CVV</label>
+                        <input id="cvv" type="number" name="CVV">
+                    </div>
+
+                    <div class="f">
+                        <label for="card-name">card holder name </label>
+                        <input id="card-name" type=" text" name="Card Holder Name">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </form>
+    </section>
+
+    <!-- -----------------------------------------------------------------section3()--------------------------------------------------------------------------------------------- -->
+
+    <section class="order-summary">
+        <!-- --------------------------------- -->
+        <div class="notes">
+            <h3>Notes</h3>
+            <textarea placeholder="Write your notes on order"></textarea>
+        </div>
+        <!-- --------------------------------- -->
+        <div class="summary">
+            <h3>Order summary</h3>
+        </div>
+        <!-- --------------------------------- -->
+        <div class="buttons">
+            <button type="button" id="confirmBTN">Confirm Order</button>
+
+            <button type="reset" id="resetBTN">Reset</button>
+        </div>
+        <!-- --------------------------------- -->
+    </section>
 </body>
-</html>
