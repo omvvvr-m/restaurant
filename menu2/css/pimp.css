@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #443627;
+    --text-shadow-color: #251d14;
+    --secondary-color: #eabb76;
+    /* --accent-color: #DAF7A6; */
+    --background-color: #F2F6D0;
+    --text-color: #EFDCAB;
+    --text-hover-color: rgb(250, 235, 104);
+    --main-padding: 300px;
+    --main-radius: 36px;
+    --main-button-color: rgb(232, 50, 50);
+}
+h1{
+    background-color: var(--background-color);
+    margin-bottom: 0%;
+    font-family:"Merienda", cursive;
+    font-size: 100px;
+}
+.ph{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+     gap: 30px; 
+     text-align: center;
+     font-family: "Oswald";
+     font-size: 20px;
+}
+ .ph1{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph2{
+     width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph3{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph4{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph5{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph6{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph8{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph9{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph10{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph11{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph12{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph13{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+}
+.ph14{
+    width: 90%;
+    border-width: 25%px;
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 36pX; 
+    margin-bottom: 15pX;
+    padding-left: 5pX;
+  }
+.p1, .p2, .p3, .p4, .p5, .p6, .p8, .p9, .p10, .p11, .p12, .p13, .p14{
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-right: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--main-button-color);
+    font-family:"Oswald" ;
+    font-size: 20px;
+}
+
+
+
+  
