@@ -28,8 +28,8 @@ h1{
  .ph1{
     width: 90%;
     border-width: 25%px;
-    background-color: var(--background-color);
-    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--background-color);
     border-style: solid;
     border-radius: 36pX; 
     margin-bottom: 15pX;
