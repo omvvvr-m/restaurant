@@ -42,9 +42,9 @@ body {
     font-family: "Merienda", cursive;
 }
 
-h1 {}
+/* h1 {} */
 
-h2 {}
+/* h2 {} */
 
 .order-form {
     background-color: #f5deb8;
@@ -80,10 +80,7 @@ h3 {
     color: #443627;
 }
 
-#name
-{
-
-}
+/* #name{} */
 
 .input-name {
     position: relative;
@@ -152,10 +149,7 @@ h3 {
     align-items: center;  
 }
 
-#governorate 
- {
-   
- }
+/* #governorate {} */
 
  .input-governorate
  {
@@ -241,7 +235,7 @@ h3 {
     margin-right: auto;
 }
 
-.payment-method {}
+/* .payment-method {} */
 
 #cash {
     margin-bottom: 20px;
@@ -256,9 +250,8 @@ h3 {
     /* display: none; */
 }
 
-#CardNumber {
+/* #CardNumber {} */
 
-}
 .input-cardnumber
 {
     position: relative;
@@ -293,7 +286,7 @@ h3 {
 }
 
 
-#ExpiryDate {}
+/* #ExpiryDate {} */
 
 .input-date
 {
@@ -329,7 +322,7 @@ h3 {
     align-items: center;  
 }
 
-#cvv {}
+/* #cvv {} */
 
 .input-cvv
 {
@@ -364,7 +357,7 @@ h3 {
     align-items: center;
 }
 
-#card-name {}
+/* #card-name {} */
 
 .input-cardname
 {
@@ -412,8 +405,7 @@ h3 {
 
 }
 
-.notes {
-}
+/* .notes {} */
 
 .notes{
     text-align: center;
@@ -424,7 +416,7 @@ h3 {
 width: 400px;
 height:150px;
 border-radius: 36px;
-font-family: ;
+font-family: "Merienda", cursive ;
 background-color:#f3ede4 ;
 border: 2px solid #443627;
 resize: none;
@@ -467,9 +459,7 @@ box-shadow: 0 4px 8px #251d14;
     align-items: center;   
 }
 
-.summary {
-   
-}
+/* .summary {} */
 
 .buttons {
     display: flex;
