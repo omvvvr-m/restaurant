@@ -570,7 +570,7 @@ box-shadow: 0 4px 8px #251d14;
 
 #confirmBTN:hover {
     background-color: #f5e5cc;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition-duration: 1s;
     transition-delay: 0.2s;
 }
