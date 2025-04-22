@@ -22,6 +22,13 @@ body {
     padding: 0px;
 }
 
+.palastine {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+}
+
 .nav-container {
     margin: 0px;
 }
