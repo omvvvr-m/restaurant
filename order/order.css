@@ -83,18 +83,15 @@ input:checked + .round::before
 
 */
 
-:root
-{
-    --section1-color
-}
+
 
 body {
    transition: backgroung-color 0.5s, color 0.5s;
 }
 
 .header {
-    background-color:#eabb76 ;
-    border-radius:36px;
+    background-color:var(--background-color-header) ;
+    border-radius:var(--main-radius);
     box-shadow: 5px 5px 5px #e4a74c ;
     margin-left: -20px;
     margin-right: -20px;
