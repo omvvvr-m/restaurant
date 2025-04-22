@@ -1,23 +1,37 @@
+:root {
+    --primary-color: rgb(83, 42, 22);
+    --text-shadow-color: #251d14;
+    --secondary-color: #eabb76;
+     --accent-color: #DAF7A6; 
+    --background-color: #F2F6D0;
+    --text-color: #EFDCAB;
+    --text-hover-color: rgb(250, 235, 104);
+    --main-padding: 300px;
+    --main-radius: 36px;
+    --main-button-color: rgb(232, 50, 50);
+}
+
+
 body{
-    background-color: #e4a444;
- 
- }
- .offer_containers{
-     display:flex;
-     justify-content: center;
-     margin: 30px 0;
-     flex-wrap:wrap;
-     gap:20px;
- }
- .tittle{
+   background-color:var(--background-color);
+
+}
+.offer_containers{
+    display:flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap:wrap;
+    gap:20px;
+   
+}
+.tittle{
     padding:30px;
-    color: rgb(83, 42, 22);
+    color:var(--primary-color) ;
     margin:30px;
-    font-family:cursive ;
     font-size:60px ;
+    text-shadow: 2px 2px 0px var(--secondary-color);
    text-align: center;
    text-transform: uppercase;
-   letter-spacing: 1px;
    transition: transform 0.3s ease;
    
 }
@@ -25,12 +39,12 @@ body{
     transform:scale(1.02);
 }
 .offer_card{
-    padding:40px;
-    margin:20px;
-    background-color: rgb(101, 70, 37);
+    padding:25px;
+    margin:10px;
+    background-color:transparent;
     overflow: hidden;/*الصورة متطلعش برة*/
-    width:450px;
-    border-radius:45%;
+    width:400px;
+    border-radius:50px;
     align-items: center;
     height:auto;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
@@ -57,16 +71,17 @@ body{
 }
 .offer_tittle{
     
-    font-family:cursive;
-    font-size: 35px;
-    color: rgb(8, 8, 8);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: var(--primary-color);
     text-align: center;
+    text-shadow:2px 0px 0px rgb(210, 189, 139);
 
 }
 .content{
-    color: rgb(17, 16, 16);
+    color:var(--primary-color);
     font-family: cursive;
-    size: 25px;
+    font-size: 16px;
     text-align: center;
 
 }
@@ -78,61 +93,78 @@ body{
    padding:0px 80px 0px 0px;
 }
 .offer_price{
-    display:flex;
-    gap:35px;
-    margin:10px auto;
-    justify-content: center; 
-     border-radius: 8px;
-    background-color:rgb(168, 30, 30);
-    padding: 4px 8px;
+position:relative;
+display:flex;
+gap:35px;
+margin:;
+justify-content:center ; 
+border-radius:20px ;
+background-color:rgb(196, 38, 38);
+padding:5px ;
+width: 100%;
+
+
+
+
+}
+.old{
+    text-decoration: line-through;
+    color:#0b0b0b;
+    font-size: 25px;
+    font-family: cursive;
+
+
+
+}
+.new{
+    font-weight: bold;
+    color:white;
+    font-size: 30px;
+    position: relative;
+    animation:pulse 1.5s infinite;
+    font-family:cursive;
+    cursor: pointer;
+   
+  text-shadow: 2px 2px 0px black;
+}
+
     
-    }
-    .old{
-        text-decoration: line-through;
-        color:#0b0b0b;
-        font-size: 25px;
-        font-family: cursive;
+
+
+.offer_btn{
+    padding:10px;
+    margin:5px;
+    border-radius:25px;
+    border-color: transparent;
+    border-style: double;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    color:rgb(255, 249, 203);
+    border: none;
+    display:block;
+    background-color:black;
+    margin: auto;
     
     
+
+}
+.offer_btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.offer2_img{
+    width: 300px;
+    padding:10px 40px 25px 50px;
     
-    }
-    .new{
-        font-weight: bold;
-        color:#e4a444;
-        font-size: 30px;
-        position: relative;
-        animation:pulse 1.5s infinite;
-        font-family:cursive;
-        cursor: pointer;
-       
-      
-    }
-    .offer_btn{
-        padding:10px;
-        margin:5px;
-        border-radius:30px;
-        border-color: transparent;
-        border-style: double;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 16px;
-        transition: transform 0.3s ease;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
-        align-items: center;
-        border: none;
-        display:block;
-        background-color: #e4a444;
-        margin: auto;
+}
+.offer3_img{
+
+    width: 300px;
+    padding:10px 40px 25px 50px;
     
-    }
-    .offer_btn:hover{
-        transform: scale(1.1);
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    }
-    .offer2_img{
-        width: 520px;
-    }
-    
-        
-    
+}

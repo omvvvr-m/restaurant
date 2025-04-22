@@ -1,5 +1,6 @@
 *{
-    background-color:rgb(255, 81, 0);
+    background-color: #e4a444;
+    
 }
 
 .photo{
@@ -128,9 +129,10 @@ border: solid black;
 .photo4{
 
 width: 500px;
-height: 250px;
-margin-left: 800px;
+height: 270px;
+margin-left: 600px;
 position: absolute;
+top:870px;
 
 }
 
