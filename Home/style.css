@@ -165,17 +165,23 @@ body {
     z-index: 0;
 }
 
+
+
+
+
 @keyframes intro {
     to {
         opacity: 1;
         transform: translate(0px);
         filter: blur(0);
+
     }
 
 }
 
 .main-section .main-blanket img {
     position: relative;
+
     /* Animation properties */
     opacity: 0;
     transform: translateX(60px);
@@ -370,6 +376,7 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+
     }
 }
 
