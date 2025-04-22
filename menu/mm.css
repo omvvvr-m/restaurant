@@ -59,13 +59,14 @@ body{
     
 }
 .offer_img{
-    width: 350px;
+    width:300px;
     align-content: center;
     display:block;
     position: relative;
     align-items: center;
     text-align: center;
     margin:0 auto;
+    padding:20px;
     
 
 }
@@ -158,8 +159,8 @@ width: 100%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 .offer2_img{
-    width: 300px;
-    padding:10px 40px 25px 50px;
+    width: 475px;
+   
     
 }
 .offer3_img{
