@@ -7,15 +7,12 @@ color:wheat ;
 background: url(contactus.png) ;
 background-size: contain;
 background-position: center;
-background-repeat: repeat;
-
-
-
-padding: 100px 0;
-text-align: inherit;
-
+background-repeat: repeat-x;
 width: 2000px;
 height: 400px;
+
+
+
 }
 
 
