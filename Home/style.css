@@ -687,18 +687,41 @@ body {
 }
 
 /* ============================== Section Divider ==========================  */
-.feels-hungry {
-    margin: 0px;
+.final-section {
+    margin: 48px;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
 }
 
-.fh-description {
-    border: 1px dashed;
+.cec-description {
+    margin-left: 32%;
+    margin-right: 32%;
+    border: 2px dashed var(--primary-color);
 }
 
 .catchy-text {
     font-family: "Oswald", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.cec-cards-container {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+.finalcard {
+    border: 2px dashed var(--primary-color);
+    width: 309px; 
+    height: 200px;
+
+    
 }
 /* ============================== Section Divider ==========================  */
