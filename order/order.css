@@ -1,5 +1,5 @@
 
-body.light-mode{
+/* body.light-mode{
     background-color: rgb(214, 214, 214);
     color: black;
 }
@@ -81,12 +81,12 @@ input:checked + .round::before
     background-size: cover;
 }
 
+*/
 
-
-
-
-
-
+:root
+{
+    --section1-color
+}
 
 body {
    transition: backgroung-color 0.5s, color 0.5s;
