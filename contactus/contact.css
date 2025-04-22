@@ -5,11 +5,12 @@ color:wheat ;
 
 .contact-header{
 background: url(contactus.png) ;
-background-size: cover;
+background-size: contain;
 background-position: center;
-background-position-x: right;
-display: flex;
-background-repeat: repeat-y;
+background-repeat: repeat;
+
+
+
 padding: 100px 0;
 text-align: inherit;
 
