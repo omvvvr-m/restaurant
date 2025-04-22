@@ -648,7 +648,7 @@ body {
     height: 70px;
     border: none;
     overflow: hidden;
-    
+
     cursor: pointer;
 
     display: flex;
@@ -670,7 +670,7 @@ body {
     z-index: -1;
     transition: height 0.2s ease-out;
     overflow: hidden;
-    
+
 }
 
 .lscard button:hover:before {
@@ -724,4 +724,130 @@ body {
 
     
 }
+
 /* ============================== Section Divider ==========================  */
+
+footer {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: var(--primary-color);
+}
+
+
+
+footer ul.links {
+
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+footer ul.links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer ul.links a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+footer ul li {
+    cursor: pointer;
+}
+
+
+.resName-footer {
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.footer-desc {
+    width: 700px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.privacy_policy_container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Oswald", sans-serif;
+
+}
+
+.privacy_policy {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 500px;
+    height: 700px;
+    background-color: wheat;
+    border-radius: var(--main-radius);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.privacy_policy .privacy-box {
+
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+}
+
+
+.privacy_policy .acceptBtn {
+    margin-top: 20px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Oswald";
+    width: 210px;
+    height: 70px;
+
+    border: none;
+    cursor: pointer;
+    transition: transform ease-out 0.3s;
+
+}
+
+.privacy_policy .acceptBtn:hover {
+
+    transform: scale(1.04);
+
+}
