@@ -648,7 +648,7 @@ body {
     height: 70px;
     border: none;
     overflow: hidden;
-
+    
     cursor: pointer;
 
     display: flex;
@@ -670,7 +670,7 @@ body {
     z-index: -1;
     transition: height 0.2s ease-out;
     overflow: hidden;
-
+    
 }
 
 .lscard button:hover:before {
@@ -686,4 +686,19 @@ body {
     transform: scale(1.03);
 }
 
+/* ============================== Section Divider ==========================  */
+.feels-hungry {
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fh-description {
+    border: 1px dashed;
+}
+
+.catchy-text {
+    font-family: "Oswald", sans-serif;
+}
 /* ============================== Section Divider ==========================  */
