@@ -349,7 +349,7 @@ body {
     text-align: center;
 }
 
-.bs-section-title {
+/* .bs-section-title {
     margin-bottom: auto;
     color: var(--primary-color);
     margin: 0px;
@@ -357,7 +357,7 @@ body {
     display: inline-block;
     font-size: 64px;
     text-shadow: 2px 2px 0px var(--secondary-color);
-}
+} */
 
 .bs-description {
     margin-left: 32%;
@@ -543,7 +543,7 @@ body {
     text-align: center;
 }
 
-.ls-section-title {
+/* .ls-section-title {
     margin-bottom: auto;
     color: var(--primary-color);
     margin: 0px;
@@ -551,7 +551,7 @@ body {
     display: inline-block;
     font-size: 64px;
     text-shadow: 2px 2px 0px var(--secondary-color);
-}
+} */
 
 .ls-description {
     margin-left: 32%;
