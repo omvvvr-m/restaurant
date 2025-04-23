@@ -106,6 +106,15 @@ body {
     justify-content: center;
     color:#F2F6D0 ;
 }     
+.typewriter{
+  overflow: hidden;
+  border-right: 2px solid transparent; 
+  white-space: nowrap;          
+  width: 0;
+  animation: typing 3s steps(25, end) forwards,
+             blink 0.6s step-end 1;
+}
+
 .info {
     background-color: rgb(0, 159, 72);
     margin: 0%;
@@ -115,6 +124,12 @@ body {
     white-space: normal;
     vertical-align: middle;
     height: 50px;
+    color: #F2F6D0;
+}
+
+.jump {
+  display: inline-block;
+  animation: jumpIn 1s ease-out forwards;
 }
 
 .container {
@@ -122,9 +137,9 @@ body {
     grid-template-columns: auto auto auto;
     flex-wrap:wrap; 
     justify-content:space-evenly;
-    gap: 30px;
+    gap: 52px;
     padding: 50px;
-    margin: 20px;
+    margin: 15px;
     font-family: "Oswald";
 
   }
@@ -142,6 +157,7 @@ body {
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: "Merienda", cursive;
+    color: #443627;
 
   }
   
@@ -160,6 +176,7 @@ body {
     flex-grow: 1;
     align-items: flex-start;
     text-align: center;
+    color: #443627;
   }
 
   
@@ -173,6 +190,68 @@ body {
   .card button:hover {
     background-color:transparent;
   }
+
+  .controls {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #443627;
+    font-size: 28px;
+    font-weight: bold;
+    color: #443627;
+    background-color: #F2F6D0; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    transition: var(--background-color) 0.3s;
+    gap: 10px;
+    margin-bottom: 15px;
+
+  }
+
+  .count {
+    width: 40px; 
+    height: 40px; 
+    background-color: #443627;
+    color: #F2F6D0;
+    font-size: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .counter button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color:#eabb76;
+    color:#F2F6D0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .counter button:hover {
+    background-color:#EFDCAB;
+  }
+
+  #count {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  
 
 
   .flip-btn {
@@ -198,7 +277,7 @@ body {
     font-size: 25px;
     font-family: "Oswald", sans-serif;
     background-color: rgb(0, 159, 72);
-    color: white;
+    color: #F2F6D0;
     transition: transform 0.6s;
     transform-style: preserve-3d;
   }
@@ -206,6 +285,7 @@ body {
   .flip-btn .front {
     transform: rotateY(0deg);
     z-index: 2;
+    color: #F2F6D0;
   }
   
   .flip-btn .back {
@@ -220,6 +300,7 @@ body {
   .flip-btn:hover .back {
     transform: rotateY(0deg);
   }
+
   
 
 @keyframes moveIn {
@@ -231,4 +312,27 @@ body {
       right: 0;
       opacity: 1;
     }
+  }
+
+  @keyframes jumpIn {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 150ch } 
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
   }
