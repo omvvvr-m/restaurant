@@ -12,11 +12,23 @@
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <title>BUN & BLAZE</title>
+
+    <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
 </head>
 
 <body>
+
     <img src="/imgs/palastine.png" alt="free-palastine" class="palastine">
-    <div class="nav-container">
+    <div id="navbar"></div>
+    <!-- <div class="nav-container">
         <nav class="navbar">
             <a class="logo" id="home" href="index.html">
                 <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
@@ -42,7 +54,7 @@
                 <li><a href="" class="about-us" target="_blank">ABOUT US</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
     <!-------------------------- SECTION DIVIDER ---------------------------->
     <section class="main-section">
         <div class="main-blanket">
