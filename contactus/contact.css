@@ -5,9 +5,9 @@ color:wheat ;
 
 .contact-header{
 background: url(contactus.png) ;
-background-size: contain;
-background-position: center;
-background-repeat: repeat-x;
+background-size: cover;
+background-position: bottom;
+background-repeat: repeat-y;
 width: 2000px;
 height: 400px;
 
@@ -43,7 +43,8 @@ margin: 20px 0;
 color: black;
 padding: 10px;
 cursor: pointer;
-border: solid black;
+border: solid black ;
+border-radius: 50px;
 width: 100px;
 color: black;
 background-color: white;
@@ -68,7 +69,7 @@ h4{
 .social-icon{
 
     margin-right: 40px;
-    font-size: 24px;
+    font-size: 29px;
 }
 .time{
     font-family: Arial, sans-serif;
@@ -99,6 +100,9 @@ table {
     text-align: center;
   }
   th { 
-    color: white;}   
-     
+    color: white; 
+  }   
+   a{
+    text-decoration: none;
+   }  
 
