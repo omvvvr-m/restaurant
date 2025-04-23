@@ -1,0 +1,208 @@
+*{
+/*    background-color: rgb(255, 123, 0);*/
+    align-content: center
+}
+
+.headerImg{
+/*    text-align: center;*/
+    width: 85%;
+    height: 5%
+}
+.contaier{
+    align-content: center
+}
+.photo{
+width: 230px;
+height: auto;
+margin-top: 40px;
+position: absolute;
+margin-left: 40px;
+
+
+}
+.divheader{
+    height: 10%
+}
+.pargraph{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10pxs;
+    font-family: sans-serif
+}
+.merienda{
+    font-family: sans-serif;
+    font-size: 40px
+}
+.rate{
+font-weight: 400;
+font-size: larger;
+}
+hr{
+
+opacity:20% ;
+color: white;}
+.rating{
+
+align-items: center;
+display:flex;
+justify-content:space-around ;}
+
+
+
+h1,h2{
+    font-family:cursive; 
+font-weight: 700;
+}
+
+.place{
+
+width: 450px;
+height: 480px;
+position: absolute;
+top: 35px;
+right: 50px;
+
+
+
+}
+.teamImg{
+    height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    padding: 1%;
+
+}
+.story{
+line-height: 1.4;
+
+overflow-wrap: break-word;
+
+    font-style: normal;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    display: flex;
+    flex-direction: row
+    }
+sorty2{
+   line-height: 1.4;
+
+overflow-wrap: break-word;
+
+    font-style: normal;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    display: flex;
+    flex-direction: row
+    } 
+}
+ 
+
+strong{
+
+font-family: cursive;
+font-weight: 700;
+font-style: italic;
+margin-left: 40px;
+
+}
+ 
+
+.star{
+
+    color: #FFD700;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+
+.hh{
+     background-color: rgb(255, 123, 0);
+    padding: 10px
+}
+
+.hh p {
+
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width:600 ;
+    margin-left: 40px;
+    
+}
+
+
+
+.ii{
+
+font-family: sans-serif;
+font-weight: 600;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-left: 40px;
+}
+.tt{
+
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.stary {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .stary.selected {
+    color: gold;
+  }
+  .review-section{
+line-height: 1.8;
+    margin: 40px;
+}
+#reviewInput,
+.click
+
+{
+border: solid black;
+
+}
+.pargraph{
+ font-family: sans-serif;
+    font-size: 20px
+}
+
+.photo4{
+
+width: 500px;
+height: 270px;
+margin-left: 600px;
+position: absolute;
+top:870px;
+
+}
+
+
+
+
+
+.photo2{
+
+width:230px ;
+margin-left:500px ;
+height: auto;
+position: absolute;
+margin-top: 40px;
+}
+.photo3{
+
+
+    width:230px ;
+    margin-left:960px ;
+    height: auto;
+    position: absolute;
+    margin-top: 40px;
+    }

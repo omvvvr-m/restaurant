@@ -1,6 +1,6 @@
 *{
 background-color: rgb(66, 19, 19);
-color:wheat ;
+color:wheat;
 }
 
 .contact-header{
@@ -14,6 +14,38 @@ height: 400px;
 
 
 }
+
+.typing-text {
+  position: absolute;
+  bottom: 180px; /* Distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.9em;
+  color: wheat;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  white-space: nowrap;
+  
+  border-right: 2px solid white;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 40ch; } /* Adjust to match sentence length */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+
+
+
+
+
 
 
 
