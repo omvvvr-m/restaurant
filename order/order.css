@@ -4,8 +4,8 @@ body {
 }
 
 .header {
-    background-color:var(--background-color-header) ;
-    border-radius:var(--main-radius);
+    background-color:#eabb76 ;
+    border-radius:36px;
     box-shadow: 5px 5px 5px #e4a74c ;
     margin-left: -20px;
     margin-right: -20px;

@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <title>Order</title>
     <link rel="stylesheet" href="order.CSS">
+    <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+    <script>
+    fetch('../Navbar/navbar.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+    });
+    </script>
 </head>
 
 <body>
-
-    <!-- <div class="theme-switch">
-        <label for="checkbox" class="themeSwitch">
-            <input type="checkbox" id="checkbox" >
-            <div class="round"></div>
-        </label>
-    </div> -->
-    
+    <div id="navbar"></div>
     <!-- ------------------------------------------------------------------section1(الصورة+الجملة)------------------------------------------------------------------------- -->
 
     <header class="header">
