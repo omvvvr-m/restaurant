@@ -98,8 +98,7 @@ overflow-wrap: break-word;
     display: flex;
     flex-direction: row
     } 
-}
- 
+
 
 strong{
 
@@ -184,25 +183,3 @@ position: absolute;
 top:870px;
 
 }
-
-
-
-
-
-.photo2{
-
-width:230px ;
-margin-left:500px ;
-height: auto;
-position: absolute;
-margin-top: 40px;
-}
-.photo3{
-
-
-    width:230px ;
-    margin-left:960px ;
-    height: auto;
-    position: absolute;
-    margin-top: 40px;
-    }
