@@ -1,92 +1,6 @@
 
-/* body.light-mode{
-    background-color: rgb(214, 214, 214);
-    color: black;
-}
-
-body.dark-mode
-{
-    background-color: black;
-    color:white;
-}
-
-.theme-switch
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.themeSwitch
-{
-    position: relative;
-    display: inline-block;
-    width:80px;
-    height: 44px;
-}
-
-.themeSwitch input{
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.round
-{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffc72b;
-    transition: 0.4s;
-    border-radius: 36px;
-    width: 80px;
-    height: 44px;
-}
-
-.round:hover
-{
-    box-shadow: 0 0 20px rgb(214, 252, 0);
-}
-.round:before
-{
-    position: absolute;
-    content: "";
-    height: 36px;
-    width: 36px;
-    left: 4px;
-    bottom: 4px;
-    background-image: url( c:\Users\Malak\AppData\Local\Temp\light-mode-toggle-button-switching-on-with-sun-icon-vector.jpg );
-    transition: 0.4s;
-    border-radius: 50px;
-    background-size: cover;
-}
-
-input:checked + .round{
-    background-color: #2c0b47;
-}
-
-input:checked + .round:hover
-{
-    box-shadow: 0 0 20px rgb(255,255,255);
-}
-
-input:checked + .round::before
-{
-    transform: translateX(35px);
-    background-image:url(../../../../../../../../AppData/Local/Temp/Is-dark-mode-better-for-you.webp) ;
-    background-size: cover;
-}
-
-*/
-
-
-
 body {
-   transition: backgroung-color 0.5s, color 0.5s;
+    transition: backgroung-color 0.5s, color 0.5s;
 }
 
 .header {
@@ -124,7 +38,7 @@ body {
     font-size: 55px;
     font-weight: bold;
     font-family: "Merienda", cursive;
-    color: ;
+    /* color: ; */
     text-shadow: 5px 5px 5px #251d14;
     font-family: "Merienda", cursive;
 }
@@ -173,8 +87,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -182,12 +96,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-name input {
@@ -198,7 +112,7 @@ h3 {
     box-sizing: border-box;
     align-items: center;
 }
-   
+
 
 #number {
     margin-bottom: 20px;
@@ -208,8 +122,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -217,12 +131,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-number input {
@@ -238,29 +152,29 @@ h3 {
 
 /* #governorate {} */
 
- .input-governorate
- {
+.input-governorate
+{
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
- }
+}
 
- .input-governorate .icon{
+.input-governorate .icon{
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
- }
- 
- .input-governorate input{
+    left: 10px;
+    right:auto;
+}
+
+.input-governorate input{
     font-size: 16px;
     width: 100%;
     padding-left:45px;
@@ -269,10 +183,10 @@ h3 {
     height: 40px;
     box-sizing: border-box;
     align-items: center;  
- }
+}
 
 #address { 
-      margin-bottom: 20px;
+    margin-bottom: 20px;
     }
 
 .input-address
@@ -280,8 +194,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -290,12 +204,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:15%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-address input
@@ -330,11 +244,11 @@ h3 {
 
 #visa {
     margin-bottom: 20px;
-   
+
 }
 
 .visa-info {
-    /* display: none; */
+    display: none;
 }
 
 /* #CardNumber {} */
@@ -344,8 +258,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -353,12 +267,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-cardnumber input{
@@ -380,8 +294,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -389,12 +303,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-date input
@@ -416,8 +330,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -425,12 +339,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-cvv input{
@@ -451,8 +365,8 @@ h3 {
     position: relative;
     width:300px; 
     max-width: 200px;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -460,12 +374,12 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:20%;
-   left: 10px;
-   right:auto;
+    left: 10px;
+    right:auto;
 }
 
 .input-cardname input{
@@ -518,8 +432,8 @@ box-shadow: 0 4px 8px #251d14;
     width:300px; 
     max-width: 500px;
     display: flex;
-     justify-content: center;
-     align-items: center; 
+    justify-content: center;
+    align-items: center; 
     margin:20px auto; 
 }
 
@@ -527,12 +441,12 @@ box-shadow: 0 4px 8px #251d14;
     position: absolute;
     width: 24px;
     height: 24px;
-     pointer-events: none;
+    pointer-events: none;
     /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top:10%;
-   left: 20px;
-   right:auto;
+    left: 20px;
+    right:auto;
 }
 
 .input-note input{
