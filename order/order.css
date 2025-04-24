@@ -239,11 +239,11 @@ h3 {
 /* .payment-method {} */
 
 #cash {
-    margin-bottom: 20px;
+    display: block;
 }
 
 #visa {
-    margin-bottom: 20px;
+    display: block;
 
 }
 
@@ -466,7 +466,7 @@ box-shadow: 0 4px 8px #251d14;
     display: flex;
 }
 
-#confirmBTN {
+#confirm {
     font-family: "Merienda", cursive  ;
     font-size: 30px;
     color: #443627;
@@ -479,14 +479,14 @@ box-shadow: 0 4px 8px #251d14;
     border: 3px solid #443627  ;
 }
 
-#confirmBTN:hover {
+#confirm:hover {
     background-color: #f5e5cc;
     transform: scale(1.2);
     transition-duration: 1s;
     transition-delay: 0.2s;
 }
 
-#resetBTN {
+#reset {
     font-family: "Merienda", cursive  ;
     font-size: 30px;
     color: #443627;
@@ -499,7 +499,7 @@ box-shadow: 0 4px 8px #251d14;
     border: 3px solid #443627 ;
 }
 
-#resetBTN:hover {
+#reset:hover {
     background-color: #f5e5cc;
     transform: scale(1.2);
     transition-duration: 1s;
