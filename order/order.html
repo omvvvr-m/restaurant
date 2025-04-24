@@ -5,6 +5,7 @@
     <title>Order</title>
     <link rel="stylesheet" href="order.CSS">
     <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+    <script src="order.js"></script>
 </head>
 
 <body>
@@ -100,7 +101,7 @@
             <!-- --------------------بيانات الدفع ---------------------- -->
             <div class="payment-info">
                 <h3>payment Methods</h3>
-
+                <label for="paymethod">choose payment method:</label>
                 <div class="payment-method">
                     <input type="radio" id="cash" name="pay" value="cash">
                     <label for="cash">Cash</label>
@@ -111,7 +112,7 @@
                 </div>
                 <!-- ------------------------------------ -->
                 <!-- js -->
-                <div class="visa-info">
+                <div id="visaForm">
                     <div class="f">
                         <label for="Card Number">Card Number</label>
                         <div class="input-cardnumber">
@@ -172,12 +173,16 @@
         <!-- --------------------------------- -->
         <div class="buttons">
             
-            <button type="button" id="confirm" onclick="submitOrder()" >Confirm Order</button>
+            <button type="button" id="confirm" onclick="submitOrder()">Confirm Order</button>
+            <div id="confirmmessage" class="popup">
+                <div class="checkmark"></div>
+            <p>Your order has been placed successfully!</p>
+            </div>
 
             <button type="reset" id="reset">Reset</button>
         </div>
         <!-- --------------------------------- -->
     </section>
-    <script src="order.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 </body>
