@@ -1,6 +1,6 @@
 *{
 background-color: rgb(66, 19, 19);
-color:wheat;
+color:rgb(255, 174, 0);
 }
 
 .contact-header{
@@ -21,11 +21,11 @@ height: 400px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.9em;
-  color: rgb(255, 174, 0);
+  color: wheat;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  white-space: nowrap;
+  white-space:nowrap;
   
-  border-right: 2px solid white;
+  border-right: 2px solid transparent;
   width: 0;
   animation: typing 3s steps(40, end) forwards, blink 0.7s step-end infinite;
 }
@@ -102,6 +102,7 @@ h4{
 
     margin-right: 40px;
     font-size: 29px;
+    
 }
 .time{
     font-family: Arial, sans-serif;
