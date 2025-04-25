@@ -1,6 +1,50 @@
 // ععععععععععااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااا
 
 
+// document.getElementById("OrderForm").addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     // clear previous errors
+//     document.querySelectorAll('.error').forEach(el => el.textContent = "");
+
+//     let name = document.getElementById("name").value.trim();
+//     let phone = document.getElementById("num").value.trim();
+//     let cvv = document.getElementById("cvv").value.trim();
+//     let visa = document.getElementById("visa").checked;
+//     let cash = document.getElementById("cash").checked;
+
+//     let hasError = false;
+
+//     if (name === "") {
+//         document.getElementById("error-name").textContent = "Please enter your name.";
+//         hasError = true;
+//     }
+
+//     if (phone.length !== 11 || isNaN(phone)) {
+//         document.getElementById("error-phone").textContent = "Phone number must be exactly 11 digits.";
+//         hasError = true;
+//     }
+
+//     if (!visa && !cash) {
+//         document.getElementById("error-payment").textContent = "Please select a payment method.";
+//         hasError = true;
+//     }
+//     if (visa && (cvv.length !== 3 || isNaN(cvv))) {
+//         document.getElementById("error-cvv").textContent = "CVV must be 3 digits.";
+//         hasError = true;
+//     }
+
+//     if (!hasError) {
+//         document.getElementById("successmessage").style.display = "block";
+//         setTimeout(() => {
+//             document.getElementById("successmessage").style.display = "none";
+//         }, 4000);
+
+//         document.getElementById("OrderForm").reset();
+//         }
+//     });
+
+
 
 // const form = document.getElementById('orderForm');
 // const phoneInput = document.getElementById('phone');
@@ -47,68 +91,57 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
  //confirm
 
-function  submitOrder(e)
-    {
-        e.preventDefault();
-    let name =document.getElementById("name").value.trim;
-    let phone =document.getElementById("num").value.trim;
-    let cvv =document.getElementById("cvv").value.trim;
-    let address =document.getElementById("address").value.trim;
-    let paymentVisa=document.getElementById("visa").Checked;
-    let paymentCash=document.getElementById("cash").Checked;
-    let isvalid =true;
+// function  submitOrder(e)
+//     {
+//         e.preventDefault();
+//     let name =document.getElementById("name").value.trim;
+//     let phone =document.getElementById("num").value.trim;
+//     let cvv =document.getElementById("cvv").value.trim;
+//     let address =document.getElementById("address").value.trim;
+//     let paymentVisa=document.getElementById("visa").Checked;
+//     let paymentCash=document.getElementById("cash").Checked;
+//     let isvalid =true;
 
-//validition
+// //validition
 
-    if (name===""){
-        alert("please enter your name.");
-        isvalid=false;
-    }
+//     if (name===""){
+//         alert("please enter your name.");
+//         isvalid=false;
+//     }
 
-    if(phone.length!==11||isNaN(phone)){
-        alert("phone number must be exactly 11 digits.");
-        isvalid=false;
-    }
+//     if(phone.length!==11||isNaN(phone)){
+//         alert("phone number must be exactly 11 digits.");
+//         isvalid=false;
+//     }
 
-    if(!paymentCash && !paymentVisa){
-        alert("please select a payment method");
-        isvalid=false;
-    }
+//     if(!paymentCash && !paymentVisa){
+//         alert("please select a payment method");
+//         isvalid=false;
+//     }
 
-    if(paymentVisa && (cvv.length!==3|| isNaN(cvv))){
-        alert("CVV must be 3 digit.");
-        isvalid=false;
-    }
+//     if(paymentVisa && (cvv.length!==3|| isNaN(cvv))){
+//         alert("CVV must be 3 digit.");
+//         isvalid=false;
+//     }
 
-    if(isvalid)
-    {
-        let confirmBtn=document.getElementById("confirm");
-        document.addEventListener("DOMContentLoaded",function(e){
-            e.preventDefault();
-                alert ("order");
-        });
-        
-    }}
+//     if(isvalid)
+//     {
+//         let confirmBtn=document.getElementById("confirm");
+//         document.addEventListener("DOMContentLoaded",function(e){
+//             e.preventDefault();
+//                 alert ("order");
+//         });
 
-document.getElementById("confirmmessage").style.display="block";
-        setTimeout(() =>
-        {
-            document.getElementById("confirmmessage").style.display="none";
-        }
-        ,4000);
+//     }}
+
+// document.getElementById("confirmmessage").style.display="block";
+//         setTimeout(() =>
+//         {
+//             document.getElementById("confirmmessage").style.display="none";
+//         }
+//         ,4000);
 
 
 
