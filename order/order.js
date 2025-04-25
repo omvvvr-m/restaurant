@@ -60,54 +60,55 @@
 
  //confirm
 
-// function  submitOrder()
-//     {
-//     let name =document.getElementById("name").value.trim;
-//     let phone =document.getElementById("num").value.trim;
-//     let cvv =document.getElementById("cvv").value.trim;
-//     let address =document.getElementById("address").value.trim;
-//     let paymentVisa=document.getElementById("visa").Checked;
-//     let paymentCash=document.getElementById("cash").Checked;
-//     let isvalid =true;
+function  submitOrder(e)
+    {
+        e.preventDefault();
+    let name =document.getElementById("name").value.trim;
+    let phone =document.getElementById("num").value.trim;
+    let cvv =document.getElementById("cvv").value.trim;
+    let address =document.getElementById("address").value.trim;
+    let paymentVisa=document.getElementById("visa").Checked;
+    let paymentCash=document.getElementById("cash").Checked;
+    let isvalid =true;
 
-// //validition
+//validition
 
-//     if (name===""){
-//         alert("please enter your name.");
-//         isvalid=false;
-//     }
+    if (name===""){
+        alert("please enter your name.");
+        isvalid=false;
+    }
 
-//     if(phone.length!==11||isNaN(phone)){
-//         alert("phone number must be exactly 11 digits.");
-//         isvalid=false;
-//     }
+    if(phone.length!==11||isNaN(phone)){
+        alert("phone number must be exactly 11 digits.");
+        isvalid=false;
+    }
 
-//     if(!paymentCash && !paymentVisa){
-//         alert("please select a payment method");
-//         isvalid=false;
-//     }
+    if(!paymentCash && !paymentVisa){
+        alert("please select a payment method");
+        isvalid=false;
+    }
 
-//     if(paymentVisa && (cvv.length!==3|| isNaN(cvv))){
-//         alert("CVV must be 3 digit.");
-//         isvalid=false;
-//     }
+    if(paymentVisa && (cvv.length!==3|| isNaN(cvv))){
+        alert("CVV must be 3 digit.");
+        isvalid=false;
+    }
 
-//     if(isvalid)
-//     {
-//         let confirmBtn=document.getElementById("confirm");
-//         document.addEventListener("DOMContentLoaded",function(e){
-//             e.preventDefault();
-//                 alert ("order");
-//         });
+    if(isvalid)
+    {
+        let confirmBtn=document.getElementById("confirm");
+        document.addEventListener("DOMContentLoaded",function(e){
+            e.preventDefault();
+                alert ("order");
+        });
         
-//     }}
+    }}
 
-  // document.getElementById("confirmmessage").style.display="block";
-        // setTimeout(() =>
-        // {
-        //     document.getElementById("confirmmessage").style.display="none";
-        // }
-        // ,4000);
+document.getElementById("confirmmessage").style.display="block";
+        setTimeout(() =>
+        {
+            document.getElementById("confirmmessage").style.display="none";
+        }
+        ,4000);
 
 
 
@@ -132,7 +133,7 @@
 //     const modal = document.getElementById("confirmationModal");
 //     const closeBtn = document.getElementsByClassName("close")[0];
 
-//      
+
 //     confirmBtn.addEventListener("click", function() {
 //       modal.style.display = "block"; // إظهار الـ Modal
 //     });
@@ -142,7 +143,7 @@
 //       modal.style.display = "none"; // إخفاء الـ Modal
 //     });
 
-//    
+
 //     window.addEventListener("click", function(event) {
 //         if (event.target == modal) {
 //         modal.style.display = "none"; // إخفاء الـ Modal
