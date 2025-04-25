@@ -1,4 +1,49 @@
-// عااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااا
+// ععععععععععااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااا
+
+
+
+// const form = document.getElementById('orderForm');
+// const phoneInput = document.getElementById('phone');
+// const paymentSelect = document.getElementById('payment');
+// const cvvInput = document.getElementById('cvv');
+// const visaDetails = document.getElementById('visaDetails');
+// const successMessage = document.getElementById('successMessage');
+
+// paymentSelect.addEventListener('change', () => {
+//     if (paymentSelect.value === 'visa') {
+//     visaDetails.classList.remove('hidden');
+//     } else {
+//     visaDetails.classList.add('hidden');
+// }
+// });
+
+// form.addEventListener('submit', function (event) {
+//     event.preventDefault();
+
+//     const phone = phoneInput.value.trim();
+//     const payment = paymentSelect.value;
+//     const cvv = cvvInput.value.trim();
+
+//     if (phone.length !== 11 || isNaN(phone)) {
+//     alert("Phone number must be exactly 11 digits.");
+//     return;
+// }
+
+//     if (payment === "") {
+//     alert("Please select a payment method.");
+//     return;
+// }
+
+//     if (payment === "visa") {
+//     if (cvv.length !== 3 || isNaN(cvv)) {
+//         alert("CVV must be exactly 3 digits.");
+//         return;
+//     }
+// }
+
+//   // إذا كل حاجة تمام، نعرض الرسالة الشيك
+//     successMessage.classList.remove('hidden');
+// });
 
 
 
@@ -13,17 +58,7 @@
 
 
 
-
-
-
-fetch('../Navbar/navbar.html')
-.then(res => res.text())
-.then(data => {
-    document.getElementById('navbar').innerHTML = data;
-});
-
-
-// //confirm
+ //confirm
 
 // function  submitOrder()
 //     {
@@ -33,31 +68,49 @@ fetch('../Navbar/navbar.html')
 //     let address =document.getElementById("address").value.trim;
 //     let paymentVisa=document.getElementById("visa").Checked;
 //     let paymentCash=document.getElementById("cash").Checked;
+//     let isvalid =true;
 
 // //validition
 
 //     if (name===""){
 //         alert("please enter your name.");
-//         return;
+//         isvalid=false;
 //     }
-    
+
 //     if(phone.length!==11||isNaN(phone)){
 //         alert("phone number must be exactly 11 digits.");
-//         return;
+//         isvalid=false;
 //     }
 
 //     if(!paymentCash && !paymentVisa){
 //         alert("please select a payment method");
-//         return;
+//         isvalid=false;
 //     }
 
 //     if(paymentVisa && (cvv.length!==3|| isNaN(cvv))){
 //         alert("CVV must be 3 digit.");
-//         return;
+//         isvalid=false;
 //     }
 
-//     swal ("Order Confirmed!" , "your delicious meal is on its way!","sucess");
-// }
+//     if(isvalid)
+//     {
+//         let confirmBtn=document.getElementById("confirm");
+//         document.addEventListener("DOMContentLoaded",function(e){
+//             e.preventDefault();
+//                 alert ("order");
+//         });
+        
+//     }}
+
+  // document.getElementById("confirmmessage").style.display="block";
+        // setTimeout(() =>
+        // {
+        //     document.getElementById("confirmmessage").style.display="none";
+        // }
+        // ,4000);
+
+
+
 
 
 // document.getElementById("confirm").onclick=function(this)
@@ -79,7 +132,7 @@ fetch('../Navbar/navbar.html')
 //     const modal = document.getElementById("confirmationModal");
 //     const closeBtn = document.getElementsByClassName("close")[0];
 
-//     // لما المستخدم يضغط على Confirm
+//      
 //     confirmBtn.addEventListener("click", function() {
 //       modal.style.display = "block"; // إظهار الـ Modal
 //     });
@@ -89,7 +142,7 @@ fetch('../Navbar/navbar.html')
 //       modal.style.display = "none"; // إخفاء الـ Modal
 //     });
 
-//     // إذا ضغط المستخدم في أي مكان خارج الـ Modal
+//    
 //     window.addEventListener("click", function(event) {
 //         if (event.target == modal) {
 //         modal.style.display = "none"; // إخفاء الـ Modal
@@ -100,6 +153,21 @@ fetch('../Navbar/navbar.html')
 
 
 
+
+
+
+
+//nav
+
+fetch('../Navbar/navbar.html')
+.then(res => res.text())
+.then(data => {
+    document.getElementById('navbar').innerHTML = data;
+});
+
+
+
+//visa form
 
 document.addEventListener("DOMContentLoaded",function(){
     const visaOption= document.getElementById("visa");
@@ -118,6 +186,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
 //reset
+
 let resetBtn=document.getElementById("reset");
 let resetNote=document.getElementById("reset-note")
 resetBtn.onclick=function(){

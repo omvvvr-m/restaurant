@@ -75,10 +75,73 @@ cursor: pointer;
 
  */
 
-    
+/* .popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 25px 35px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.6s ease-out;
+    font-family: Arial, sans-serif;
+}
+.checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #28a745;
+    margin: 0 auto 15px;
+    position: relative;
+}
 
+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 14px;
+    height: 28px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -40%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+} */
 
+/* 
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    background-color: #DFF2BF;
+    color: #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.checkmark {
+    font-size: 40px;
+    margin-bottom: 10px;
+} */
 
 body {
     transition: backgroung-color 0.5s, color 0.5s;
@@ -90,7 +153,7 @@ body {
     box-shadow: 5px 5px 5px #e4a74c ;
     margin-left: -20px;
     margin-right: -20px;
-    margin-top: -20px;
+    /* margin-top: ; */
 }
 
 .header-content {
@@ -160,9 +223,25 @@ h3 {
     font-family:"Merienda", cursive ;
     /* font-family: "Oswald", sans-serif ; */
     color: #443627;
+    font-size: 35px;
+}
+
+.font
+{
+    font-size: 25px;
+}
+.font1
+{
+    font-size: 40px;
+}
+.gap
+{
+    margin-bottom: 10px;
+    color: #524130;
 }
 
 /* #name{} */
+
 
 .input-name {
     position: relative;
@@ -307,26 +386,33 @@ h3 {
 
 .payment-info {
     flex: 1;
-    border: 3px solid  #443627;
     padding: auto;
     text-align: center;
-    border-radius: 36px;
+    border-radius: 26px;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:200px;
+    margin-right:200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-/* .payment-method {} */
-
-#cash {
+.paymethod
+{
+    font-family:"Merienda", cursive ;
+    color: #443627;
+    font-size: 35px;
     display: block;
+    font-weight: bold;
 }
 
-#visa {
-    display: block;
-
+.payment-method {
+    padding-top: 20px;
 }
+
+/* #cash {display: block;} */
+
+/* #visa {display: block;} */
 
 #visaForm{
     display: none;

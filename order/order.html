@@ -5,7 +5,6 @@
     <title>Order</title>
     <link rel="stylesheet" href="order.CSS">
     <link rel="stylesheet" href="../Navbar/navbar-style.css" />
-    <script src="order.js"></script>
 </head>
 
 <body>
@@ -37,12 +36,11 @@
         <form id="OrderForm">
             <!---------------------- بيانات العميل ---------------------->
             <div class="customer-info">
-                <h3>Customer Information</h3>
+                <h3>Order form</h3>
 
-                <div class="m">
-
+                
                     <div class="f">
-                        <label for="name">Name</label>
+                        <label for="name"  class="font">Name</label>
                         <DIV class="input-name">
                             <img src="icons2/user.png" class="icon">
                             <input id="name" type="text" name="username" required>
@@ -50,19 +48,18 @@
                     </div>
 
                     <div class="f">
-                        <label for="num">Phone Number</label>
+                        <label for="num"  class="font">Phone Number</label>
                         <div class="input-number">
                             <img src="icons2/phone-9768623.png" class="icon">
                         <input id="num" type="tel" name=" number" required>
                         </div>
                     </div>
 
-                </div>
 
-                <div class="m">
+                
 
                     <div class="f">
-                        <label>Governorate</label>
+                        <label  class="font">Governorate</label>
                         <div class="input-governorate">
                         <input list="governorate" name="gov">
                         <img src="icons2/map2-13727442.png" class="icon">
@@ -84,22 +81,36 @@
 
                     </div>
 
-                </div>
+                
 
                     <div class="f">
-                        <label for="address">Address</label>
+                        <label for="address"  class="font">Address</label>
                         <div class="input-address">
                         <img src="icons2/home-heart.png" class="icon">
                         <input id="address" type="text" name=" address" placeholder="city,street,building number">
                         </div>
                     </div>
 
-                </div>
+                    <div class="payment-info"> 
+                        <label class="paymethod">choose payment method:</label>
+                        <div class="payment-method">
+                            <div class="gap">
+                            <input type="radio" id="cash" name="pay" value="cash">
+                            <label for="cash" class="font1">Cash</label>
+                            </div>
+
+                            <div class="gap">
+                            <input type="radio" id="visa" name="pay" value="visa">
+                            <label for="visa"  class="font1">Visa</label>
+                            </div>
+        
+                        </div>
+                    </div>
 
             </div>
 
             <!-- --------------------بيانات الدفع ---------------------- -->
-            <div class="payment-info">
+            <!-- <div class="payment-info">
                 <h3>payment Methods</h3>
                 <label for="paymethod">choose payment method:</label>
                 <div class="payment-method">
@@ -109,12 +120,11 @@
                     <input type="radio" id="visa" name="pay" value="visa">
                     <label for="visa">Visa</label>
 
-                </div>
+                </div> -->
                 <!-- ------------------------------------ -->
-                <!-- js -->
-                <div id="visaForm">
+                <div id="visaForm" >
                     <div class="f">
-                        <label for="Card Number">Card Number</label>
+                        <label for="Card Number"  class="font">Card Number</label>
                         <div class="input-cardnumber">
                             <img src="icons2/credit-card.png" class="icon">
                         <input id="Card Number" type="tel" name="Card Name">
@@ -122,7 +132,7 @@
                     </div>
 
                     <div class="f">
-                        <label for="Expiry Date">Expiry Date(MM/YY)</label>
+                        <label for="Expiry Date"  class="font">Expiry Date(MM/YY)</label>
                         <div class="input-date">
                             <img src="icons2/calendar-check(1).png" class="icon">
                         <input id="Expiry Date" type="month" name="Expiry Date">
@@ -130,7 +140,7 @@
                     </div>
 
                     <div class="f">
-                        <label for="cvv">CVV</label>
+                        <label for="cvv"  class="font">CVV</label>
                         <div class="input-cvv">
                             <img src="icons2/shield-check.png" class="icon">
                         <input id="cvv" type="number" name="CVV">
@@ -138,7 +148,7 @@
                     </div>
 
                     <div class="f">
-                        <label for="card-name">Card Holder Name </label>
+                        <label for="card-name"  class="font">Card Holder Name </label>
                         <div class="input-cardname">
                             <img src="icons2/id-card.png" class="icon">
                         <input id="card-name" type=" text" name="Card Holder Name">
@@ -166,23 +176,24 @@
         </div>
         </div>
         <!-- --------------------------------- -->
-        <!-- js -->
+        
         <!-- <div class="summary">
             <h3>Order summary</h3>
         </div> -->
         <!-- --------------------------------- -->
         <div class="buttons">
             
-            <button type="button" id="confirm" onclick="submitOrder()">Confirm Order</button>
-            <div id="confirmmessage" class="popup">
-                <div class="checkmark"></div>
-            <p>Your order has been placed successfully!</p>
-            </div>
+            <button type="submit" id="confirm" >Confirm Order</button>
+
+            <!-- <div id="successMessage" stle="display: none; text-align: center; margin-top: 20px;">
+                <img src="icons2/checkmark1.svg" alt="success" style="width:40px;">
+                <p style="color:green; font-weight: bold;">Order confirmed!</p>
+            </div> -->
 
             <button type="reset" id="reset">Reset</button>
         </div>
         <!-- --------------------------------- -->
     </section>
 
-    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="order.js"></script>
 </body>
