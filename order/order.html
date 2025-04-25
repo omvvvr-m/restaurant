@@ -61,7 +61,7 @@
 
                     <div class="f">
                         <label  class="font">Governorate</label>
-                        <div class="input-governorate">
+                        <div class="input-governorate" required>
                         <input list="governorate" name="gov">
                         <img src="icons2/map2-13727442.png" class="icon">
 
@@ -88,7 +88,7 @@
                         <label for="address"  class="font">Address</label>
                         <div class="input-address">
                         <img src="icons2/home-heart.png" class="icon">
-                        <input id="address" type="text" name=" address" placeholder="city,street,building number">
+                        <input id="address" type="text" name=" address" placeholder="city,street,building number" required>
                         </div>
                     </div>
 
@@ -184,7 +184,7 @@
         <!-- --------------------------------- -->
         <div class="buttons">
             
-            <button type="submit" id="confirm" onclick=" submitOrder(this)" >Confirm Order</button>
+            <button type="submit" id="confirm" >Confirm Order</button>
 
             <!-- <div id="successMessage">
                 <img src="icons2/checkmark1.svg" alt="success" style="width:40px;">

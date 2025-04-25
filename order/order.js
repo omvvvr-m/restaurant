@@ -3,10 +3,10 @@
 // حسبي الله ونعم الوكيل
 window.alert("اكتب بياناتك عدل بالله عليك ");
 
-let confirmBtn=document.getElementById("confirm");
-confirmBtn.onclick=function(){
-    alert("خلاص وصل برا بقا");
-}
+// let confirmBtn=document.getElementById("confirm");
+// confirmBtn.onclick=function(){
+//     alert("خلاص وصل برا بقا");
+// }
 
 
 // let Button =document.getElementById("h");
