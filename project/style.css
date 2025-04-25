@@ -1,0 +1,345 @@
+:root {
+  --primary-color: #443627;
+  --text-shadow-color: #251d14;
+  --secondary-color: #eabb76;
+  --background-color: #F2F6D0;
+  --text-color: #EFDCAB;
+  --text-hover-color: rgb(250, 235, 104);
+  --main-padding: 300px;
+  --main-radius: 36px;
+  --main-button-color: rgb(232, 50, 50);
+}
+ 
+html { 
+  scroll-behavior: smooth; 
+} 
+ 
+body { 
+  font-family: "Oswald", sans-serif; 
+  margin: 0px; 
+  background-color: var(--background-color); 
+  padding: 0px; 
+} 
+ 
+.nav-container { 
+  margin: 0px; 
+} 
+ 
+.navbar { 
+ 
+  height: 103px; 
+  margin-bottom: 0px; 
+  background-color: var(--primary-color); 
+  align-items: center; 
+  justify-content: space-between; 
+  display: flex; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+} 
+ 
+.navbar:hover { 
+  transform: scale(1.0); 
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */ 
+} 
+ 
+.logo { 
+  display: flex; 
+  margin-left: 16%; 
+} 
+ 
+.logo-img { 
+  width: 115px; 
+  height: 115px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+} 
+ 
+.logo-img:hover { 
+  transform: scale(1.05); 
+ 
+} 
+ 
+ 
+.nav-links { 
+  margin-right: 16%; 
+  font-weight: 200; 
+  list-style: none; 
+  display: flex; 
+  gap: 1rem; 
+} 
+ 
+.nav-links li a { 
+  font-family: "Oswald", sans-serif; 
+  font-weight: bolder; 
+  font-size: 24px; 
+  color: var(--background-color); 
+  text-decoration: none; 
+  display: inline-block; 
+  padding: 10px; 
+  transition: color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+ 
+.nav-links li a:hover { 
+  color: var(--text-hover-color); 
+  transform: scale(1.1); 
+} 
+ 
+ 
+  body{ 
+    background-color: #F2F6D0; 
+    font-family: "Oswald", sans-serif; 
+  } 
+  .topp{ 
+    background-color: rgb(0, 159, 72); 
+  } 
+  .title { 
+    background-color: rgb(0, 159, 72); 
+    color:#F2F6D0 ; 
+    margin: 0%; 
+    text-transform:uppercase ; 
+    animation: moveIn 3.4s ease-out forwards; 
+  } 
+.intro { 
+    background-color: rgb(0, 159, 72); 
+    margin: 0%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color:#F2F6D0 ; 
+}      
+.typewriter{ 
+  overflow: hidden; 
+  border-right: 2px solid transparent;  
+  white-space: nowrap;           
+  width: 0; 
+  animation: typing 3s steps(25, end) forwards, 
+             blink 0.6s step-end 1; 
+} 
+ 
+.info { 
+    background-color: rgb(0, 159, 72); 
+    margin: 0%; 
+    color: #F2F6D0; 
+    text-indent: 40px; 
+    line-height: 1.6; 
+    white-space: normal; 
+    vertical-align: middle; 
+    height: 50px; 
+    color: #F2F6D0; 
+} 
+ 
+.jump { 
+  display: inline-block; 
+  animation: jumpIn 1s ease-out forwards; 
+} 
+ 
+.container { 
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    flex-wrap:wrap;  
+    justify-content:space-evenly; 
+    gap: 5px; 
+    padding: 15px; 
+    margin: 15px; 
+    font-family: "Oswald"; 
+ 
+  } 
+   
+  .card { 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #F2F6D0; 
+    justify-content: top; 
+    border-radius: 40px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    width: 400px; 
+    height: 600px; 
+    text-align: center; 
+    align-items: stretch; 
+    padding: 15px; 
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    font-family: "Merienda", cursive; 
+    font-size:small;  
+    color: #443627; 
+    box-sizing: border-box; 
+ 
+  } 
+   
+  .card img { 
+    width: 100%; 
+    height: 350px; 
+    border-radius: 36px; 
+    object-fit: contain; 
+    align-items: center; 
+    display: block;
+
+  } 
+ 
+  .card .description { 
+    padding: 5.5px; 
+    font-size: 14px; 
+    font-family: "Oswald"; 
+    line-height: 1.4; 
+    text-align: center; 
+    color: #443627; 
+    min-height: 30px;
+  } 
+
+
+  .card .button {
+    margin-top: auto;            
+    align-self: center;          
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: "Oswald";
+    border-radius: 10px;
+    background-color: #009f48;
+    color: #f2f6d0;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+ 
+   
+ 
+  .card:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); 
+  } 
+   
+   
+  .card button:hover { 
+    background-color:transparent; 
+  } 
+ 
+ 
+
+  
+ 
+  .count { 
+    width: 40px;  
+    height: 40px;  
+    background-color: #443627; 
+    color: #F2F6D0; 
+    font-size: 20px; 
+    min-width: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 8px; 
+  } 
+ 
+  .counter { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+  } 
+ 
+  .counter button { 
+    width: 30px; 
+    height: 30px; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color:#eabb76; 
+    color:#F2F6D0; 
+    cursor: pointer; 
+    transition: 0.3s; 
+  } 
+   
+  .counter button:hover { 
+    background-color:#EFDCAB; 
+  }
+  
+  .card .flip-btn,
+  .card.counter{
+
+    margin-top: auto;
+    margin-bottom: 0;
+    align-self: center;
+  }
+ 
+ 
+  .flip-btn { 
+    position: relative; 
+    width: 100px; 
+    height: 40px; 
+    margin: 10px auto 0 auto; 
+    background-color: transparent; 
+    border: none; 
+    perspective: 1000px; 
+  } 
+   
+  .flip-btn .front, 
+  .flip-btn .back { 
+    position: absolute; 
+    width: 100px; 
+    height: 36px; 
+    backface-visibility: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px; 
+    font-size: 25px; 
+    font-family: "Oswald", sans-serif; 
+    background-color: rgb(0, 159, 72); 
+    color: #F2F6D0; 
+    transition: transform 0.6s; 
+    transform-style: preserve-3d; 
+  } 
+   
+  .flip-btn .front { 
+    transform: rotateY(0deg); 
+    z-index: 2; 
+    color: #F2F6D0; 
+  } 
+   
+  .flip-btn .back { 
+    transform: rotateY(180deg); 
+    z-index: 1; 
+  } 
+   
+  .flip-btn:hover .front { 
+    transform: rotateY(180deg); 
+  } 
+   
+  .flip-btn:hover .back { 
+    transform: rotateY(0deg); 
+  } 
+ 
+   
+ 
+@keyframes moveIn { 
+    from { 
+      right: -100%; 
+      opacity: 0; 
+    } 
+    to { 
+      right: 0; 
+      opacity: 1; 
+    } 
+  } 
+ 
+  @keyframes jumpIn { 
+    0% { 
+      transform: translateY(-100px); 
+      opacity: 0; 
+    } 
+    50% { 
+      transform: translateY(20px); 
+      opacity: 1; 
+    } 
+    100% { 
+      transform: translateY(0); 
+    } 
+  } 
+ 
+  @keyframes typing { 
+    from { width: 0 } 
+    to { width: 150ch }  
+  } 
+   
+  @keyframes blink { 
+    50% { border-color: transparent } 
+  }

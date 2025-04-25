@@ -1,122 +1,185 @@
-.nav-links {
-    font-weight: 200;
-    list-style: none;
-    display: flex;
-    gap: 25px;
+*{
+/*    background-color: rgb(255, 123, 0);*/
+    align-content: center
 }
 
-.nav-links li a {
-    font-family: "Oswald", sans-serif;
-    font-weight: bolder;
-    font-size: 24px;
-    color: #443627(--background-color);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    transition: color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+.headerImg{
+/*    text-align: center;*/
+    width: 85%;
+    height: 5%
 }
-
-.nav-links li a:hover {
-    color: var(--text-hover-color);
-    transform: scale(1.1);
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); */
+.contaier{
+    align-content: center
 }
-  /*end of nav*/
-  body{
-    background-color: #F2F6D0;
-  }
-  .topp{
-    background-color: #D98324;
-  }
-  .title {
-    background-color:#D98324;
-    color:#F2F6D0 ;
-    margin: 0%;
-    text-transform:uppercase ;
-    animation: moveIn 3.4s ease-out forwards;
-  }
-.intro {
-    background-color:#D98324;
-    margin: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#F2F6D0 ;
-}     
-.info {
-    background-color:#D98324 ;
-    margin: 0%;
-    color: #F2F6D0;
-    text-indent: 40px;
-    line-height: 1.6;
-    white-space: normal;
-    vertical-align: middle;
-    height: 50px;
+.photo{
+width: 230px;
+height: auto;
+margin-top: 40px;
+position: absolute;
+margin-left: 40px;
+
+
 }
-
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    flex-wrap:wrap; 
-    justify-content:space-evenly;
-    gap: 30px;
-    padding: 50px;
-    margin: 20px;
-
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F6D0;
-    border-radius: 36px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    width: 400px;
-    height: auto;
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card img {
-    width: 100%;
-    border-radius: 36px;
-  }
-  
-  .card .description {
-    margin-top: 10px;
-    padding: 5px;
+.divheader{
+    height: 10%
+}
+.pargraph{
     font-size: 20px;
-  }
+    font-weight: 300;
+    padding: 10pxs;
+    font-family: sans-serif
+}
+.merienda{
+    font-family: sans-serif;
+    font-size: 40px
+}
+.rate{
+font-weight: 400;
+font-size: larger;
+}
+hr{
 
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
-  }
-  
-  
-  
-  .card button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #800020;
-    color: white;
-    border: none;
-    border-radius: 8px;
+opacity:20% ;
+color: white;}
+.rating{
+
+align-items: center;
+display:flex;
+justify-content:space-around ;}
+
+
+
+h1,h2{
+    font-family:cursive; 
+font-weight: 700;
+}
+
+.place{
+
+width: 450px;
+height: 480px;
+position: absolute;
+top: 35px;
+right: 50px;
+
+
+
+}
+.teamImg{
+    height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    padding: 1%;
+
+}
+.story{
+line-height: 1.4;
+
+overflow-wrap: break-word;
+
+    font-style: normal;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    display: flex;
+    flex-direction: row
+    }
+sorty2{
+   line-height: 1.4;
+
+overflow-wrap: break-word;
+
+    font-style: normal;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    display: flex;
+    flex-direction: row
+    } 
+
+
+strong{
+
+font-family: cursive;
+font-weight: 700;
+font-style: italic;
+margin-left: 40px;
+
+}
+ 
+
+.star{
+
+    color: #FFD700;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+
+.hh{
+     background-color: rgb(255, 123, 0);
+    padding: 10px
+}
+
+.hh p {
+
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width:600 ;
+    margin-left: 40px;
+    
+}
+
+
+
+.ii{
+
+font-family: sans-serif;
+font-weight: 600;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-left: 40px;
+}
+.tt{
+
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.stary {
+    font-size: 40px;
+    color: #ccc;
     cursor: pointer;
   }
   
-  .card button:hover {
-    background-color: #a83232;
+  .stary.selected {
+    color: gold;
   }
+  .review-section{
+line-height: 1.8;
+    margin: 40px;
+}
+#reviewInput,
+.click
 
-@keyframes moveIn {
-    from {
-      right: -100%;
-      opacity: 0;
-    }
-    to {
-      right: 0;
-      opacity: 1;
-    }
-  }
+{
+border: solid black;
+
+}
+.pargraph{
+ font-family: sans-serif;
+    font-size: 20px
+}
+
+.photo4{
+
+width: 500px;
+height: 270px;
+margin-left: 600px;
+position: absolute;
+top:870px;
+
+}

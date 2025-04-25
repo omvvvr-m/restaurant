@@ -2,7 +2,6 @@
     --primary-color: #443627;
     --text-shadow-color: #251d14;
     --secondary-color: #eabb76;
-    /* --accent-color: #DAF7A6; */
     --background-color: #F2F6D0;
     --text-color: #EFDCAB;
     --text-hover-color: rgb(250, 235, 104);
@@ -22,6 +21,23 @@ body {
     padding: 0px;
 }
 
+.palastine {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: auto;
+    opacity: 0.7;
+    z-index: 9999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.palastine:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* 
 .nav-container {
     margin: 0px;
 }
@@ -39,7 +55,7 @@ body {
 
 .navbar:hover {
     transform: scale(1.0);
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
+    
 }
 
 .logo {
@@ -113,7 +129,7 @@ body {
 
 .home .home-sections a {
     padding: 4px;
-}
+} */
 
 /* ============================== Section Divider ==========================  */
 
@@ -123,7 +139,7 @@ body {
 
 .main-section .main-blanket {
     position: relative;
-
+    background-image: url('/imgs/Bg.png');
     z-index: -2;
     display: flex;
     justify-content: center;
@@ -159,30 +175,36 @@ body {
     text-align: right;
     position: relative;
     top: 0px;
-    right: -60px;
+    right: -240px;
     padding: 0px;
     margin: 0px;
     z-index: 0;
 }
+
+
+
+
 
 @keyframes intro {
     to {
         opacity: 1;
         transform: translate(0px);
         filter: blur(0);
+
     }
 
 }
 
-.main-section .main-blanket img {
+.main-section .main-blanket video {
     position: relative;
+
     /* Animation properties */
     opacity: 0;
     transform: translateX(60px);
     animation: intro 0.6s ease-out forwards;
     filter: blur(5px);
-    width: 750px;
-    height: 750px;
+    width: 1000px;
+    height: 1000px;
     z-index: 1;
 }
 
@@ -309,54 +331,12 @@ body {
     left: 10px;
 }
 
-
-
-/* .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card1 .img-1 {
-    border-radius: var(--main-radius);
-    overflow: hidden;
-}
-
-.card2 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.card2 .img-2 {
-    border-radius: var(--main-radius);
-}
-
-.card3 {
-    grid-column: 3;
-    grid-row: 2;
-
-} */
-
-/* .card3 .img-3 {
-    border-radius: var(--main-radius);
-} */
-
 /* ============================== Section Divider ==========================  */
 .best-selling {
     margin-top: 64px;
     align-items: center;
     box-sizing: border-box;
     text-align: center;
-}
-
-.bs-section-title {
-    margin-bottom: auto;
-    color: var(--primary-color);
-    margin: 0px;
-    font-weight: bolder;
-    display: inline-block;
-    font-size: 64px;
-    text-shadow: 2px 2px 0px var(--secondary-color);
 }
 
 .bs-description {
@@ -412,6 +392,7 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+
     }
 }
 
@@ -541,16 +522,6 @@ body {
     align-items: center;
     box-sizing: border-box;
     text-align: center;
-}
-
-.ls-section-title {
-    margin-bottom: auto;
-    color: var(--primary-color);
-    margin: 0px;
-    font-weight: bolder;
-    display: inline-block;
-    font-size: 64px;
-    text-shadow: 2px 2px 0px var(--secondary-color);
 }
 
 .ls-description {
@@ -732,3 +703,167 @@ body {
 }
 
 /* ============================== Section Divider ==========================  */
+.final-section {
+    margin: 48px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.cec-description {
+    margin-left: 32%;
+    margin-right: 32%;
+    border: 2px dashed var(--primary-color);
+}
+
+.catchy-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.cec-cards-container {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+
+.finalcard {
+    border: 2px dashed var(--primary-color);
+    width: 309px;
+    height: 200px;
+
+
+}
+
+/* ============================== Section Divider ==========================  */
+
+footer {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: var(--primary-color);
+}
+
+
+
+footer ul.links {
+
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+footer ul.links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer ul.links a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+footer ul li {
+    cursor: pointer;
+}
+
+
+.resName-footer {
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.footer-desc {
+    width: 700px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.privacy_policy_container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Oswald", sans-serif;
+
+}
+
+.privacy_policy {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 500px;
+    height: 700px;
+    background-color: wheat;
+    border-radius: var(--main-radius);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.privacy_policy .privacy-box {
+
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+}
+
+
+.privacy_policy .acceptBtn {
+    margin-top: 20px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Oswald";
+    width: 210px;
+    height: 70px;
+
+    border: none;
+    cursor: pointer;
+    transition: transform ease-out 0.3s;
+
+}
+
+.privacy_policy .acceptBtn:hover {
+
+    transform: scale(1.04);
+
+}

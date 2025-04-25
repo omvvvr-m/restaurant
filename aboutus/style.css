@@ -1,8 +1,16 @@
 *{
-    background-color: #e4a444;
-    
+/*    background-color: rgb(255, 123, 0);*/
+    align-content: center
 }
 
+.headerImg{
+/*    text-align: center;*/
+    width: 85%;
+    height: 5%
+}
+.contaier{
+    align-content: center
+}
 .photo{
 width: 230px;
 height: auto;
@@ -11,6 +19,19 @@ position: absolute;
 margin-left: 40px;
 
 
+}
+.divheader{
+    height: 10%
+}
+.pargraph{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10pxs;
+    font-family: sans-serif
+}
+.merienda{
+    font-family: sans-serif;
+    font-size: 40px
 }
 .rate{
 font-weight: 400;
@@ -44,20 +65,40 @@ right: 50px;
 
 
 }
+.teamImg{
+    height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    padding: 1%;
+
+}
 .story{
 line-height: 1.4;
-max-width: 600px;
+
 overflow-wrap: break-word;
 
     font-style: normal;
- 
-    font-optical-sizing: auto;
         
         font-family: sans-serif;
         font-weight: 400;
         margin-left: 40px;
+    display: flex;
+    flex-direction: row
     }
- 
+sorty2{
+   line-height: 1.4;
+
+overflow-wrap: break-word;
+
+    font-style: normal;
+        
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-left: 40px;
+    display: flex;
+    flex-direction: row
+    } 
+
 
 strong{
 
@@ -77,12 +118,15 @@ margin-left: 40px;
 }
 
 
-
+.hh{
+     background-color: rgb(255, 123, 0);
+    padding: 10px
+}
 
 .hh p {
 
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     max-width:600 ;
     margin-left: 40px;
     
@@ -92,8 +136,8 @@ margin-left: 40px;
 
 .ii{
 
-font-family: cursive;
-font-weight: 700;
+font-family: sans-serif;
+font-weight: 600;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
@@ -125,6 +169,10 @@ line-height: 1.8;
 border: solid black;
 
 }
+.pargraph{
+ font-family: sans-serif;
+    font-size: 20px
+}
 
 .photo4{
 
@@ -135,26 +183,3 @@ position: absolute;
 top:870px;
 
 }
-
-
-
-
-
-.photo2{
-
-width:230px ;
-margin-left:500px ;
-height: auto;
-position: absolute;
-margin-top: 40px;
-}
-.photo3{
-
-
-    width:230px ;
-    margin-left:960px ;
-    height: auto;
-    position: absolute;
-    margin-top: 40px;
-    }
-

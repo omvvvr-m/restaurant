@@ -33,14 +33,16 @@ window.addEventListener('scroll', () => {
 });
 
 
-// function show(div) {
-//     var homeSections = div.nextElementSibling;
-//     homeSections.style.visibility = 'visible';
-// }
-// function hide(div) {
-//     var homeSections = div.nextElementSibling;
-//     homeSections.style.visibility = 'hidden';
-// }
+function openPrivacyPolicy() {
+    var element = document.getElementById("privacy_policy");
+    element.style.display = "flex";
+}
+
+function closePrivacyPolicy() {
+    var element = document.getElementById("privacy_policy");
+    element.style.display = "none";
+}
+
 
 
 
