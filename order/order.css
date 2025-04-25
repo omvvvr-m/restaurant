@@ -631,6 +631,7 @@ box-shadow: 0 4px 8px #251d14;
 
 .buttons {
     display: flex;
+    background-color: #f7e7ce;
 }
 
 #confirm {
