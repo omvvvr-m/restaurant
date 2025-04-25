@@ -12,6 +12,8 @@
 }
 h1{
     background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 0px;
     margin-bottom: 0%;
     font-family:"Merienda", cursive;
     font-size: 100px;
@@ -31,15 +33,10 @@ h1{
     width: 90%;
     border-width:0px;
     background-color: var(--background-color);
-    border-color:#F2F6D0 ;
-    /* border-style: solid; */
-    
+    /* border-color:#F2F6D0 ; */
     border-style: solid;
     box-shadow: 0 16px 40px 10px rgba(131, 130, 130, 0.3);
-    
-    /* box-shadow: 10px 10px 50px  #8c9287; */
-    /* opacity:10%; */
-    border-radius: 36pX; 
+    border-radius: 36px;
     margin-bottom: 15pX;
     padding-left: 5pX;
 }
@@ -47,27 +44,10 @@ h1{
     transform: scale(1.03);
 
     box-shadow: 0 16px 40px 10px rgba(0,0,0,0.3);
-    /* background-color: var(--secondary-color); */
     transition-duration: 0.5s;
-}
-.ph2{
-     width: 90%;
-    /* border-width: 25%px; */
-    background-color: var(--background-color);
-    border-color: var(--background-color);
-    border-style: solid;
-    box-shadow: 0 16px 40px 10px rgba(131, 130, 130, 0.3);
-    border-radius: 36pX; 
-    margin-bottom: 15pX;
-    padding-left: 5pX;
-}
-.ph2:hover{
-    transform: scale(1.03);
-    box-shadow: 0 16px 40px 10px rgba(0,0,0,0.3);
-    /* background-color: var(--secondary-color); */
-    transition-property: 0.5s;
-}
-.ph3{
+ }
+
+ .ph3{
     width: 90%;
     /* border-width: 25%px; */
     background-color: var(--background-color);
@@ -106,7 +86,7 @@ h1{
     /* border-width: 25%px; */
     background-color: var(--background-color);
     border-color: var(--background-color);
-    border-style: solid;
+    border-style: solid; 
     box-shadow: 0 16px 40px 10px rgba(131, 130, 130, 0.3);
     border-radius: 36pX; 
     margin-bottom: 15pX;
@@ -132,13 +112,12 @@ h1{
 .ph6:hover{
     transform: scale(1.03);
     box-shadow: 0 16px 40px 10px rgba(0,0,0,0.3);
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
     transition-property: 0.5s;
 }
 .ph8{
     width: 90%;
-    /* border-width: 25%px; */
-    background-color: var(--background-color);
+    border-width: 25%px;
     border-color: var(--background-color);
     border-style: solid;
     box-shadow: 0 16px 40px 10px rgba(131, 130, 130, 0.3);
@@ -237,21 +216,7 @@ h1{
     /* background-color: var(--secondary-color); */
     transition-property: 0.5s;
 }
-.ph14{
-    width: 90%;
-    border-width: 25%px;
-    background-color: var(--background-color);
-    border-color: var(--secondary-color);
-    border-style: solid;
-    border-radius: 36pX; 
-    margin-bottom: 15pX;
-    padding-left: 5pX;
-  }
-  .ph14:hover{
-    transform: scale(1.03);
-    background-color: var(--secondary-color);
-    transition-property: 1s;
-  }
+ 
 .p1, .p2, .p3, .p4, .p5, .p6, .p8, .p9, .p10, .p11, .p12, .p13, .p14{
     width: 200px;
     /* height: 30px; */
@@ -260,8 +225,9 @@ h1{
     margin-bottom: 10px;
     padding-bottom: 10px;
     /* padding-top: 40px; */
-    background-color: var(--main-button-color);
+    background-color: orange;
     border-radius: 20px;
+    border: none;
     font-family:"Oswald";
     font-size: 30px;
     font-weight: 500;
@@ -323,6 +289,39 @@ h1{
 .d1, .d2, .d3, .d4, .d5, .d6, .d8, .d9, .d10, .d11, .d12, .d13, .d14 {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
+}
+.b{
+    background-color: orange;
+    color: white;
+    width: 150px;
+    height: 75px;
+    font-size:20px;
+    border-radius: 20px;
+    border: none;
+}
+.inc1, .inc2, .inc3, .inc4, .inc5, .inc6, .inc8, .inc9, .inc9, .inc10, .inc11, .inc12, .inc13{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.dec1, .dec2, .dec3, .dec4, .dec5, .dec6, .dec8, .dec9, .dec10, .dec11, .dec12, .dec13{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.ch1, .ch2, .ch3, .ch4, .ch5, .ch6, .ch8, .ch9, .ch10, .ch11, .ch12, .ch13{
+    width: 40px;
+    height: 40px;
+    /* background-color: var(--main-button-color); */
+    color: white;
+    display: flex;
+    text-align: left;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    /* border-radius: 10px; */
 }
 
 
