@@ -34,7 +34,6 @@
 
     <section class="order-form">
         <form id="OrderForm">
-            <!---------------------- بيانات العميل ---------------------->
             <div class="customer-info">
                 <h3>Order form</h3>
 
@@ -44,8 +43,7 @@
                         <DIV class="input-name">
                             <img src="icons2/user.png" class="icon">
                             <input id="name" type="text" name="username"  >
-                        </dIV>
-                        <!-- <button id="h" type="button" style="width:5px" >Enter</button> -->
+                        </div>
                     </div>
 
                     <div class="f">
@@ -108,20 +106,7 @@
                         </div>
                     </div>
 
-            </div>
-
-            <!-- --------------------بيانات الدفع ---------------------- -->
-            <!-- <div class="payment-info">
-                <h3>payment Methods</h3>
-                <label for="paymethod">choose payment method:</label>
-                <div class="payment-method">
-                    <input type="radio" id="cash" name="pay" value="cash">
-                    <label for="cash">Cash</label>
-
-                    <input type="radio" id="visa" name="pay" value="visa">
-                    <label for="visa">Visa</label>
-
-                </div> -->
+                </div>
                 <!-- ------------------------------------ -->
                 <div id="visaForm" >
                     <div class="f">
@@ -159,23 +144,22 @@
                 </div>
 
 
-            </section>
+            
             </div>
 
-            
-    <section class="order-summary">
-        <div class="notes">
-            <h3 class="note">Notes</h3>
-            <div class="input-note">
-                <img src="icons2/journal-alt.png" class="icon">
-            <textarea id="reset-note" placeholder=" write your notes on order"></textarea>
-        </div>
-        </div>
+            <div class="order-summary">
 
-    <div class="buttons">
-            
-        <button id="confirm" onclick="confirm(this)">confirm order</button>
+                <div class="notes">
+                    <h3 class="note">Notes</h3>
+                    <div class="input-note">
+                        <img src="icons2/journal-alt.png" class="icon">
+                    <textarea placeholder=" write your notes on order"></textarea>
+                </div>
+                </div>
+                <div class="buttons">
 
+                    <button type="button" id="confirm">Confirm Order</button>
+                    
         <div class="successMessage" >
             <div class="checkmark-icon">
                 <img src="icons2/checkmark1.svg">
@@ -183,20 +167,16 @@
 
             <p class="checkpara">your order confirmed</p>
             </div>
+        
+                    <button type="reset" id="reset">Reset</button>
+                </div>
 
-        <button type="reset" id="reset">Reset</button>
-    </div>
+            </div>
+
 
 </section>
-
-
-
-
 </form>
-
-
-    <!-- -----------------------------------------------------------------section3()--------------------------------------------------------------------------------------------- -->
-
+</section>
         <!-- --------------------------------- -->
         
         <!-- <div class="summary">
@@ -204,8 +184,6 @@
         </div> -->
         <!-- --------------------------------- -->
     
-        <!-- --------------------------------- -->
-
 
     <script src="order.js"></script>
 </body>
