@@ -81,20 +81,20 @@ else if (payment.value === "visa") {
         alert("Please enter the card holder's name.");
 
     }
-    let isvalid= true;
-    return isvalid;
-//     else{
-//         alert("order confirmed");
-//     }
- }
-});
- function confirm(btn){
-    let x=getElementById(confirm);
-    if(isvalid===true){
-        alert("confirmed");
+    // let isvalid= true;
+    // return isvalid;
+    else{
+        alert("order confirmed");
     }
+}
+});
+//  function confirm(btn){
+//     let x=getElementById(confirm);
+//     if(isvalid===true){
+//         alert("confirmed");
+//     }
 
- }
+//  }
 
 
 
