@@ -1,12 +1,24 @@
+:root {
+    --primary-color: #443627;
+    --text-shadow-color: #251d14;
+    --secondary-color: #eabb76;
+    --background-color: #F2F6D0;
+    --text-color: #EFDCAB;
+    --text-hover-color: rgb(250, 235, 104);
+    --main-padding: 300px;
+    --main-radius: 36px;
+    --main-button-color: rgb(232, 50, 50);
+}
+
 .nav-container {
     margin: 0px;
 }
 
 .navbar {
-
+    background-color: var(--primary-color);
+    z-index: 99999;
     height: 103px;
     margin-bottom: 0px;
-    background-color: var(--primary-color);
     align-items: center;
     justify-content: space-between;
     display: flex;
