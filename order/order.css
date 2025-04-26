@@ -15,7 +15,11 @@
 }
 
 
-* {}
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
     transition: backgroung-color 0.5s, color 0.5s;
