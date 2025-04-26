@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <title>Order</title>
     <link rel="stylesheet" href="order.CSS">
+    <!-------------------- NAVBAR LINES-------------------->
     <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <!-------------------- NAVBAR LINES-------------------->
 </head>
 
 <body>
@@ -38,30 +47,30 @@
             <div class="customer-info">
                 <h3>Order form</h3>
 
-                
-                    <div class="f">
-                        <label for="name"  class="font">Name</label>
-                        <DIV class="input-name">
-                            <img src="icons2/user.png" class="icon">
-                            <input id="name" type="text" name="username"  >
-                        </dIV>
-                        <!-- <button id="h" type="button" style="width:5px" >Enter</button> -->
+
+                <div class="f">
+                    <label for="name" class="font">Name</label>
+                    <DIV class="input-name">
+                        <img src="icons2/user.png" class="icon">
+                        <input id="name" type="text" name="username">
+                    </dIV>
+                    <!-- <button id="h" type="button" style="width:5px" >Enter</button> -->
+                </div>
+
+                <div class="f">
+                    <label for="num" class="font">Phone Number</label>
+                    <div class="input-number">
+                        <img src="icons2/phone-9768623.png" class="icon">
+                        <input id="num" type="tel" name=" number">
                     </div>
-
-                    <div class="f">
-                        <label for="num"  class="font">Phone Number</label>
-                        <div class="input-number">
-                            <img src="icons2/phone-9768623.png" class="icon">
-                        <input id="num" type="tel" name=" number"  >
-                        </div>
-                    </div>
+                </div>
 
 
-                
 
-                    <div class="f">
-                        <label  class="font">Governorate</label>
-                        <div class="input-governorate" required>
+
+                <div class="f">
+                    <label class="font">Governorate</label>
+                    <div class="input-governorate" required>
                         <input list="governorate" name="gov">
                         <img src="icons2/map2-13727442.png" class="icon">
 
@@ -78,35 +87,35 @@
                             <option value="cairo">
                             <option value="cairo">
                         </datalist>
-                        </div>
-
                     </div>
 
-                
+                </div>
 
-                    <div class="f">
-                        <label for="address"  class="font">Address</label>
-                        <div class="input-address">
+
+
+                <div class="f">
+                    <label for="address" class="font">Address</label>
+                    <div class="input-address">
                         <img src="icons2/home-heart.png" class="icon">
-                        <input id="address" type="text" name=" address" placeholder="city,street,building number" >
-                        </div>
+                        <input id="address" type="text" name=" address" placeholder="city,street,building number">
                     </div>
+                </div>
 
-                    <div class="payment-info"> 
-                        <label class="paymethod">choose payment method:</label>
-                        <div class="payment-method">
-                            <div class="gap">
+                <div class="payment-info">
+                    <label class="paymethod">choose payment method:</label>
+                    <div class="payment-method">
+                        <div class="gap">
                             <input type="radio" id="cash" name="pay" value="cash">
                             <label for="cash" class="font1">Cash</label>
-                            </div>
-
-                            <div class="gap">
-                            <input type="radio" id="visa" name="pay" value="visa">
-                            <label for="visa"  class="font1">Visa</label>
-                            </div>
-        
                         </div>
+
+                        <div class="gap">
+                            <input type="radio" id="visa" name="pay" value="visa">
+                            <label for="visa" class="font1">Visa</label>
+                        </div>
+
                     </div>
+                </div>
 
             </div>
 
@@ -122,90 +131,90 @@
                     <label for="visa">Visa</label>
 
                 </div> -->
-                <!-- ------------------------------------ -->
-                <div id="visaForm" >
-                    <div class="f">
-                        <label for="Card Number"  class="font">Card Number</label>
-                        <div class="input-cardnumber">
-                            <img src="icons2/credit-card.png" class="icon">
+            <!-- ------------------------------------ -->
+            <div id="visaForm">
+                <div class="f">
+                    <label for="Card Number" class="font">Card Number</label>
+                    <div class="input-cardnumber">
+                        <img src="icons2/credit-card.png" class="icon">
                         <input id="Card Number" type="tel" name="Card Name">
                     </div>
-                    </div>
-
-                    <div class="f">
-                        <label for="Expiry Date"  class="font">Expiry Date(MM/YY)</label>
-                        <div class="input-date">
-                            <img src="icons2/calendar-check(1).png" class="icon">
-                        <input id="Expiry Date" type="month" name="Expiry Date">
-                    </div>
-                    </div>
-
-                    <div class="f">
-                        <label for="cvv"  class="font">CVV</label>
-                        <div class="input-cvv">
-                            <img src="icons2/shield-check.png" class="icon">
-                        <input id="cvv" type="number" name="CVV">
-                    </div>
-                    </div>
-
-                    <div class="f">
-                        <label for="card-name"  class="font">Card Holder Name </label>
-                        <div class="input-cardname">
-                            <img src="icons2/id-card.png" class="icon">
-                        <input id="card-name" type=" text" name="Card Holder Name">
-                    </div>
-                    </div>
-
                 </div>
 
+                <div class="f">
+                    <label for="Expiry Date" class="font">Expiry Date(MM/YY)</label>
+                    <div class="input-date">
+                        <img src="icons2/calendar-check(1).png" class="icon">
+                        <input id="Expiry Date" type="month" name="Expiry Date">
+                    </div>
+                </div>
 
-            </section>
+                <div class="f">
+                    <label for="cvv" class="font">CVV</label>
+                    <div class="input-cvv">
+                        <img src="icons2/shield-check.png" class="icon">
+                        <input id="cvv" type="number" name="CVV">
+                    </div>
+                </div>
+
+                <div class="f">
+                    <label for="card-name" class="font">Card Holder Name </label>
+                    <div class="input-cardname">
+                        <img src="icons2/id-card.png" class="icon">
+                        <input id="card-name" type=" text" name="Card Holder Name">
+                    </div>
+                </div>
+
             </div>
 
-            
+
+    </section>
+    </div>
+
+
     <section class="order-summary">
         <div class="notes">
             <h3 class="note">Notes</h3>
             <div class="input-note">
                 <img src="icons2/journal-alt.png" class="icon">
-            <textarea id="reset-note" placeholder=" write your notes on order"></textarea>
-        </div>
-        </div>
-
-    <div class="buttons">
-            
-        <button id="confirm">confirm order</button>
-
-        <div class="successMessage" >
-            <div class="checkmark-icon">
-                <img src="icons2/checkmark1.svg">
+                <textarea id="reset-note" placeholder=" write your notes on order"></textarea>
             </div>
-            
-            <p class="checkpara">your order confirmed</p>
+        </div>
+
+        <div class="buttons">
+
+            <button id="confirm">confirm order</button>
+
+            <div class="successMessage">
+                <div class="checkmark-icon">
+                    <img src="icons2/checkmark1.svg">
+                </div>
+
+                <p class="checkpara">your order confirmed</p>
             </div>
 
-        <button type="reset" id="reset">Reset</button>
-    </div>
+            <button type="reset" id="reset">Reset</button>
+        </div>
 
-</section>
-
-
+    </section>
 
 
-</form>
+
+
+    </form>
 
 
     <!-- -----------------------------------------------------------------section3()--------------------------------------------------------------------------------------------- -->
 
-        <!-- --------------------------------- -->
-        
-        <!-- <div class="summary">
+    <!-- --------------------------------- -->
+
+    <!-- <div class="summary">
             <h3>Order summary</h3>
         </div> -->
-        <!-- --------------------------------- -->
-    
-        <!-- --------------------------------- -->
-    
+    <!-- --------------------------------- -->
+
+    <!-- --------------------------------- -->
+
 
     <script src="order.js"></script>
 </body>
