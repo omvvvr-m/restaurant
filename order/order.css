@@ -15,7 +15,11 @@
 }
 
 
-* {}
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
     transition: backgroung-color 0.5s, color 0.5s;
@@ -424,13 +428,10 @@ h3 {
 }
 
 
- HEAD
 
 
 
-
-.order-summary
-{
+.order-summary {
 
     background-color: #f7e7ce;
     border-radius: 36px;
