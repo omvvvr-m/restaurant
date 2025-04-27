@@ -736,10 +736,30 @@ body {
 .finalcard {
     border: 2px dashed var(--primary-color);
     width: 309px;
-    height: 200px;
+    height: 450px;
+    /* background-image: url(/imgs/menuback.jpeg); */
+    background-image: url(/imgs/Fresh\ Burger.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.order-card {
+}
+
+.final-title {
+    color: var(--text-color);
+}
+
+.final-ls {
+    color: var(--text-color);
+}
+
+.final-btt {
 
 }
+
+
 
 /* ============================== Section Divider ==========================  */
 
