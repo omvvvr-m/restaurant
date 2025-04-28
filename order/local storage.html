@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage</title>
+</head>
+<body>
+    <div id="orderlist"></div>
+    <script>
+
+        let orders =JSON.parse(localStorage.getItem("order"));
+        console.log(JSON.parse(localStorage.getItem("order")));
+        // console.log(localStorage.getItem("neworder"));
+            let listdiv=document.getElementById("orderlist");
+            let orderitems=document.createElement("div");
+            orderitems.innerHTML=` <h3>${orders.name} </h3>
+                                 <p>${orders.price}</p>
+                                 <p>${orders.quantity}</p>   `   
+            listdiv.appendChild(orderitems)                                 
+        ;
+        
+       
+    </script>
+    
+</body>
+</html>

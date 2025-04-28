@@ -32,7 +32,7 @@ function save (btn){
         name,price,quantity
     }
     let jsonorder=JSON.stringify(neworder);
-    let c=JSON.parse(localStorage.getItem("orders"));
+    // let c=JSON.parse(localStorage.getItem("orders"));
     // let cindex=c.findIndex(order=>order.name===name);
     // if(cindex!==-1){
         // c[cindex]=neworder;
@@ -41,7 +41,7 @@ function save (btn){
         // c.push(neworder);
     // }
     localStorage.setItem("order",JSON.stringify(neworder));
-    localStorage.getItem("order",JSON.stringify(neworder));
+    // localStorage.getItem("order",JSON.stringify(neworder));
     console.log(neworder);
 
 }
