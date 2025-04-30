@@ -21,6 +21,33 @@
     margin: 0px;
 }
 
+
+#orderlist
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left:750px ;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    border: 2px solid #443627;
+    box-shadow: 0 4px 8px #251d14;
+    padding-left: 60px;
+    padding-top: 15px;
+    width: 400px;
+    height: 150px;
+    border-radius: 36px;
+    font-family: "Merienda", cursive;
+    background-color: #f3ede4;
+}
+
+.order-summary{
+    text-align: center;
+}
+
+
 body {
     transition: backgroung-color 0.5s, color 0.5s;
 }
