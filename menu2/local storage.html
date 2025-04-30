@@ -16,8 +16,8 @@
             let listdiv=document.getElementById("orderlist");
             let orderitems=document.createElement("div");
             orderitems.innerHTML=` <h3> NAME:${orders.name} </h3>
-                                 <p> PRICE:${orders.price}</p>
-                                 <p> QUANTITY:${orders.quantity}</p>   `   
+                    <p> PRICE:${orders.price}</p>
+                    <p> QUANTITY:${orders.quantity}</p>   `   
             listdiv.appendChild(orderitems)                                 
         ;
         function cleanorder (){
@@ -27,7 +27,6 @@
             // alert("deleted");
         }
         
-       
             orderitems.innerHTML=` <h3>${orders.name} </h3>
                         <p>${orders.price}</p>
                         <p>${orders.quantity}</p>   `   

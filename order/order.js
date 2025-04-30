@@ -140,3 +140,11 @@ console.log(JSON.parse(localStorage.getItem("order")));
                 <p>quantity : ${orders.quantity}</p>   `   
     listdiv.appendChild(orderitems)                                 
 ;
+
+;
+function cleanorder (){
+    // let clearbtn=document.getElementById("clean");
+    localStorage.removeItem("order");
+    document.getElementById("orderlist").innerHTML=" ";
+    // alert("deleted");
+}
