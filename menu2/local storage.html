@@ -6,6 +6,7 @@
     <title>storage</title>
 </head>
 <body>
+    <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
     <div id="orderlist"></div>
     <script>
 
@@ -14,11 +15,17 @@
         // console.log(localStorage.getItem("neworder"));
             let listdiv=document.getElementById("orderlist");
             let orderitems=document.createElement("div");
-            orderitems.innerHTML=` <h3>${orders.name} </h3>
-                                 <p>${orders.price}</p>
-                                 <p>${orders.quantity}</p>   `   
+            orderitems.innerHTML=` <h3> NAME:${orders.name} </h3>
+                                 <p> PRICE:${orders.price}</p>
+                                 <p> QUANTITY:${orders.quantity}</p>   `   
             listdiv.appendChild(orderitems)                                 
         ;
+        function cleanorder (){
+            // let clearbtn=document.getElementById("clean");
+            localStorage.removeItem("order");
+            document.getElementById("orderlist").innerHTML=" ";
+            // alert("deleted");
+        }
         
        
     </script>
