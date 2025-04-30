@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/pimp.css">
+    <link rel="stylesheet" href="/Navbar/navbar-style.css"/>
+    <script>
+      fetch('/Navbar/navbar.html')
+      .then(res=>res.text())
+      .then(data=>{
+        document.getElementById('navbar').innerHTML=data;
+      })
+    </script>
 </head>
 <body>
+  <div id="navbar"></div>
  <h1>Menu</h1>
  <div class="ph">
     <div class="ph1">
@@ -19,7 +28,7 @@
         <p class="d1">Chiken Strips With Baffalo Sauce And Melted Cheddar Cheese.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 14.5$</button>
+          <button class="p1"> 14.5$</button>
         </div>
         
     </div>
@@ -32,7 +41,7 @@
         <p class="d2">Beef Bacon With Fresh Sauteed Mashroom, Cheddar Cheese, And Creamy Mayonnaise.</p>
         <div class="cart">
            <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-           <button class="p1" onclick="save(this)"> 20$</button>
+           <button class="p1"> 20$</button>
         </div>
        
         
@@ -46,7 +55,7 @@
         <p class="d3">Sauteed Mushroom, Cheddar Cheese,And Creamy Mayonnais Spread On Top Of Our Pure Beef burger.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 12$</button>
+          <button class="p1"> 12$</button>
         </div>
         
     </div>
@@ -59,7 +68,7 @@
         <p class="d4">Crispy Chicken Piece With Lettuce, Cheese Slices, Pickles And The New TikTok Sauce.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)">16$</button>
+          <button class="p1">16$</button>
         </div>
         
     </div>
@@ -72,7 +81,7 @@
         <p class="d5">lightly breaded and perfectly fried toa golden crisp and topped with our signature in-house tartar sauce.</p>
         <div class="cart">
           <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 15$</button>
+          <button class="p1"> 15$</button>
         </div>
        
     </div>
@@ -86,7 +95,7 @@
         <p class="d6">Handmaded beef patty, turkey rashes, onions,pickles,and cheese slice with our classic sauce.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)">17$</button>
+          <button class="p1">17$</button>
         </div>
         
     </div>
@@ -99,7 +108,7 @@
         <p class="d8">Handmade fresh veg patty with fried crispy coating - topped with cheese, lettuce,tomato,& achoice of 'signature sauce'.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)">22$</button>
+          <button class="p1">22$</button>
         </div>
         
     </div>
@@ -112,7 +121,7 @@
         <p class="d9">Chicken breast fried to perfection - topped with cheese, lettuce, tomato,&choice of signature sauce.</p>
         <div  class="cart">
           <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1"onclick="save(this)">14$</button>
+          <button class="p1">14$</button>
         </div>
        
     </div>
@@ -125,7 +134,7 @@
         <p class="d10">Handmade beef burger , beef patty topped with cheece, lettuce, tomato, onions , & choice of sauce.</p>
         <div  class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 10$</button>
+          <button class="p1"> 10$</button>
         </div>
        
     </div>
@@ -138,7 +147,7 @@
         <p class="d11">meet our host chicken burger, topped with cheese, jalpenos and fiery saucs.</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)">13$</button>
+          <button class="p1" onclick>13$</button>
         </div>
         
     </div>
@@ -151,7 +160,7 @@
         <p class="d12">Our uniqe beef patty, with cheese sauce, jalapenos,Nachos and classic sauce,</p>
         <div class="cart">
           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 18$</button>
+          <button class="p1" > 18$</button>
         </div>
         
     </div>
@@ -164,7 +173,7 @@
         <p class="d13">Beef patty topped with double cheese, pickles, lettuce, tomato, carmelised onions, &classic sauce.</p>
         <div class="cart">
           <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" onclick="save(this)"> 23$</button>
+          <button class="p1"> 23$</button>
         </div>
         
     </div>   

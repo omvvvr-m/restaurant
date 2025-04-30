@@ -10,6 +10,9 @@
     --main-radius: 36px;
     --main-button-color: rgb(232, 50, 50);
 }
+body{
+  margin: 0px;
+}
 h1{
     background-color: var(--background-color);
     color: var(--primary-color);
@@ -19,6 +22,7 @@ h1{
     font-size: 100px;
 }
 .ph{
+  padding-top: 0px;
     padding-left: 50px;
     /* padding-right: 50px; */ 
     background-color: var(--background-color);
