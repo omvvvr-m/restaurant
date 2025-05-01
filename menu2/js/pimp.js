@@ -43,5 +43,9 @@ function save (btn){
     localStorage.setItem("order",JSON.stringify(neworder));
     // localStorage.getItem("order",JSON.stringify(neworder));
     console.log(neworder);
+}
+
+function Go (){
+    window.location.href= "/order/order.html"
 
 }
