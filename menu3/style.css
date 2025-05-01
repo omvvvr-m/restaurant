@@ -1,0 +1,128 @@
+body {
+    background-color: #dee3ac;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(248, 252, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #161616;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 270px;
+    display: block;
+    object-fit: cover;
+  }
+  .card h1 {
+    font-family: "sofia";
+    margin: 10px 0 5px;
+    color: #010001;
+  }
+  
+  .card p {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .price {
+    font-size: 30px;
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  button {
+    background-color: #ecc590;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 18px;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .card:hover button {
+    opacity: 4;
+    transform: translateY(0);
+  }
+  .card:hover h1,
+  .card:hover p,
+  .card:hover .price {
+    color: #f2f1ed;
+  }
+  
+  .card img.cake2 {
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card img.cake3 {
+    height: 320px;
+    object-fit: cover;
+    display: block;
+  }
+  .card img.cake4 {
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card img.cake5 {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card img.drink1 {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  .card img.drink2 {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    justify-self: center;
+  }
+  
+  .card img.drink3 {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    justify-self: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 80px;
+    padding: 15px;
+    margin: 15px;
+  }
+  

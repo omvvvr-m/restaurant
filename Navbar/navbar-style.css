@@ -103,3 +103,36 @@
 .home .home-sections a {
     padding: 4px;
 }
+
+.about-us {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    z-index: 99;
+}
+
+.nav-links .about-us-sections {
+    position: absolute;
+    display: none;
+    right: -60px;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    border: #251d14;
+
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 16px;
+}
+
+
+
+.about-us:hover .about-us-sections {
+    display: flex;
+}
+
+.about-us .about-us-sections a {
+    padding: 4px;
+}
