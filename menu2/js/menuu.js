@@ -35,3 +35,72 @@ function order (button) {
 }
 
 
+// تفعيل الحركات عند ظهور الجمل أو العناصر المحددة
+const elementsToAnimate = document.querySelectorAll('.typewriter, .jump');
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // عند ظهور العنصر في نافذة العرض، أضف الكلاس الذي يفعّل الحركة
+      entry.target.classList.add('animated');
+      observer.unobserve(entry.target);  // أوقف المراقبة بعد تفعيل الحركة
+    }
+  });
+}, { threshold: 0.5 });  // تأكد أن العنصر يظهر بنسبة 50% على الأقل
+
+// مراقبة العناصر التي تحتاج للحركة
+elementsToAnimate.forEach(element => {
+  observer.observe(element);
+});
+
+// search bar
+function searchFood() {
+  const searchInput = document.getElementById('searchInput').value.toLowerCase();
+  const div1Foods = document.getElementById('main-menu').querySelectorAll('.n1');
+  const div2Foods = document.getElementById('light-side').querySelectorAll('.s');
+
+  let found = false;
+
+  // البحث في الـ div الأول
+  for (const food of div1Foods) {
+    const foodName = food.textContent.toLowerCase().trim();
+    if (foodName.includes(searchInput)) {
+      selectAndScroll(food);
+      found = true;
+      break;
+    }
+  }
+
+  // لو ما لقيناهاش في الأول هنبحث في الـ div التاني
+  if (!found) {
+    for (const food of div2Foods) {
+      const foodName = food.textContent.toLowerCase().trim();
+      if (foodName.includes(searchInput)) {
+        selectAndScroll(food);
+        found = true;
+        break;
+      }
+    }
+  }
+
+  // لو ما لقيناهاش خالص نعرض رسالة
+  if (!found) {
+    alert('Sorry!Not found');
+  }
+}
+
+function selectAndScroll(element) {
+  // إزالة أي تحديد سابق
+  const selected = document.querySelector('.selected');
+  if (selected) {
+    selected.classList.remove('selected');
+  }
+
+  // إضافة كلاس التحديد للعنصر الحالي
+  element.classList.add('selected');
+
+  // عمل سكرول للعنصر
+  element.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+

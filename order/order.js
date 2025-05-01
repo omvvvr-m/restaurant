@@ -148,3 +148,5 @@ function cleanorder (){
     document.getElementById("orderlist").innerHTML=" ";
     // alert("deleted");
 }
+
+

@@ -5,18 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/pimp.css">
-    <link rel="stylesheet" href="/Navbar/navbar-style.css"/>
-    <script>
-      fetch('/Navbar/navbar.html')
-      .then(res=>res.text())
-      .then(data=>{
-        document.getElementById('navbar').innerHTML=data;
-      })
-    </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-------------------- NAVBAR LINES-------------------->
+  <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+  <script>
+    fetch('../Navbar/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  <!-------------------- NAVBAR LINES-------------------->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-  <div id="navbar"></div>
+  <nav>
+    <div class="nav-container">
+        <nav class="navbar">
+            <a class="logo" id="home" href="index.html">
+                <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
+
+
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <div class="home">
+                        <a href="#index.html" class="home-link">HOME</a>
+                        <div class="home-sections">
+                            <a href="#why-us">WHY US</a>
+                            <a href="#chefs-choice">CHEF'S CHOICE</a>
+                            <a href="#light-side">THE LIGHT SIDE</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="" class="offers" target="_blank">OFFERS</a></li>
+                <li><a href="" class="menu" target="_blank">MENU</a></li>
+                <li><a href="" class="order" target="_blank">ORDER</a></li>
+                <li><a href="" class="about-us" target="_blank">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+<!-- end of nav bar -->
+
+<!-- search bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Search..." id="searchInput" oninput="searchFood()">
+  <button><i class="fas fa-search"></i></button>
+</div>
+
+<!-- menu start -->
+
  <h1>Menu</h1>
+<div id="main-menu">
  <div class="ph">
     <div class="ph1">
         <button class="inc1" onclick="increase(this)">+</button>
@@ -178,16 +222,20 @@
         
     </div>   
 </div>
+</div>
 <button class="b" onclick="Go(this)">ORDER NOW </button>
 
 <script src="js/pimp.js"></script>
 
 <!--light-->
 
+<img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+    <div id="orderlist"></div>
+
 <div class="topp">
     <div class="title">
-      <span>
-        <h1 class="welc">
+      <span data-aos="fade-up">
+        <h1 class="welc" >
           NO Sugar
           <br>
           &nbsp; &nbsp; &nbsp;NO Worries
@@ -196,12 +244,14 @@
     </div>
     <div class="intro">
       <h2 class="jump">
-        Welcome to Our Wellness Corner!
+        <span data-aos="fade-up">
+          Welcome to Our Wellness Corner!
+        </span>
       </h2>
     </div>
     <div class="info">
         <div class="typewriter">
-          <span>
+          <span data-aos="fade-up" >
             At our restaurant, your health matters just as much as the flavor That's why we've created this special
             section for our diabetic quests to help you enjoy our meals safely and deliciously.
           </span>
@@ -209,6 +259,7 @@
       </div>
     </div>
      <!--end of welcometosection-->
+<div id="light-side">
   <div class="container">
     <div class="card">
       <div class="counter">
@@ -345,7 +396,16 @@
         </button>
       </div>
   </div>
+  <button class="back" onclick="Go(this)">ORDER NOW </button>
+</div>
+
+ <script src="js/pimp.js"></script>
+
   <script src="js/menuu.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
