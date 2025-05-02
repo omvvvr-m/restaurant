@@ -186,21 +186,21 @@ resetBtn.onclick=function(){
      
 
 //  ;
- function cleanorder (){
+//  function cleanorder (){
     //  let clearbtn=document.getElementById("clean");
-     localStorage.removeItem("order");
-     document.getElementById("orderlist").innerHTML=" ";
+    //  localStorage.removeItem("order");
+    //  document.getElementById("orderlist").innerHTML=" ";
      // alert("deleted");
- }
+//  }
 
 
 
- function cleanorder (){
+//  function cleanorder (){
      // let clearbtn=document.getElementById("clean");
-     localStorage.removeItem("order");
-     document.getElementById("orderlist").innerHTML=" ";
+    //  localStorage.removeItem("order");
+    //  document.getElementById("orderlist").innerHTML=" ";
      // alert("deleted");
- }
+//  }
 
 
 
