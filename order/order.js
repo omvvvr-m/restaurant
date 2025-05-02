@@ -187,7 +187,7 @@ resetBtn.onclick=function(){
 
 //  ;
  function cleanorder (){
-     // let clearbtn=document.getElementById("clean");
+    //  let clearbtn=document.getElementById("clean");
      localStorage.removeItem("order");
      document.getElementById("orderlist").innerHTML=" ";
      // alert("deleted");
