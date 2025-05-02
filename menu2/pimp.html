@@ -6,6 +6,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="css/pimp.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-------------------- NAVBAR LINES-------------------->
   <link rel="stylesheet" href="../Navbar/navbar-style.css" />
@@ -17,15 +18,10 @@
       });
   </script>
   <!-------------------- NAVBAR LINES-------------------->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
   <nav>
     <div class="nav-container">
         <nav class="navbar">
-            <a class="logo" id="home" href="index.html">
+            <a class="logo" id="home" href="../Home/index.html">
                 <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
 
 
@@ -33,21 +29,29 @@
             <ul class="nav-links">
                 <li>
                     <div class="home">
-                        <a href="#index.html" class="home-link">HOME</a>
+                        <a href="../Home/index.html#index.html" class="home-link">HOME</a>
                         <div class="home-sections">
-                            <a href="#why-us">WHY US</a>
-                            <a href="#chefs-choice">CHEF'S CHOICE</a>
-                            <a href="#light-side">THE LIGHT SIDE</a>
+                            <a href=../Home/index.html#why-us>WHY US</a>
+                            <a href="../Home/index.html#chefs-choice">CHEF'S CHOICE</a>
+                            <a href="../Home/index.html#light-side">THE LIGHT SIDE</a>
                         </div>
                     </div>
                 </li>
-                <li><a href="" class="offers" target="_blank">OFFERS</a></li>
-                <li><a href="" class="menu" target="_blank">MENU</a></li>
-                <li><a href="" class="order" target="_blank">ORDER</a></li>
-                <li><a href="" class="about-us" target="_blank">ABOUT US</a></li>
+                <li><a href="../menu/m.html" class="offers" target="_self">OFFERS</a></li>
+                <li><a href="../menu2/pimp.html" class="menu" target="_self">MENU</a></li>
+                <li><a href="../order/order.html" class="order" target="_self">ORDER</a></li>
+                <div class="about-us">
+                    <li>
+                        <a href="../aboutus/index-2.html" class="about-us-link" target="_self">ABOUT US</a>
+                        <div class="about-us-sections">
+                            <a href="../contactus/contactus.html" class="contact-us" target="_self">CONTACT US</a>
+                    </li>
+                </div>
             </ul>
-        </nav>
+
     </div>
+</nav>
+</div>
 </nav>
 <!-- end of nav bar -->
 
@@ -229,8 +233,8 @@
 
 <!--light-->
 
-<img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
-    <div id="orderlist"></div>
+<!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+    <div id="orderlist"></div> -->
 
 <div class="topp">
     <div class="title">
