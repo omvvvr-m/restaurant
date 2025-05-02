@@ -89,17 +89,6 @@ else{
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 //visa form
 
 document.addEventListener("DOMContentLoaded",function(){
@@ -141,9 +130,8 @@ resetBtn.onclick=function(){
 // //  console.log(JSON.parse(localStorage.getItem("order")));
 //  // console.log(localStorage.getItem("neworder"));
 //     //  let listdiv=document.getElementById("orderlist");
-     
-                                     
- 
+
+
 //  function cleanorder (){
 //      // let clearbtn=document.getElementById("clean");
 //      localStorage.removeItem("order");
@@ -183,7 +171,7 @@ resetBtn.onclick=function(){
 //  console.log(JSON.parse(localStorage.getItem("order")));
 //  // console.log(localStorage.getItem("neworder"));
 //     //  let listcard=document.getElementById("orderlist");
-     
+
 
 //  ;
 //  function cleanorder (){
@@ -193,6 +181,13 @@ resetBtn.onclick=function(){
      // alert("deleted");
 //  }
 
+// function cleanorder (){
+//      // let clearbtn=document.getElementById("clean");
+//       localStorage.removeItem("order");
+//       document.getElementById("orderlist").innerHTML=" ";
+//      // alert("deleted");
+// }
+
 
 
 //  function cleanorder (){
@@ -200,6 +195,10 @@ resetBtn.onclick=function(){
     //  localStorage.removeItem("order");
     //  document.getElementById("orderlist").innerHTML=" ";
      // alert("deleted");
+//      // let clearbtn=document.getElementById("clean");
+//      localStorage.removeItem("order");
+//      document.getElementById("orderlist").innerHTML=" ";
+//      // alert("deleted");
 //  }
 
 

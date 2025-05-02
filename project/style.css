@@ -21,7 +21,7 @@ body {
   padding: 0px; 
 } 
  
-.nav-container { 
+/* .nav-container { 
   margin: 0px; 
 } 
  
@@ -39,7 +39,7 @@ body {
 .navbar:hover { 
   transform: scale(1.0); 
   /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */ 
-} 
+/* } 
  
 .logo { 
   display: flex; 
@@ -80,7 +80,7 @@ body {
 .nav-links li a:hover { 
   color: var(--text-hover-color); 
   transform: scale(1.1); 
-} 
+}  */ */
  
  
   body{ 
