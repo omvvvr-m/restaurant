@@ -12,15 +12,26 @@
     rel="stylesheet">
   <title>BUN & BLAZE!!!</title>
 
-
+  <!-------------------- NAVBAR LINES-------------------->
+  <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+  <script>
+    fetch('../Navbar/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  <!-------------------- NAVBAR LINES-------------------->
 
 
 </head>
 
 <body>
 
+  <div id="navbar"></div>
 
-  <div class="nav-container">
+
+  <!-- <div class="nav-container">
     <nav class="navbar">
       <a class="logo" href="index.html">
         <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
@@ -47,7 +58,7 @@
         <li><a href="" class="about-us" target="_blank">ABOUT US</a></li>
       </ul>
     </nav>
-  </div>
+  </div> -->
   <!-- end of nav -->
 
   <div class="topp">
