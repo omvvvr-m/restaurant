@@ -141,9 +141,8 @@ resetBtn.onclick=function(){
 // //  console.log(JSON.parse(localStorage.getItem("order")));
 //  // console.log(localStorage.getItem("neworder"));
 //     //  let listdiv=document.getElementById("orderlist");
-     
-                                     
- 
+
+
 //  function cleanorder (){
 //      // let clearbtn=document.getElementById("clean");
 //      localStorage.removeItem("order");
@@ -183,15 +182,15 @@ resetBtn.onclick=function(){
 //  console.log(JSON.parse(localStorage.getItem("order")));
 //  // console.log(localStorage.getItem("neworder"));
 //     //  let listcard=document.getElementById("orderlist");
-     
+
 
 //  ;
- function cleanorder (){
+function cleanorder (){
      // let clearbtn=document.getElementById("clean");
-     localStorage.removeItem("order");
-     document.getElementById("orderlist").innerHTML=" ";
+      localStorage.removeItem("order");
+      document.getElementById("orderlist").innerHTML=" ";
      // alert("deleted");
- }
+}
 
 
 
