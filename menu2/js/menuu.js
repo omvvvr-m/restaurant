@@ -53,6 +53,7 @@ elementsToAnimate.forEach(element => {
   observer.observe(element);
 });
 
+
 // search bar
 function searchFood() {
   const searchInput = document.getElementById('searchInput').value.toLowerCase();
