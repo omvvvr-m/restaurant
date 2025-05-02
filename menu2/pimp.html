@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/pimp.css">
-    <link rel="stylesheet" href="/Navbar/navbar-style.css"/>
-    <script>
-      fetch('/Navbar/navbar.html')
-      .then(res=>res.text())
-      .then(data=>{
-        document.getElementById('navbar').innerHTML=data;
-      })
-    </script>
-</head>
-<body>
-  <div id="navbar"></div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-------------------- NAVBAR LINES-------------------->
+  <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+  <script>
+    fetch('../Navbar/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  <!-------------------- NAVBAR LINES-------------------->
+
+
+<div id="navbar"></div>
+
+<!-- search bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Search..." id="searchInput" oninput="searchFood()">
+  <button><i class="fas fa-search"></i></button>
+</div>
+
+<!-- menu start -->
+
  <h1>Menu</h1>
+<div id="main-menu">
  <div class="ph">
     <div class="ph1">
         <button class="inc1" onclick="increase(this)">+</button>
@@ -165,8 +180,9 @@
         
     </div>
     <div class="ph1">
-        <button class="inc13" onclick="increse(this)">+</button>
-        <span class="q13" >0</span>
+        <button class="inc13" onclick="increase(this)">+</button>
+        <span class="q" >0</span>
+        <span id="q13"class="q" >0</span>
         <button class="dec13" onclick="decrease(this)">-</button>
         <p class="n1">ANGUS BEEF STACK BURGER </p>
         <img width="350px" height="350px" src="photo/angus-beef-stack-3000px-1536x1536.png.webp" alt="burger">
@@ -178,16 +194,22 @@
         
     </div>   
 </div>
-<button class="b" onclick="Go(this)">ORDER NOW </button>
+</div>
+<!-- <button class="b" onclick="Go(this)">ORDER NOW </button> -->
 
 <script src="js/pimp.js"></script>
 
 <!--light-->
 
+<!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
+    <!-- <div id="orderlist"></div> -->
+<!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+    <div id="orderlist"></div> -->
+
 <div class="topp">
     <div class="title">
-      <span>
-        <h1 class="welc">
+      <span data-aos="fade-up">
+        <h1 class="welc" >
           NO Sugar
           <br>
           &nbsp; &nbsp; &nbsp;NO Worries
@@ -196,12 +218,14 @@
     </div>
     <div class="intro">
       <h2 class="jump">
-        Welcome to Our Wellness Corner!
+        <span data-aos="fade-up">
+          Welcome to Our Wellness Corner!
+        </span>
       </h2>
     </div>
     <div class="info">
         <div class="typewriter">
-          <span>
+          <span data-aos="fade-up" >
             At our restaurant, your health matters just as much as the flavor That's why we've created this special
             section for our diabetic quests to help you enjoy our meals safely and deliciously.
           </span>
@@ -209,6 +233,7 @@
       </div>
     </div>
      <!--end of welcometosection-->
+<div id="light-side">
   <div class="container">
     <div class="card">
       <div class="counter">
@@ -220,7 +245,7 @@
       <img src="photo/light-side/m1-transparent.png" alt="Avocado egg burger" />
       <p class="description">A healthy twist with avocado replacing the bun, topped with a perfectly boiled egg. A
         light,nutritious, and flavorful option that’s as satisfying as it is wholesome.</p>
-      <button class="flip-btn">
+      <button class="flip-btn" onclick="order(this)">
         <span class="front">12.50$</span>
         <span class="back">ORDER!</span>
       </button>
@@ -345,7 +370,16 @@
         </button>
       </div>
   </div>
+  <button class="back" onclick="Go(this)">ORDER NOW </button>
+</div>
+
+ <script src="js/pimp.js"></script>
+
   <script src="js/menuu.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

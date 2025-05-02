@@ -6,13 +6,13 @@
     <title>storage</title>
 </head>
 <body>
-    <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+    <!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
     <div id="orderlist"></div>
     <script>
 
         let orders =JSON.parse(localStorage.getItem("order"));
         console.log(JSON.parse(localStorage.getItem("order")));
-        // console.log(localStorage.getItem("neworder"));
+        console.log(localStorage.getItem("neworder"));
             let listdiv=document.getElementById("orderlist");
             let orderitems=document.createElement("div");
             orderitems.innerHTML=` <h3> NAME:${orders.name} </h3>
@@ -27,11 +27,11 @@
             // alert("deleted");
         }
         
-            orderitems.innerHTML=` <h3>${orders.name} </h3>
-                        <p>${orders.price}</p>
-                        <p>${orders.quantity}</p>   `   
-            listdiv.appendChild(orderitems)                                 
-        ;
+        //     orderitems.innerHTML=` <h3>${orders.name} </h3>
+        //                 <p>${orders.price}</p>
+        //                 <p>${orders.quantity}</p>   `   
+        //     listdiv.appendChild(orderitems)                                 
+        // ;
     </script>
     
 </body>
