@@ -88,7 +88,8 @@ body {
     font-family: "Merienda", cursive;
     /* color: ; */
     text-shadow: 5px 5px 5px #251d14;
-    font-family: "Merienda", cursive;
+    margin-top: 150PX;
+    /* font-family: "Merienda", cursive; */
 }
 
 /* h1 {} */
