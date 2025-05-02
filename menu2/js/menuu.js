@@ -104,3 +104,31 @@ function selectAndScroll(element) {
 }
 
 
+function order (button){
+  let c1=button.closest(".card");
+  let m1=c1.querySelector(".s").textContent;
+  let p1=parseInt(c1.querySelector(".flip-btn").textContent);
+  let q1=parseInt(c1.querySelector(".count").textContent);
+  let ob={
+      m1,p1,q1
+  }
+   let jsonorder=JSON.stringify(ob);
+  // let c=JSON.parse(localStorage.getItem("orders"));
+  // let cindex=c.findIndex(order=>order.name===name);
+  // if(cindex!==-1){
+      // c[cindex]=neworder;
+  // }
+  // else{
+      // c.push(neworder);
+  // }
+  localStorage.setItem("order",JSON.stringify(ob));
+  localStorage.getItem("order",JSON.stringify(ob));
+  window.location.href= "../order/order.html";
+  console.log(ob);
+
+}
+
+function Go (){
+  window.location.href= "../order/order.html"
+
+}

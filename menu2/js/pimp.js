@@ -42,13 +42,16 @@ function save (btn){
     // }
     localStorage.setItem("order",JSON.stringify(neworder));
     // localStorage.getItem("order",JSON.stringify(neworder));
+     window.location.href= "../order/order.html";
     console.log(neworder);
 }
 
+// function Go (){
+//     window.location.href= "../order/order.html"
 function Go (){
-    window.location.href= "/order/order.html"
+    window.location.href= "../order/order.html"}
 
-}
+
 
 
 
