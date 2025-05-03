@@ -174,6 +174,12 @@ resetBtn.onclick=function(){
 
 
 //  ;
+//  function cleanorder (){
+    //  let clearbtn=document.getElementById("clean");
+    //  localStorage.removeItem("order");
+    //  document.getElementById("orderlist").innerHTML=" ";
+     // alert("deleted");
+//  }
 
 // function cleanorder (){
 //      // let clearbtn=document.getElementById("clean");
@@ -185,6 +191,10 @@ resetBtn.onclick=function(){
 
 
 //  function cleanorder (){
+     // let clearbtn=document.getElementById("clean");
+    //  localStorage.removeItem("order");
+    //  document.getElementById("orderlist").innerHTML=" ";
+     // alert("deleted");
 //      // let clearbtn=document.getElementById("clean");
 //      localStorage.removeItem("order");
 //      document.getElementById("orderlist").innerHTML=" ";

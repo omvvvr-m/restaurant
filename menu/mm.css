@@ -13,7 +13,7 @@
 
 
 body{
-   background-color: #F2F6D0;
+   background-color: #f2eec9;
 
 }
 .offer_containers{
@@ -34,6 +34,7 @@ body{
     text-shadow:2px 2px 0px  #EFDCAB;
    text-align: center;
    text-transform: uppercase;
+   font-family: 'Merienda';
  
    opacity:0;
    margin-top: 50px; 
@@ -60,7 +61,7 @@ body{
 
 .offer_card{
     padding:25px;
-    margin:10px;
+    margin:19px ;
     background-color:transparent;
     overflow: hidden;/*الصورة متطلعش برة*/
     width:400px;
@@ -94,7 +95,7 @@ body{
 
 .offer_tittle{
     
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Merienda';
     font-size: 40px;
     color:rgb(11, 11, 11);
     text-align: center;
@@ -232,4 +233,32 @@ width: 100%;
     width: 310px;
     padding: 60px 5px 0px 35px;
 
+}
+.counter
+{
+display:flex;
+justify-content:center;
+align-items: center;
+gap:10px;
+font-family: cursive;
+font-weight: bold;
+
+
+}
+.counter button
+{
+ font-size:;
+ color: white;
+ background-color:#0b0b0b;
+ cursor: pointer;
+ border-radius:40%;
+ font-weight: bold;
+ font-size:20px;
+
+
+}
+.btm1 
+{
+    padding: 2px 8px;
+   
 }
