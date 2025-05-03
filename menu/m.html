@@ -5,19 +5,19 @@
     <title></title>
     <link rel="stylesheet"href="mm.css">
 <!---------------------navbar --------------------->
-    <link rel="stylesheet"href="../Navbar/navbar-style.css"/>
-    <script>
-        fetch('../Navbar/navbar.html')
-        .then(res=>res.text())
-        .then(data=>{
-            document.getElementByld('navbar').innerHT
-            ML=data;
-
-        });
-    </script>
+<link rel="stylesheet" href="../Navbar/navbar-style.css" />
+<script>
+  fetch('../Navbar/navbar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
 <!---------------------navbar --------------------->
+
+</div>
+</nav>
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"rel="stylesheet">
-  
     </head>
     <body>
     <div id="navbar"></div>
