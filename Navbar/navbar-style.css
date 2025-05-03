@@ -157,7 +157,7 @@
 }
 
 .login-handler {
-    display: none;
+    display: flex;
 
     /* toggles the login windows 
     none -> hidden
