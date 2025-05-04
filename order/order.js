@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 //------------offer-------//
 
-window.addEventListener("DOMContentloaded",function(){
+/*window.addEventListener("DOMContentloaded",function(){
   let meals=
     localStorage.getItem("meals");
 
@@ -255,5 +255,35 @@ window.addEventListener("DOMContentloaded",function(){
   }else{
     console.log("un defiened");
   }
-});
+});*/
 //-----------offer-----------------//
+window.addEventListener("DOMContentLoaded",function(){
+const querystring=
+this.window.location.search;
+const urlparams=new
+URLSearchParams(querystring);
+const data=
+urlparams.get("data");
+if(!data)
+  {
+    this.document.getElementById("orderlist").innerHTML+="<p> no data </p>";
+
+  }else{
+    const orders =JSON.parse(data)
+    const orderbox=
+    document.getElementById("orderlist");
+    orders.forEach((order,index)=>{
+      const itemdiv=
+      document.createElement("div");
+      itemdiv.classList.add("order-item");
+      itemdiv.innerHTML=
+      `<strong> order ${index+1}:</strong><br> 
+      meal:${order.name }<br>
+      price:${order.price}<br>
+      quantity:${order.quantity}`;
+      orderbox.appendChild(itemdiv);
+      
+    });
+  } 
+
+});
