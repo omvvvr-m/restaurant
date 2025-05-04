@@ -266,7 +266,7 @@ const data=
 urlparams.get("data");
 if(!data)
   {
-    this.document.getElementById("orderlist").innerHTML+="<p> no data </p>";
+    this.document.getElementById("orderlist").innerHTML+="<p>  </p>";
 
   }else{
     const orders =JSON.parse(data)
