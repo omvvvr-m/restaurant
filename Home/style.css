@@ -637,7 +637,6 @@ body {
 }
 
 .lscard .card-description {
-
     color: var(--primary-color);
     font-size: 20px;
     margin: 0px;
@@ -646,7 +645,6 @@ body {
     align-items: center;
     text-align: center;
     margin-top: -60px;
-
 }
 
 
@@ -744,8 +742,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.order-card {
-}
+.order-card {}
 
 .final-title {
     color: var(--text-color);
@@ -755,9 +752,7 @@ body {
     color: var(--text-color);
 }
 
-.final-btt {
-
-}
+.final-btt {}
 
 
 

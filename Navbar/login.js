@@ -10,22 +10,79 @@ const confirmPasswordInput = document.getElementById('confirmPassword');
 const loginModal = document.getElementById('loginModal');
 const registerModal = document.getElementById('registerModal');
 
+const signInBtn = document.getElementById('signInBtn');
+const signOutBtn = document.getElementById('signOutBtn');
+
+const signInSpan = document.getElementById('signInSpan');
+const signOutSpan = document.getElementById('signOutSpan');
+
+var currentUserFname;
+
+
+signInBtn.addEventListener('click', function () {
+
+  loginModal.style.display = 'flex';
+
+});
+
+function signOut() {
+  // loginModal.style.display = 'flex';
+  sessionStorage.removeItem('isLoggedIn');
+  sessionStorage.removeItem('currentUser');
+
+  location.reload();
+}
+signOutBtn.addEventListener('click', function () {
+
+  signOut();
+
+});
+
+
+
 if (!emailInput) {
   console.error('emailInput not found!');
 }
+const firstName = sessionStorage.getItem('currentUserFname');
 
-// Original code with sessionStorage check
+signOutBtn.addEventListener('mouseenter', () => {
+
+  signOutSpan.innerHTML = 'Sign Out';
+
+  console.log('ENtered');
+
+
+});
+signOutBtn.addEventListener('mouseleave', () => {
+  console.log('exit');
+
+  signOutSpan.innerHTML = firstName ?? 'Sign Out';
+
+});
+
+
 if (sessionStorage.getItem('isLoggedIn') == "true") {
   console.log("Hiding");
   loginModal.style.display = 'none';
+
+
+  signOutBtn.style.display = 'flex';
+  signOutSpan.innerHTML = firstName ?? 'Sign Out';
+  signInBtn.style.display = 'none';
+
 } else {
+
   console.log("Showing");
-  loginModal.style.display = 'flex';
+  loginModal.style.display = 'none';
+
+  signOutBtn.style.display = 'none';
+  signInBtn.style.display = 'flex';
+
 }
 function showWelcomeMessage(userData) {
   // const welcomeMessage = document.createElement('div');
   // welcomeMessage.classList.add('welcome-message');
-  // welcomeMessage.innerHTML = `<h2>Welcome back, ${userData.firstName}!</h2>`;
+  // welcomeMessage.innerHTML = <h2>Welcome back, ${userData.firstName}!</h2>;
   // document.body.appendChild(welcomeMessage);
 }
 
@@ -50,16 +107,13 @@ function registerUser(firstName, lastName, email, password) {
   loginModal.style.display = 'flex';
 }
 
-//login existing user
-
 function loginUser(email, password) {
+
   if (!localStorage.getItem(email)) {
     alert('Email does not exist!');
     return;
   }
-
   const storedData = JSON.parse(localStorage.getItem(email));
-
   if (storedData.password !== password) {
     alert('Incorrect password!');
     return;
@@ -67,20 +121,16 @@ function loginUser(email, password) {
 
   sessionStorage.setItem('isLoggedIn', 'true');
   sessionStorage.setItem('currentUser', email);
-  registerModal.style.display = 'none';
-  loginModal.style.display = 'none';
-
-  // showWelcomeMessage(storedData);
+  sessionStorage.setItem('currentUserFname', storedData.firstName);
+  location.reload();
 }
 
-// Check if the user is already logged in
 
 const isLoggedIn = sessionStorage.getItem('isLoggedIn');
 const currentUserEmail = sessionStorage.getItem('currentUser');
 
 if (isLoggedIn) {
-  const currentUserData = JSON.parse(sessionStorage.getItem(currentUserEmail));
-  showWelcomeMessage(currentUserData);
+  // showWelcomeMessage(currentUserData);
 
 }
 
@@ -102,12 +152,9 @@ registerForm.addEventListener('submit', function (e) {
 });
 
 // LOGIN
-
 loginForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  console.log("Clickled!");
   const email = emailInput.value.trim();
   const password = passwordInput.value;
   loginUser(email, password);
-
 });

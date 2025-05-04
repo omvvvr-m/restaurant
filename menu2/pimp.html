@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="css/pimp.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-------------------- NAVBAR LINES-------------------->
-  <link rel="stylesheet" href="../Navbar/navbar-style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/pimp.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-------------------- NAVBAR LINES-------------------->
   <script>
+     fetch('../Navbar/navbar.html') 
+      .then(res => res.text()) 
+       .then(data => { 
+         document.getElementById('navbar').innerHTML = data; 
+       }); 
+   </script> 
     fetch('../Navbar/navbar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar').innerHTML = data;
+
+        const script = document.createElement('script');
+        script.src = '../Navbar/login.js';
+        document.body.appendChild(script);
       });
   </script>
   <!-------------------- NAVBAR LINES-------------------->
   <nav>
     <div class="nav-container">
-        <nav class="navbar">
-            <a class="logo" id="home" href="../Home/index.html">
-                <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
+      <nav class="navbar">
+        <a class="logo" id="home" href="../Home/index.html">
+          <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
 
 
-            </a>
-            <ul class="nav-links">
-                <li>
-                    <div class="home">
-                        <a href="../Home/index.html#index.html" class="home-link">HOME</a>
-                        <div class="home-sections">
-                            <a href=../Home/index.html#why-us>WHY US</a>
-                            <a href="../Home/index.html#chefs-choice">CHEF'S CHOICE</a>
-                            <a href="../Home/index.html#light-side">THE LIGHT SIDE</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="../menu/m.html" class="offers" target="_self">OFFERS</a></li>
-                <li><a href="../menu2/pimp.html" class="menu" target="_self">MENU</a></li>
-                <li><a href="../order/order.html" class="order" target="_self">ORDER</a></li>
-                <div class="about-us">
-                    <li>
-                        <a href="../aboutus/index-2.html" class="about-us-link" target="_self">ABOUT US</a>
-                        <div class="about-us-sections">
-                            <a href="../contactus/contactus.html" class="contact-us" target="_self">CONTACT US</a>
-                    </li>
-                </div>
-            </ul>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <div class="home">
+              <a href="../Home/index.html#index.html" class="home-link">HOME</a>
+              <div class="home-sections">
+                <a href=../Home/index.html#why-us>WHY US</a>
+                <a href="../Home/index.html#chefs-choice">CHEF'S CHOICE</a>
+                <a href="../Home/index.html#light-side">THE LIGHT SIDE</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="../menu/m.html" class="offers" target="_self">OFFERS</a></li>
+          <li><a href="../menu2/pimp.html" class="menu" target="_self">MENU</a></li>
+          <li><a href="../order/order.html" class="order" target="_self">ORDER</a></li>
+          <div class="about-us">
+            <li>
+              <a href="../aboutus/index-2.html" class="about-us-link" target="_self">ABOUT US</a>
+              <div class="about-us-sections">
+                <a href="../contactus/contactus.html" class="contact-us" target="_self">CONTACT US</a>
+            </li>
+          </div>
+        </ul>
 
     </div>
-</nav>
-</div>
-</nav>
-<!-- end of nav bar -->
+  </nav>
+  </div>
+  </nav>
+  <!-- end of nav bar -->
 
-<!-- search bar -->
-<div class="search-bar">
-  <input type="text" placeholder="Search..." id="searchInput" oninput="searchFood()">
-  <button><i class="fas fa-search"></i></button>
-</div>
+  <!-- search bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput" oninput="searchFood()">
+    <button><i class="fas fa-search"></i></button>
+  </div>
 
-<!-- menu start -->
+  <!-- menu start -->
 
- <h1>Menu</h1>
-<div id="main-menu">
- <div class="ph">
-    <div class="ph1">
+  <h1>Menu</h1>
+  <div id="main-menu">
+    <div class="ph">
+      <div class="ph1">
         <button class="inc1" onclick="increase(this)">+</button>
         <!-- <button class="inc1" onclick="sum(this)">+</button> -->
         <span id="q1" class="q">0</span>
@@ -75,12 +85,13 @@
         <img src="photo/image.png" alt="burger">
         <p class="d1">Chiken Strips With Baffalo Sauce And Melted Cheddar Cheese.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1"> 14.5$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc2" onclick="increase(this)">+</button>
         <span id="q2" class="q">0</span>
         <button class="dec2" onclick="decrease(this)">-</button>
@@ -88,13 +99,14 @@
         <img src="photo/d845c9309b0d95d8c5d945b6b2552491.webp" alt="burger">
         <p class="d2">Beef Bacon With Fresh Sauteed Mashroom, Cheddar Cheese, And Creamy Mayonnaise.</p>
         <div class="cart">
-           <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-           <button class="p1"> 20$</button>
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
+          <button class="p1"> 20$</button>
         </div>
-       
-        
-    </div>
-    <div class="ph1">
+
+
+      </div>
+      <div class="ph1">
         <button class="inc3" onclick="increase(this)">+</button>
         <span id="q3" class="q">0</span>
         <button class="dec3" onclick="decrease(this)">-</button>
@@ -102,12 +114,13 @@
         <img src="photo/a76de047b66f2511962b600232c60769.webp" alt="burger">
         <p class="d3">Sauteed Mushroom, Cheddar Cheese,And Creamy Mayonnais Spread On Top Of Our Pure Beef burger.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1"> 12$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc4" onclick="increase(this)">+</button>
         <span id="q4" class="q">0</span>
         <button class="dec4" onclick="decrease(this)">-</button>
@@ -115,134 +128,153 @@
         <img src="photo/c7550ca55107369f9ec3f706b8956df4.webp" alt="burger">
         <p class="d4">Crispy Chicken Piece With Lettuce, Cheese Slices, Pickles And The New TikTok Sauce.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1">16$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc5" onclick="increase(this)">+</button>
         <span id="q5" class="q">0</span>
         <button class="dec5" onclick="decrease(this)">-</button>
         <p class="n1">THE ATLANTIC COD BURGER</p>
-        <img width="350px" height="350px" src="photo/atlantic-cod-burger-banner-3000px-1024x1024.png.webp"  alt="burger">
-        <p class="d5">lightly breaded and perfectly fried toa golden crisp and topped with our signature in-house tartar sauce.</p>
+        <img width="350px" height="350px" src="photo/atlantic-cod-burger-banner-3000px-1024x1024.png.webp" alt="burger">
+        <p class="d5">lightly breaded and perfectly fried toa golden crisp and topped with our signature in-house tartar
+          sauce.</p>
         <div class="cart">
-          <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1"> 15$</button>
         </div>
-       
-    </div>
-    <div class="ph1">
-    
+
+      </div>
+      <div class="ph1">
+
         <button class="inc6" onclick="increase(this)">+</button>
         <span id="q6" class="q">0</span>
         <button class="dec6" onclick="decrease(this)">-</button>
         <p class="n1">THE FESTIVE BURGER</p>
-        <img  width="350px" height="350px" src="photo/burger-and-sauce-festive-burger-1536x1536.png.webp" alt="burger">
+        <img width="350px" height="350px" src="photo/burger-and-sauce-festive-burger-1536x1536.png.webp" alt="burger">
         <p class="d6">Handmaded beef patty, turkey rashes, onions,pickles,and cheese slice with our classic sauce.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1">17$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc8" onclick="increase(this)">+</button>
         <span id="q8" class="q">0</span>
         <button class="dec8" onclick="decrease(this)">-</button>
         <p class="n1">THE ORIGINAL VEGGI BURGER</p>
-        <img width="350px"height="350px" src="photo/burger-and-sauce-veggi-burger-3000px-2.1-1536x1536.png.webp" alt="burger">
-        <p class="d8">Handmade fresh veg patty with fried crispy coating - topped with cheese, lettuce,tomato,& achoice of 'signature sauce'.</p>
+        <img width="350px" height="350px" src="photo/burger-and-sauce-veggi-burger-3000px-2.1-1536x1536.png.webp"
+          alt="burger">
+        <p class="d8">Handmade fresh veg patty with fried crispy coating - topped with cheese, lettuce,tomato,& achoice
+          of 'signature sauce'.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1">22$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc9" onclick="increase(this)">+</button>
         <span id="q9" class="q">0</span>
         <button class="dec9" onclick="decrease(this)">-</button>
         <p class="n1">THE ORIGINAL CHICKEN BURGER</p>
-        <img width="350" height="350" src="photo/burger-and-suace-chicken-burger-3000px-2.1-1536x1536.png.webp" alt="burger">
-        <p class="d9">Chicken breast fried to perfection - topped with cheese, lettuce, tomato,&choice of signature sauce.</p>
-        <div  class="cart">
-          <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+        <img width="350" height="350" src="photo/burger-and-suace-chicken-burger-3000px-2.1-1536x1536.png.webp"
+          alt="burger">
+        <p class="d9">Chicken breast fried to perfection - topped with cheese, lettuce, tomato,&choice of signature
+          sauce.</p>
+        <div class="cart">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1">14$</button>
         </div>
-       
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc10" onclick="increase(this)">+</button>
         <span id="q10" class="q">0</span>
         <button class="dec10" onclick="decrease(this)">-</button>
         <p class="n1">THE ORIGINAL BEEF BURGER</p>
-        <img width="350px" height="350px" src="photo/burger-and-sauce-beef-burger-3000px2-1-1536x1536.png.webp" alt="burger">
-        <p class="d10">Handmade beef burger , beef patty topped with cheece, lettuce, tomato, onions , & choice of sauce.</p>
-        <div  class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+        <img width="350px" height="350px" src="photo/burger-and-sauce-beef-burger-3000px2-1-1536x1536.png.webp"
+          alt="burger">
+        <p class="d10">Handmade beef burger , beef patty topped with cheece, lettuce, tomato, onions , & choice of
+          sauce.</p>
+        <div class="cart">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1"> 10$</button>
         </div>
-       
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc11" onclick="increase(this)">+</button>
         <span id="q11" class="q">0</span>
         <button class="dec11" onclick="decrease(this)">-</button>
         <p class="n1">THE FIERY LGEND BURGER</p>
-        <img width="350px" height="350" src="photo/burger-and-sauce-fiery-Legend-3000px-2-3-1536x1536.png.webp"alt="burger">
+        <img width="350px" height="350" src="photo/burger-and-sauce-fiery-Legend-3000px-2-3-1536x1536.png.webp"
+          alt="burger">
         <p class="d11">meet our host chicken burger, topped with cheese, jalpenos and fiery saucs.</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1" onclick>13$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc12" onclick="increase(this)">+</button>
         <span id="q12" class="q">0</span>
         <button class="dec12" onclick="decrease(this)">-</button>
         <p class="n1">THE BEEF NACHO MELT BURGER</p>
-        <img width="350px" height="350px" src="photo/burger-and-sauce-beef-nacho-3000px-2-1-1536x1536.png.webp" alt="burger">
+        <img width="350px" height="350px" src="photo/burger-and-sauce-beef-nacho-3000px-2-1-1536x1536.png.webp"
+          alt="burger">
         <p class="d12">Our uniqe beef patty, with cheese sauce, jalapenos,Nachos and classic sauce,</p>
         <div class="cart">
-          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
-          <button class="p1" > 18$</button>
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
+          <button class="p1"> 18$</button>
         </div>
-        
-    </div>
-    <div class="ph1">
+
+      </div>
+      <div class="ph1">
         <button class="inc13" onclick="increase(this)">+</button>
-        <span class="q" >0</span>
-        <span id="q13"class="q" >0</span>
+        <span class="q">0</span>
+        <span id="q13" class="q">0</span>
         <button class="dec13" onclick="decrease(this)">-</button>
         <p class="n1">ANGUS BEEF STACK BURGER </p>
         <img width="350px" height="350px" src="photo/angus-beef-stack-3000px-1536x1536.png.webp" alt="burger">
-        <p class="d13">Beef patty topped with double cheese, pickles, lettuce, tomato, carmelised onions, &classic sauce.</p>
+        <p class="d13">Beef patty topped with double cheese, pickles, lettuce, tomato, carmelised onions, &classic
+          sauce.</p>
         <div class="cart">
-          <img class="c"  src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"height="60px"  onclick="save(this)">
+          <img class="c" src="photo/8eafc8bdb1dada986f0c0605fcd166c3-removebg-preview (2).png" width="60px"
+            height="60px" onclick="save(this)">
           <button class="p1"> 23$</button>
         </div>
-        
-    </div>   
-</div>
-</div>
-<!-- <button class="b" onclick="Go(this)">ORDER NOW </button> -->
 
-<script src="js/pimp.js"></script>
+      </div>
+    </div>
+  </div>
+  <!-- <button class="b" onclick="Go(this)">ORDER NOW </button> -->
 
-<!--light-->
+  <script src="js/pimp.js"></script>
 
-<!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
-    <!-- <div id="orderlist"></div> -->
-<!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+  <!--light-->
+
+  <!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
+  <!-- <div id="orderlist"></div> -->
+  <!-- <img src="photo/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
     <div id="orderlist"></div> -->
 
-<div class="topp">
+  <div class="topp">
     <div class="title">
       <span data-aos="fade-up">
-        <h1 class="welc" >
+        <h1 class="welc">
           NO Sugar
           <br>
           &nbsp; &nbsp; &nbsp;NO Worries
@@ -257,32 +289,32 @@
       </h2>
     </div>
     <div class="info">
-        <div class="typewriter">
-          <span data-aos="fade-up" >
-            At our restaurant, your health matters just as much as the flavor That's why we've created this special
-            section for our diabetic quests to help you enjoy our meals safely and deliciously.
-          </span>
+      <div class="typewriter">
+        <span data-aos="fade-up">
+          At our restaurant, your health matters just as much as the flavor That's why we've created this special
+          section for our diabetic quests to help you enjoy our meals safely and deliciously.
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--end of welcometosection-->
+  <div id="light-side">
+    <div class="container">
+      <div class="card">
+        <div class="counter">
+          <button class="increase-btn">+</button>
+          <span class="count">0</span>
+          <button class="decrease-btn">-</button>
         </div>
+        <h1 class="s">AVOCADO EGG BURGER</h1>
+        <img src="photo/light-side/m1-transparent.png" alt="Avocado egg burger" />
+        <p class="description">A healthy twist with avocado replacing the bun, topped with a perfectly boiled egg. A
+          light,nutritious, and flavorful option that’s as satisfying as it is wholesome.</p>
+        <button class="flip-btn" onclick="order(this)">
+          <span class="front">12.50$</span>
+          <span class="back">ORDER!</span>
+        </button>
       </div>
-    </div>
-     <!--end of welcometosection-->
-<div id="light-side">
-  <div class="container">
-    <div class="card">
-      <div class="counter">
-        <button class="increase-btn">+</button>
-        <span class="count">0</span>
-        <button class="decrease-btn">-</button>
-      </div>
-      <h1 class="s">AVOCADO EGG BURGER</h1>
-      <img src="photo/light-side/m1-transparent.png" alt="Avocado egg burger" />
-      <p class="description">A healthy twist with avocado replacing the bun, topped with a perfectly boiled egg. A
-        light,nutritious, and flavorful option that’s as satisfying as it is wholesome.</p>
-      <button class="flip-btn" onclick="order(this)">
-        <span class="front">12.50$</span>
-        <span class="back">ORDER!</span>
-      </button>
-    </div>
       <div class="card">
         <div class="counter">
           <button class="increase-btn">+</button>
@@ -291,7 +323,8 @@
         </div>
         <h1 class="s">LETTUCE WRAP DELIGHT</h1>
         <img src="photo/light-side/m2-transparent.png" alt="LETTUCE WRAP DELIGHT" />
-        <p class="description">Fresh, crisp lettuce wraps a tender piece of chicken, with juicy tomatoes and cool cucumber
+        <p class="description">Fresh, crisp lettuce wraps a tender piece of chicken, with juicy tomatoes and cool
+          cucumber
           tucked
           inside. A light, refreshing, and flavorful bite that’s both healthy and satisfying.</p>
         <button class="flip-btn" onclick="order(this)">
@@ -307,10 +340,11 @@
         </div>
         <h1 class="s">GARDEN-CHICKEN PLATE</h1>
         <img src="photo/light-side/m3-transparent.png" alt="Low carb chicken burger" />
-        <p class="description">Grilled chicken breast on a bed of rice, topped with fresh zucchini, tomatoes, andcucumber.
+        <p class="description">Grilled chicken breast on a bed of rice, topped with fresh zucchini, tomatoes,
+          andcucumber.
           A light, wholesome dish full of flavor.</p>
         <button class="flip-btn" onclick="order(this)">
-        
+
           <span class="front">12.00$</span>
           <span class="back">ORDER!</span>
         </button>
@@ -325,7 +359,7 @@
         <img src="photo/light-side/M6.png" alt="Chaffle Burger" />
         <p class="description">A cheesy chaffle swap for the bun—low-carb, high flavor. A guilt-free bite that hits the
           spot</p>
-          <button class="flip-btn" onclick="order(this)">
+        <button class="flip-btn" onclick="order(this)">
           <span class="front">9.50$</span>
           <span class="back">ORDER!</span>
         </button>
@@ -340,7 +374,7 @@
         <img src="photo/light-side/img5.png" alt="Whole Grain Bun" />
         <p class="description">A soft whole grain bun with a juicy patty, crisp lettuce, ripe tomatoes, and creamy
           avocado—healthy, hearty, and totally satisfying.</p>
-          <button class="flip-btn" onclick="order(this)">
+        <button class="flip-btn" onclick="order(this)">
           <span class="front">8.00$</span>
           <span class="back">ORDER!</span>
         </button>
@@ -353,9 +387,10 @@
         </div>
         <h1 class="s">BAKED POTATO</h1>
         <img src="photo/light-side/M8.png" alt="Baked Potato" />
-        <p class="description">A perfectly baked potato, golden and fluffy, topped with fresh herbs and a dollop of creamy
+        <p class="description">A perfectly baked potato, golden and fluffy, topped with fresh herbs and a dollop of
+          creamy
           yogurt—simple, nutritious, and satisfying.</p>
-          <button class="flip-btn" onclick="order(this)">
+        <button class="flip-btn" onclick="order(this)">
           <span class="front">3.50$</span>
           <span class="back">ORDER!</span>
         </button>
@@ -402,11 +437,11 @@
           <span class="back">ORDER!</span>
         </button>
       </div>
+    </div>
+    <button class="back" onclick="Go(this)">ORDER NOW </button>
   </div>
-  <button class="back" onclick="Go(this)">ORDER NOW </button>
-</div>
 
- <script src="js/pimp.js"></script>
+  <script src="js/pimp.js"></script>
 
   <script src="js/menuu.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -414,5 +449,6 @@
     AOS.init();
   </script>
 
-</body>
+  </body>
+
 </html>
