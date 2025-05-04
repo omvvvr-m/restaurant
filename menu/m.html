@@ -1,141 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta char set="utf-8">
-    <title></title>
-    <link rel="stylesheet"href="mm.css">
-<!---------------------navbar --------------------->
-<link rel="stylesheet" href="../Navbar/navbar-style.css" />
-<script>
-  fetch('../Navbar/navbar.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-    });
-</script>
-<!---------------------navbar --------------------->
 
-</div>
-</nav>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"rel="stylesheet">
-    </head>
-    <body>
-    <div id="navbar"></div>
-     <h1 class="tittle">offers</h1>
-     <div class="offer_containers">
-         <div class="offer_card">
-            <h3 class="offer_tittle">The Crunch Combo </h3>
-            <img src="image 3/pngtree-delicious-cheesy-chicken-bu(2).png" alt="burger"class="offer_img">
-            <h4 class="content"> The chicken buster sandwich with crispy fries and bold, Smooth dipping sauce !</h4>
-            <p class="offer_price">
+<head>
+   <meta char set="utf-8">
+   <title></title>
+   <link rel="stylesheet" href="mm.css">
+   <!---------------------navbar --------------------->
+   <script>
+      fetch('../Navbar/navbar.html')
+         .then(res => res.text())
+         .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+
+            const script = document.createElement('script');
+            script.src = '../Navbar/login.js';
+            document.body.appendChild(script);
+         });
+   </script>
+   <!---------------------navbar --------------------->
+
+   </div>
+   </nav>
+   <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="navbar"></div>
+   <h1 class="tittle">offers</h1>
+   <div class="offer_containers">
+      <div class="offer_card">
+         <h3 class="offer_tittle">The Crunch Combo </h3>
+         <img src="image 3/pngtree-delicious-cheesy-chicken-bu(2).png" alt="burger" class="offer_img">
+         <h4 class="content"> The chicken buster sandwich with crispy fries and bold, Smooth dipping sauce !</h4>
+         <p class="offer_price">
             <dev class="price">limited</dev>
             <span class="old">50$</span>
             <span class="new">45$ </span>
-            </p>
-            <div class="counter">
+         </p>
+         <div class="counter">
             <button class="btm1">-</button>
             <span class="count">0</span>
             <button class="btm2">+</button>
-            </div>
          </div>
-        
-        
-         <div class="offer_card">
-             <h3 class="offer_tittle">Big Bite Box</h3>
-            <img src="image 3/set-different-burgers-with-french-fries-glass-beer-burger-with-chicken-beef-smoked-pork_135427-9145-removebg-preview.png" alt="burger"class="offer2_img">
-             <h4 class="content">Bacon mashroom,The original chicken burger,Angos beef stack. Bold,Crispy,Perfect for sharing!</h4>
-             <p class="offer_price">
-             <dev class="price">limited</dev>
-             <span class="old">95$</span>
-             <span class="new">90$ </span>
-             </p>
-             <div class="counter">
-             <button class="btm1">-</button>
-             <span class="count">0</span>
-             <button class="btm2">+</button>
-            </div>
-                  
-         </div>  
+      </div>
 
 
-         <div class="offer_card">
-             <h3 class="offer_tittle">Chick Mode</h3>
-            <img src="image 3/download (1).png" alt="burger"class="offer3_img">
-            <h4 class="content">The Atlanic cod & cola & fries , double the bites , double the flavor!</h4>
-            <p class="offer_price">
+      <div class="offer_card">
+         <h3 class="offer_tittle">Big Bite Box</h3>
+         <img
+            src="image 3/set-different-burgers-with-french-fries-glass-beer-burger-with-chicken-beef-smoked-pork_135427-9145-removebg-preview.png"
+            alt="burger" class="offer2_img">
+         <h4 class="content">Bacon mashroom,The original chicken burger,Angos beef stack. Bold,Crispy,Perfect for
+            sharing!</h4>
+         <p class="offer_price">
+            <dev class="price">limited</dev>
+            <span class="old">95$</span>
+            <span class="new">90$ </span>
+         </p>
+         <div class="counter">
+            <button class="btm1">-</button>
+            <span class="count">0</span>
+            <button class="btm2">+</button>
+         </div>
+
+      </div>
+
+
+      <div class="offer_card">
+         <h3 class="offer_tittle">Chick Mode</h3>
+         <img src="image 3/download (1).png" alt="burger" class="offer3_img">
+         <h4 class="content">The Atlanic cod & cola & fries , double the bites , double the flavor!</h4>
+         <p class="offer_price">
             <dev class="price">limited</dev>
             <span class="old">70$</span>
             <span class="new">65$ </span>
-            </p>
-            <div class="counter">
-            <button  class="btm1">-</button>
+         </p>
+         <div class="counter">
+            <button class="btm1">-</button>
             <span class="count">0</span>
             <button class="btm2">+</button>
-            </div>
          </div>
+      </div>
 
 
 
-         <div class="offer_card">
-            <h3 class="offer_tittle">The crispy Attack </h3>
-            <img src="image 3/pngtree-cheeseburger-french-fries-chicken-nuggets-and-cola-on-a-.png" alt="burger"class="offer4_img">
-            <h4 class="content">Get ready for crunch explosion! <br>The fiery lgned burger with crispy fries & cola  </h4>
-            <p class="offer_price">
+      <div class="offer_card">
+         <h3 class="offer_tittle">The crispy Attack </h3>
+         <img src="image 3/pngtree-cheeseburger-french-fries-chicken-nuggets-and-cola-on-a-.png" alt="burger"
+            class="offer4_img">
+         <h4 class="content">Get ready for crunch explosion! <br>The fiery lgned burger with crispy fries & cola </h4>
+         <p class="offer_price">
             <dev class="price">limited</dev>
             <span class="old">73$</span>
             <span class="new">70$ </span>
-            </p>
-            <div class="counter">
-            <button  class="btm1">-</button>
+         </p>
+         <div class="counter">
+            <button class="btm1">-</button>
             <span class="count">0</span>
             <button class="btm2">+</button>
-           </div>
          </div>
-         
-         
-         <div class="offer_card">
-            <h3 class="offer_tittle">Burger Blast </h3>
-            <img src="image 3/download (2).png" alt="burger"class="offer5_img">
-            <h4 class="content"> Activated Flavor Mode two juicy Festive burger ,crispy fries and a drink to cool it down !</h4>
-            <p class="offer_price">
+      </div>
+
+
+      <div class="offer_card">
+         <h3 class="offer_tittle">Burger Blast </h3>
+         <img src="image 3/download (2).png" alt="burger" class="offer5_img">
+         <h4 class="content"> Activated Flavor Mode two juicy Festive burger ,crispy fries and a drink to cool it down !
+         </h4>
+         <p class="offer_price">
             <dev class="price">limited</dev>
             <span class="old">100$</span>
             <span class="new">97$ </span>
-            </p>
-            <div class="counter">
-            <button  class="btm1">-</button>
+         </p>
+         <div class="counter">
+            <button class="btm1">-</button>
             <span class="count">0</span>
             <button class="btm2">+</button>
-                                  
-            </div>
+
          </div>
+      </div>
 
 
-         <div class="offer_card">
-            <h3 class="offer_tittle">Beef Slam</h3>
-            <img src="image 3/download (3).png" alt="burger"class="offer6_img">
-            <h4 class="content">Perfect Smash of flavor , one big burger with juicy beef , melted cheese & cola & fries!</h4>
-            <p class="offer_price">
+      <div class="offer_card">
+         <h3 class="offer_tittle">Beef Slam</h3>
+         <img src="image 3/download (3).png" alt="burger" class="offer6_img">
+         <h4 class="content">Perfect Smash of flavor , one big burger with juicy beef , melted cheese & cola & fries!
+         </h4>
+         <p class="offer_price">
             <dev class="price">limited</dev>
             <span class="old">55$</span>
             <span class="new">50$ </span>
-            </p>
-            <div class="counter">
-            <button  class="btm1">-</button>
+         </p>
+         <div class="counter">
+            <button class="btm1">-</button>
             <span class="count">0</span>
             <button class="btm2">+</button>
-                                   
-            </div>
-            </div>
 
-         
          </div>
-          <button class="offer_btn">order now</button>
+      </div>
 
 
-         <script src="script.js"></script>    
+   </div>
+   <button class="offer_btn">order now</button>
 
-    </body>
+
+   <script src="script.js"></script>
+
+</body>
+
 </html>
-
-

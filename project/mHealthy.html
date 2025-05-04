@@ -19,6 +19,10 @@
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar').innerHTML = data;
+
+        const script = document.createElement('script');
+        script.src = '../Navbar/login.js';
+        document.body.appendChild(script);
       });
   </script>
   <!-------------------- NAVBAR LINES-------------------->
