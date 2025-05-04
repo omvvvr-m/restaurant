@@ -220,13 +220,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <p>quantity: ${order.q1}</p>
         `;
         listdiv.appendChild(orderitems);
+      
       } else {
-        listdiv.innerHTML = "<p>NO DATA</p>";
+        // listdiv.innerHTML = "<p>NO DATA</p>";
       }
     } else {
-      listdiv.innerHTML = "<p>UNAVILABLE!</p>";
+      // listdiv.innerHTML = "<p>UNAVILABLE!</p>";
     }
-  });
+   });
   
   function cleanorder() {
     localStorage.removeItem("order");
