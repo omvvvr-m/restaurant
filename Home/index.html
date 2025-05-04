@@ -2,7 +2,23 @@
 <html lang="en">
 
 <head>
+
     <script src="home.js" defer></script>
+
+
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../Navbar/login.js';
+                document.body.appendChild(script);
+            });
+    </script>
+    <!-- <script src="../Navbar/login.js" defer></script> -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -13,16 +29,7 @@
         rel="stylesheet">
     <title>BUN & BLAZE</title>
 
-    <link rel="stylesheet" href="../Navbar/navbar-style.css" />
-    <script>
-        fetch('../Navbar/navbar.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            });
-    </script>
 
-    <script src="../Navbar/login.js" defer></script>
 
 </head>
 
@@ -30,6 +37,7 @@
 
     <img src="/imgs/palastine.png" alt="free-palastine" class="palastine">
     <div id="navbar"></div>
+    <link rel="stylesheet" href="../Navbar/navbar-style.css" />
     <!-- <div class="nav-container">
         <nav class="navbar">
             <a class="logo" id="home" href="index.html">
@@ -359,6 +367,7 @@
             </div>
         </div>
     </footer>
+
 
 
 </body>

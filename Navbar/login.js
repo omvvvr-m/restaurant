@@ -1,114 +1,113 @@
-let isLoggedIn = false;
+const loginForm = document.querySelector('.login-handler form');
+const registerForm = document.querySelector('.register-handler form');
+const emailInput = document.getElementById('Email');
+const passwordInput = document.getElementById('Password');
+const firstNameInput = document.getElementById('FirstName');
+const lastNameInput = document.getElementById('LastName');
+const emailRegInput = document.getElementById('EmailReg');
+const passwordRegInput = document.getElementById('PasswordReg');
+const confirmPasswordInput = document.getElementById('confirmPassword');
+const loginModal = document.getElementById('loginModal');
+const registerModal = document.getElementById('registerModal');
 
-const btn = document.getElementById("submitLogin");
-if (btn) {
-
-    btn.addEventListener("click", () => {
-        console.log("hello world");
-
-    });
+if (!emailInput) {
+  console.error('emailInput not found!');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.querySelector('.login-handler form');
-  const registerForm = document.querySelector('.register-handler form');
-  const emailInput = document.getElementById('Email');
-  const passwordInput = document.getElementById('Password');
-  const firstNameInput = document.getElementById('FirstName');
-  const lastNameInput = document.getElementById('LastName');
-  const emailRegInput = document.getElementById('EmailReg');
-  const passwordRegInput = document.getElementById('PasswordReg');
-  const confirmPasswordInput = document.getElementById('confirmPassword');
-  const loginModal = document.getElementById('loginModal');
-  const registerModal = document.getElementById('registerModal');
+// Original code with sessionStorage check
+if (sessionStorage.getItem('isLoggedIn') == "true") {
+  console.log("Hiding");
+  loginModal.style.display = 'none';
+} else {
+  console.log("Showing");
+  loginModal.style.display = 'flex';
+}
+function showWelcomeMessage(userData) {
+  // const welcomeMessage = document.createElement('div');
+  // welcomeMessage.classList.add('welcome-message');
+  // welcomeMessage.innerHTML = `<h2>Welcome back, ${userData.firstName}!</h2>`;
+  // document.body.appendChild(welcomeMessage);
+}
 
-  // welcome message and hide form
+// register new user
 
-  function showWelcomeMessage(userData) {
-    const welcomeMessage = document.createElement('div');
-    welcomeMessage.classList.add('welcome-message');
-    welcomeMessage.innerHTML = `<h2>Welcome back, ${userData.firstName}!</h2>`;
-    document.body.appendChild(welcomeMessage);
-    loginModal.style.display = 'none';
-    registerModal.style.display = 'none';
+function registerUser(firstName, lastName, email, password) {
+  if (localStorage.getItem(email)) {
+    alert('Email already exists!');
+    return;
   }
 
-  // register new user
+  const userData = {
+    firstName,
+    lastName,
+    email,
+    password
+  };
 
-  function registerUser(firstName, lastName, email, password) {
-    if (localStorage.getItem(email)) {
-      alert('Email already exists!');
-      return;
-    }
+  localStorage.setItem(email, JSON.stringify(userData));
+  alert('Registration successful! You can now login.');
+  registerModal.style.display = 'none';
+  loginModal.style.display = 'flex';
+}
 
-    const userData = {
-      firstName,
-      lastName,
-      email,
-      password
-    };
+//login existing user
 
-    localStorage.setItem(email, JSON.stringify(userData));
-    alert('Registration successful! You can now login.');
-    registerModal.style.display = 'none';
-    loginModal.style.display = 'flex';
+function loginUser(email, password) {
+  if (!localStorage.getItem(email)) {
+    alert('Email does not exist!');
+    return;
   }
 
-  //login existing user
+  const storedData = JSON.parse(localStorage.getItem(email));
 
-  function loginUser(email, password) {
-    if (!localStorage.getItem(email)) {
-      alert('Email does not exist!');
-      return;
-    }
-
-    const storedData = JSON.parse(localStorage.getItem(email));
-
-    if (storedData.password !== password) {
-      alert('Incorrect password!');
-      return;
-    }
-
-    sessionStorage.setItem('isLoggedIn', 'true');
-    sessionStorage.setItem('currentUser', email);
-
-    showWelcomeMessage(storedData);
+  if (storedData.password !== password) {
+    alert('Incorrect password!');
+    return;
   }
 
-  // Check if the user is already logged in
+  sessionStorage.setItem('isLoggedIn', 'true');
+  sessionStorage.setItem('currentUser', email);
+  registerModal.style.display = 'none';
+  loginModal.style.display = 'none';
 
-  const isLoggedIn = sessionStorage.getItem('isLoggedIn');
-  const currentUserEmail = sessionStorage.getItem('currentUser');
+  // showWelcomeMessage(storedData);
+}
 
-  if (isLoggedIn) {
-    const currentUserData = JSON.parse(sessionStorage.getItem(currentUserEmail));
-    showWelcomeMessage(currentUserData);
+// Check if the user is already logged in
+
+const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+const currentUserEmail = sessionStorage.getItem('currentUser');
+
+if (isLoggedIn) {
+  const currentUserData = JSON.parse(sessionStorage.getItem(currentUserEmail));
+  showWelcomeMessage(currentUserData);
+
+}
+
+// Register
+
+registerForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+  const email = emailRegInput.value.trim();
+  const password = passwordRegInput.value;
+  const confirmPassword = confirmPasswordInput.value;
+
+  if (password !== confirmPassword) {
+    alert('Passwords do not match!');
+    return;
   }
-
-  // Register
-
-  registerForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const firstName = firstNameInput.value.trim();
-    const lastName = lastNameInput.value.trim();
-    const email = emailRegInput.value.trim();
-    const password = passwordRegInput.value;
-    const confirmPassword = confirmPasswordInput.value;
-
-    if (password !== confirmPassword) {
-      alert('Passwords do not match!');
-      return;
-    }
-    registerUser(firstName, lastName, email, password);
-  });
+  registerUser(firstName, lastName, email, password);
+});
 
 // LOGIN
 
-  loginForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
-    loginUser(email, password);
-  });
-});
+loginForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  console.log("Clickled!");
+  const email = emailInput.value.trim();
+  const password = passwordInput.value;
+  loginUser(email, password);
 
+});
