@@ -86,7 +86,7 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
       const orderstring=
         encodeURIComponent(JSON.stringify(orders));
-       window.location.href=`order.html?data=${orderstring}`;
+       window.location.href=`../order/order.html?data=${orderstring}`;
 
 
       });

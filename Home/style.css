@@ -637,7 +637,6 @@ body {
 }
 
 .lscard .card-description {
-
     color: var(--primary-color);
     font-size: 20px;
     margin: 0px;
@@ -646,7 +645,6 @@ body {
     align-items: center;
     text-align: center;
     margin-top: -60px;
-
 }
 
 
