@@ -45,7 +45,7 @@ function closePrivacyPolicy() {
 
 const menu_btt = document.querySelector('.menu-button')
 menu_btt.addEventListener('mouseenter', () => {
-    menu_btt.textContent = 'EXPLORE NOW!';
+    menu_btt.textContent = 'EXPLORE NOW !';
 });
 menu_btt.addEventListener('mouseleave', () => {
     menu_btt.textContent = 'FULL MENU';
@@ -54,7 +54,7 @@ menu_btt.addEventListener('mouseleave', () => {
 
 const order_btt = document.querySelector('.order-button')
 order_btt.addEventListener('mouseenter', () => {
-    order_btt.textContent = 'PLACE ORDER!';
+    order_btt.textContent = 'PLACE ORDER !';
 });
 order_btt.addEventListener('mouseleave', () => {
     order_btt.textContent = 'ORDER NOW';

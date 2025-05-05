@@ -729,33 +729,96 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    /* gap: 25px; */
+    gap: 100px;
 
 }
 
 .finalcard {
-    border: 2px dashed var(--primary-color);
-    width: 309px;
-    height: 450px;
+    position: relative;
+    outline: 2px dashed var(--primary-color);
+    /* width: 309px; */
+    width: 900px;
+    height: 500px;
     /* background-image: url(/imgs/menuback.jpeg); */
-    background-image: url(/imgs/Fresh\ Burger.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: var(--main-radius);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.finalcard:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .order-card {
+    background-image: url(/imgs/burger4.jpg);
+    
+}
+
+.menu-card {
+    background-image: url(/imgs/burger5.jpg);
+    
 }
 
 .final-title {
-    color: var(--text-color);
+    position: absolute;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 50px;
+    top: 10px;
+    left: 10px;
+    color: var(--background-color);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    margin: 0px;
+    opacity: 0.9;
+
 }
 
 .final-ls {
-    color: var(--text-color);
+    position: absolute;
+    text-align: left;
+    margin: 0px;
+    top: 160px;
+    left: -25px;
+    color: var(--background-color);
+    font-weight: bolder;
+    font-size: 24px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    list-style: none;
+}
+
+.final-ls li {
+    margin-bottom: 20px;
+    opacity: 0.6;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.final-ls li:hover {
+    opacity: 1;
+}
+
+.final-ls li::before {
+    content: "- ";
 }
 
 .final-btt {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Oswald';
+    width: 210px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: var(--main-radius);
+    border: none;
 
 }
 
