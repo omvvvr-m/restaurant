@@ -1,6 +1,14 @@
-body {
+/* body {
     transition: backgroung-color 0.5s, color 0.5s;
+} */
+
+body,html{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
+
 
 .header {
     background-color: #eabb76;
@@ -517,29 +525,4 @@ h3 {
     transform: scale(1.2);
     transition-duration: 1s;
     transition-delay: 0.2s;
-}
-
-
-
-#successMessage {
-    margin-top: 20px;
-    padding: 20px;
-    border: 2px solid #4CAF50;
-    background-color: #DFF2BF;
-    color: #4CAF50;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.checkpara {
-    display: none;
-    font-size: 30px;
-}
-
-
-* {
-
-    padding: 0px;
-    margin: 0px;
 }

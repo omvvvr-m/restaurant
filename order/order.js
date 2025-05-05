@@ -40,40 +40,41 @@ else if (!payment) {
     return  ;
 }
 
-else if (payment.value === "visa") {
-    let cardNumber = document.getElementById("Card Number").value.trim();
-    let expiry = document.getElementById("Expiry Date").value.trim();
-    let cvv = document.getElementById("cvv").value.trim();
-    let cardName = document.getElementById("card-name").value.trim();
+    else if (payment.value === "visa") {
+      let cardNumber = document.getElementById("Card Number").value.trim();
+      let expiry = document.getElementById("Expiry Date").value.trim();
+      let cvv = document.getElementById("cvv").value.trim();
+      let cardName = document.getElementById("card-name").value.trim();
    // let isvalid=true;
 
-    if (cardNumber === "" || cardNumber.length != 16) {
-    alert("Card number must be 16 digits.");
-    return  ;
-}
+          if (cardNumber === "" || cardNumber.length != 16) {
+              alert("Card number must be 16 digits.");
+              return  ;}
 
-else if (expiry === "") {
-    alert("Please select the expiry date.");
-    return  ;
-}
 
-else if (cvv === "" || (cvv.length != 3 && cvv.length != 4)) {
-    alert("CVV must be 3 or 4 digits.");
-    return  ;
-}
+          else if (expiry === "") {
+              alert("Please select the expiry date.");
+              return  ;}
 
-else if (cardName === "") {
-    alert("Please enter the card holder's name.");
-    return;
-} 
-else {
-    alert("order confirmed");
-    return;
-}
-}
+
+          else if (cvv === "" || (cvv.length != 3 && cvv.length != 4)) {
+                alert("CVV must be 3 or 4 digits.");
+                return  ;}
+
+
+          else if (cardName === "") {
+          alert("Please enter the card holder's name.");
+          return;}
+
+          else {
+                alert("order confirmed");
+                document.getElementById("OrderForm").submit();
+                return;}
+                                        }
 
 else{
     alert("order confirmed");
+    document.getElementById("OrderForm").submit();
     return;
 }
 
