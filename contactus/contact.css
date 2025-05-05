@@ -169,3 +169,18 @@ table {
    a{
     text-decoration: none;
    }  
+   a:hover {
+       color: rgb(255, 174, 0)
+   }
+   
+.resphoto{
+  justify-content: space-around;
+
+  display: flex;
+  margin-top:50px;
+  margin-left:410px;
+  font-weight: 800;
+  
+
+  
+}
