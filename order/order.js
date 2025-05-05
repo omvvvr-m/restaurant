@@ -235,29 +235,9 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.removeItem("neworder");
     document.getElementById("orderlist").innerHTML = "";
   }
-//------------offer-------//
 
-/*window.addEventListener("DOMContentloaded",function(){
-  let meals=
-    localStorage.getItem("meals");
 
-  if(meals){
-    let meals =
-    JSON.parse(meals);
-    let container=
-    document.getElementById("orderlist");
-     meals.forEach(function(meal){
-      let div=
-      document.createElement("div");
-       div.textcontent=`meal:${meal.name} | quantity:${meal.quantity}`;
-       container.appendchild(div);
 
-     });
-
-  }else{
-    console.log("un defiened");
-  }
-});*/
 //-----------offer-----------------//
 window.addEventListener("DOMContentLoaded",function(){
 const querystring=
