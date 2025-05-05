@@ -1,12 +1,14 @@
-
-
-
-
-
-
-body {
+/* body {
     transition: backgroung-color 0.5s, color 0.5s;
+} */
+
+body,html{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
+
 
 .header {
     background-color: #eabb76;
@@ -43,16 +45,9 @@ body {
     font-size: 55px;
     font-weight: bold;
     font-family: "Merienda", cursive;
-    /* color: ; */
     text-shadow: 5px 5px 5px #251d14;
     margin-top: 150PX;
-    /* font-family: "Merienda", cursive; */
 }
-
-/* h1 {} */
-
-/* h2 {} */
-
 .order-form {
     background-color: #f5deb8;
     padding: 90px;
@@ -83,7 +78,6 @@ body {
 
 h3 {
     font-family: "Merienda", cursive;
-    /* font-family: "Oswald", sans-serif ; */
     color: #443627;
     font-size: 35px;
 }
@@ -101,8 +95,6 @@ h3 {
     color: #524130;
 }
 
-/* #name{} */
-
 
 .input-name {
     position: relative;
@@ -118,7 +110,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -153,7 +144,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -171,8 +161,6 @@ h3 {
     align-items: center;
 }
 
-/* #governorate {} */
-
 .input-governorate {
     position: relative;
     width: 300px;
@@ -187,7 +175,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -223,7 +210,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 15%;
     left: 10px;
@@ -280,8 +266,6 @@ h3 {
     display: none;
 }
 
-/* #CardNumber {} */
-
 .input-cardnumber {
     position: relative;
     width: 300px;
@@ -296,7 +280,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -314,9 +297,6 @@ h3 {
     align-items: center;
 }
 
-
-/* #ExpiryDate {} */
-
 .input-date {
     position: relative;
     width: 300px;
@@ -331,7 +311,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -349,8 +328,6 @@ h3 {
     align-items: center;
 }
 
-/* #cvv {} */
-
 .input-cvv {
     position: relative;
     width: 300px;
@@ -365,7 +342,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -383,8 +359,6 @@ h3 {
     align-items: center;
 }
 
-/* #card-name {} */
-
 .input-cardname {
     position: relative;
     width: 300px;
@@ -399,7 +373,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -458,8 +431,6 @@ h3 {
 
 }
 
-/* .notes {} */
-
 .notes {
     text-align: center;
     color: #443627;
@@ -494,7 +465,6 @@ h3 {
     width: 24px;
     height: 24px;
     pointer-events: none;
-    /* transform: translateY(-50%);  */
     margin-bottom: 2px;
     top: 10%;
     left: 20px;
@@ -511,8 +481,6 @@ h3 {
     box-sizing: border-box;
     align-items: center;
 }
-
-/* .summary {} */
 
 .buttons {
     display: flex;
@@ -557,29 +525,4 @@ h3 {
     transform: scale(1.2);
     transition-duration: 1s;
     transition-delay: 0.2s;
-}
-
-
-
-#successMessage {
-    margin-top: 20px;
-    padding: 20px;
-    border: 2px solid #4CAF50;
-    background-color: #DFF2BF;
-    color: #4CAF50;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.checkpara {
-    display: none;
-    font-size: 30px;
-}
-
-
-* {
-
-    padding: 0px;
-    margin: 0px;
 }

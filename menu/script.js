@@ -19,52 +19,31 @@ document.querySelectorAll('.btm2').forEach((button) => {
   });
 
 
-  //----------------order----------------//
+  
+    //----------------------------order------------------------------------//
 
   window.addEventListener("DOMContentLoaded",function(){
-    let cards=
-    document.querySelectorAll(".offer_card");
-    cards.forEach(function(card){
-      let tittle=
-      card.querySelector(".offer_tittle");
-      let count =
-      card.querySelector(".count");
-      console.log("Meal:",tittle.innerText)
-      console.log("quantity:",count.value);
-
-        });
-
-      let orderbtn=
+    const orderbutton=
       document.querySelector(".offer_btn");
-      orderbtn.addEventListener("click",function() {
-        let selectmeals =[];
-        cards.forEach(function(card){
-          let tittle=
-          card.querySelector(".offer_tittle");
-          let count =
-          card.querySelector(".count");
-          
-          let qty=
-          parseInt(count.value);   
-          if(qty>0){
-            selectmeals.push({
-              name:tittle.innerText,
-              quantity:qty
-            });
-          }
+      orderbutton.addEventListener("click",function(){
+        const alloffers=
+        document.querySelectorAll(".offer_card");
+       const orders=[];
+       alloffers.forEach(offer=>{
+        const name=offer.querySelector(".offer_tittle").textContent;
+        const quantity=offer.querySelector(".count").textContent;
+        const price=offer.querySelector(".new").textContent;
+        if(parseInt(quantity)>0){
 
+          orders.push({name ,quantity,price});
 
-        });
-        localStorage.setItem("meals",JSON.stringify(selectmeals));
-        
-            JSON.parse(localStorage.getItem("meals"))
-        window.location.href="../order/order.html";
+        }
+      });
+
+      const orderstring=
+        encodeURIComponent(JSON.stringify(orders));
+       window.location.href=`../order/order.html?data=${orderstring}`;
 
 
       });
-
-    });
- 
- 
-  
-  
+  });
