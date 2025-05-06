@@ -1,13 +1,8 @@
-
-
-
-
-
+//validation
 
 document.getElementById("confirm").addEventListener("click", function(event) 
 {
-  event.preventDefault(); // Stop form from submitting
-
+  event.preventDefault();  
 let name = document.getElementById("name").value.trim();
 let phone = document.getElementById("num").value.trim();
 let gov = document.querySelector('input[list="governorate"]').value.trim();
@@ -45,7 +40,6 @@ else if (!payment) {
       let expiry = document.getElementById("Expiry Date").value.trim();
       let cvv = document.getElementById("cvv").value.trim();
       let cardName = document.getElementById("card-name").value.trim();
-   // let isvalid=true;
 
           if (cardNumber === "" || cardNumber.length != 16) {
               alert("Card number must be 16 digits.");
@@ -67,14 +61,15 @@ else if (!payment) {
           return;}
 
           else {
+            document.getElementById("OrderForm").submit();
                 alert("order confirmed");
-                document.getElementById("OrderForm").submit();
+              
                 return;}
                                         }
 
 else{
+  document.getElementById("OrderForm").submit();
     alert("order confirmed");
-    document.getElementById("OrderForm").submit();
     return;
 }
 
@@ -110,91 +105,9 @@ resetBtn.onclick=function(){
 }
 
 
-//local storage
-// let orders =JSON.parse(localStorage.getItem("order"));
-// let light =JSON.parse(localStorage.getItem("order"));
-// let listdiv=document.getElementById("orderlist");
-// if (orders) {
-//     let orderitems=document.createElement("div");
-//     orderitems.innerHTML=` <h4>Meal : ${orders.name} </h4>
-//     <p>Price : ${orders.price}</p>
-//      <p>quantity : ${orders.quantity}</p> ;  `   
-//      listdiv.appendChild(orderitems) ;
-// //  console.log(JSON.parse(localStorage.getItem("order")));
-//  // console.log(localStorage.getItem("neworder"));
-//     //  let listdiv=document.getElementById("orderlist");
 
 
-//  function cleanorder (){
-//      // let clearbtn=document.getElementById("clean");
-//      localStorage.removeItem("order");
-//      document.getElementById("orderlist").innerHTML=" ";
-//      // alert("deleted");
-//  }
-
-// }
-//  let orders =JSON.parse(localStorage.getItem("neworder"));
-//  console.log(JSON.parse(localStorage.getItem("neworder")));
-//  // console.log(localStorage.getItem("neworder"));
-//      let listdiv=document.getElementById("orderlist");
-//      let orderitems=document.createElement("div");
-//      orderitems.innerHTML=` <h4>Meal : ${orders.name} </h4>
-//                  <p>Price : ${orders.price}</p>
-//                  <p>quantity : ${orders.quantity}</p>   `   
-//      listdiv.appendChild(orderitems)                                 
-//  ;
-
-//  ;
-//  function cleanorder (){
-//      // let clearbtn=document.getElementById("clean");
-//      localStorage.removeItem("order");
-//      document.getElementById("orderlist").innerHTML=" ";
-//      // alert("deleted");
-//  }
-
- // local light
-// else if (light) {
-
-//     let lightitems=document.createElement("div");
-//      lightitems.innerHTML=` <h4>Meal : ${light.m1} </h4>
-//                  <p>Price : ${light.p1}</p>
-//                  <p>quantity : ${light.q1}</p>   `   
-//      listdiv.appendChild(lightitems)                                 
-//  ;
-//  console.log(JSON.parse(localStorage.getItem("order")));
-//  // console.log(localStorage.getItem("neworder"));
-//     //  let listcard=document.getElementById("orderlist");
-
-
-//  ;
-//  function cleanorder (){
-    //  let clearbtn=document.getElementById("clean");
-    //  localStorage.removeItem("order");
-    //  document.getElementById("orderlist").innerHTML=" ";
-     // alert("deleted");
-//  }
-
-// function cleanorder (){
-//      // let clearbtn=document.getElementById("clean");
-//       localStorage.removeItem("order");
-//       document.getElementById("orderlist").innerHTML=" ";
-//      // alert("deleted");
-// }
-
-
-
-//  function cleanorder (){
-     // let clearbtn=document.getElementById("clean");
-    //  localStorage.removeItem("order");
-    //  document.getElementById("orderlist").innerHTML=" ";
-     // alert("deleted");
-//      // let clearbtn=document.getElementById("clean");
-//      localStorage.removeItem("order");
-//      document.getElementById("orderlist").innerHTML=" ";
-//      // alert("deleted");
-//  }
-
-
+//storage
 
 document.addEventListener('DOMContentLoaded', function() {
     let listdiv = document.getElementById("orderlist");
@@ -228,15 +141,13 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       // listdiv.innerHTML = "<p>UNAVILABLE!</p>";
     }
-   });
+  });
   
   function cleanorder() {
     localStorage.removeItem("order");
     localStorage.removeItem("neworder");
     document.getElementById("orderlist").innerHTML = "";
   }
-
-
 
 //-----------offer-----------------//
 window.addEventListener("DOMContentLoaded",function(){
