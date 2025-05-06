@@ -47,3 +47,35 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
       });
   });
+  //--------------compare-------------------//
+  const comparebtns=
+  document.querySelectorAll('.compare-btn');
+  const overlay=
+  document.querySelector('.compare-overlay');
+  const modal=
+  document.querySelector('compare-modal');
+  
+  let selectmeals=[];
+
+  comparebtns.forEach(btn=>
+  {
+    btn.addEventListener('click',()=> {
+      const meal={
+        name:btn.dataset.name,
+        price:btn.dataset.price,
+        calories:btn.dataset.calories
+      };
+      const exist=
+       selectmeals.some(m=>m.name===meal.name);
+      if(exist)return;
+
+      selectmeals.push(meal);
+      if(selectmeals.length===2){
+        overlay.style.display='block';
+        modal.style.display='block';
+        filltabledata();
+      }
+
+      
+    });
+  });
