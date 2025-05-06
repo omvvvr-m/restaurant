@@ -354,3 +354,6 @@ body {
 .btm1 {
     padding: 2px 8px;
 }
+.hidden{
+    display:none;
+}

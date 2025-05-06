@@ -53,7 +53,7 @@ document.querySelectorAll('.btm2').forEach((button) => {
   const overlay=
   document.querySelector('.compare-overlay');
   const modal=
-  document.querySelector('compare-modal');
+  document.querySelector('.compare-modal');
   
   let selectmeals=[];
 
@@ -78,4 +78,16 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
       
     });
+  });
+  /*-------close---------*/
+  const closebtn=
+  document.querySelector(".close-btn");
+  const comparisonbox=
+  document.querySelector(".compare-modal");
+  const compareoverlay=
+  document.querySelector(".compare-overlay");
+  closebtn.addEventListener("click",()=>{
+    comparisonbox.classList.add("hidden");
+    compareoverlay.classList.add("hidden");
+
   });
