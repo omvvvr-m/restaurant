@@ -1,10 +1,16 @@
 body {
   background-color: #dee3ac;
-  font-family: Arial, sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+
+.page-tittle {
+  font-family: "dancing script";
+  font-size: 80px;
+  font-weight: 2000;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0a0101;
 }
 
 .card {
@@ -30,8 +36,9 @@ body {
   display: block;
   object-fit: cover;
 }
-.card h1 {
-  font-family: "sofia";
+.card h2 {
+  font-family: "dancing script";
+  font-size: 40px;
   margin: 10px 0 5px;
   color: #010001;
 }
@@ -64,7 +71,7 @@ button {
   opacity: 4;
   transform: translateY(0);
 }
-.card:hover h1,
+.card:hover h2,
 .card:hover p,
 .card:hover .price {
   color: #f2f1ed;
