@@ -43,6 +43,7 @@ function closePrivacyPolicy() {
     element.style.display = "none";
 }
 
+/* ============================== Section Divider ==========================  */
 const menu_btt = document.querySelector('.menu-button')
 menu_btt.addEventListener('mouseenter', () => {
     menu_btt.textContent = 'EXPLORE NOW !';
@@ -60,6 +61,20 @@ order_btt.addEventListener('mouseleave', () => {
     order_btt.textContent = 'ORDER NOW';
 });
 
+window.addEventListener('scroll', () =>{
+    const cards = document.querySelectorAll('.order-card , .menu-card');
+    cards.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('visible');
+        
+        } else {
+            el.classList.remove('visible');
+        }
+        
+
+    });
+});
 
 
-// 
+
