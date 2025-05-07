@@ -26,8 +26,8 @@ body{
 
 
 
-    width: 1350px;
-    height: 500px;
+    width: 1903px;
+    height: 700px;
     overflow: hidden;
     
     
@@ -43,6 +43,7 @@ body{
     width: 100%;
     height: auto;
     display: none;
+        
   }
 
 
@@ -53,7 +54,7 @@ body{
   .buttons {
     display: flex;
     gap: 20px;
-    margin-left: 630px;
+    margin-left: 900px;
     color: black;
   }
 
