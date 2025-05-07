@@ -24,16 +24,21 @@
 <div id="navbar"></div>
                         
 
-<div class="carousel">
-  <img src="/imgs/1st.png" class="active" alt="1">
-  <img src="/imgs/3rd.png" alt="2">
-  <img src="/imgs/2nd.png" alt="3">
-</div>
 
-      
-  <div class="buttons">
-    <button id="prev" disabled> ⬅</button>
-    <button id="next" disabled> ⮕ </button>
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="slide"><img src="/imgs/1st.png" alt="1"></div>
+        <div class="slide"><img src=" /imgs/3rd.png"alt="2"></div>
+        <div class="slide"><img src="/imgs/2nd.png " alt="3"></div>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button id="prevBtn" disabled> ⬅</button>
+      <button id="nextBtn" disabled> ⮕ </button>
+    </div>
+    
+
   </div>
 
 <div class="story">
@@ -172,53 +177,61 @@
     </section>
     <script>
 
-const images = document.querySelectorAll('.carousel img');
-    const nextBtn = document.getElementById('next');
-    const prevBtn = document.getElementById('prev');
-    let index = 0;
-    let canClick = false;
+        
+const track = document.getElementById('carouselTrack');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-    function showImage(newIndex) {
-      images[index].classList.remove('active');
-      index = (newIndex + images.length) % images.length;
-      images[index].classList.add('active');}
+let index = 0;
+let canClick = false;
 
-    function enableButtonsAfterDelay() {
-      canClick = false;
-      nextBtn.disabled = true;
-      prevBtn.disabled = true;
-      setTimeout(() => {
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
 
-        canClick = true;
-        nextBtn.disabled = false;
-        prevBtn.disabled = false;
-      }, 3000);
-    }
-    function autoSlide() {
-      showImage(index + 1);
-      enableButtonsAfterDelay();
-    }
+function enableButtonsAfterDelay() {
+  canClick = false;
+  prevBtn.disabled = true;
+  nextBtn.disabled = true;
 
-   let interval= setInterval(autoSlide, 3000);
+  setTimeout(() => {
+    canClick = true;
+    prevBtn.disabled = false;
+    nextBtn.disabled = false;
+  }, 3000);
+}
+
+function autoSlide() {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+  enableButtonsAfterDelay();
+}
+
+let interval = setInterval(autoSlide, 3000);
+enableButtonsAfterDelay();
+
+nextBtn.addEventListener('click', () => {
+  if (canClick) {
+    clearInterval(interval);
+    index = (index + 1) % slides.length;
+    updateCarousel();
     enableButtonsAfterDelay();
+    interval = setInterval(autoSlide, 3000);
+  }
+});
 
-    nextBtn.addEventListener('click', () => {
-      if (canClick) {
-        clearInterval(interval);
-        showImage(index + 1);
-        enableButtonsAfterDelay();
-        interval = setInterval(autoSlide, 3000);
-      }
-    });
+prevBtn.addEventListener('click', () => {
+  if (canClick) {
+    clearInterval(interval);
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+    enableButtonsAfterDelay();
+    interval = setInterval(autoSlide, 3000);
+  }
+});
 
-    prevBtn.addEventListener('click', () => {
-      if (canClick) {
-        clearInterval(interval);
-        showImage(index - 1);
-        enableButtonsAfterDelay();
-        interval = setInterval(autoSlide, 3000);
-      }
-    });
+      
 
 
 
