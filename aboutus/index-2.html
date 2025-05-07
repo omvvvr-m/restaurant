@@ -1,290 +1,335 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
 
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-       
-       <link rel="stylesheet" href="style.css"/>    
-          <title>About us - Buns&Blaze</title>
-          <link rel=" stylesheet" href="../Navbar/navbar-style.css">
-          <script>
-            fetch('../Navbar/navbar.html')
-              .then(res => res.text())
-              .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-              });
-              </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css" />
+  <title>About us - Buns&Blaze</title>
+  <link rel=" stylesheet" href="../Navbar/navbar-style.css">
+  <script>
+    fetch('../Navbar/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+
+        const script = document.createElement('script');
+        script.src = '../Navbar/login.js';
+        document.body.appendChild(script);
+      });
+  </script>
 </head>
+
 <body class="contaier">
-<div id="navbar"></div>
-                        
+  <div id="navbar"></div>
 
 
-    <div class="carousel-container">
-      <div class="carousel-track" id="carouselTrack">
-        <div class="slide"><img src="/imgs/1st.png" alt="1"></div>
-        <div class="slide"><img src=" /imgs/3rd.png"alt="2"></div>
-        <div class="slide"><img src="/imgs/2nd.png " alt="3"></div>
-      </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="slide"><img src="/imgs/2nd.png " alt="3"></div> <!-- ^^ Added this (Duplication of the last one)-->
+      <div class="slide"><img src="/imgs/1st.png" alt="1"></div>
+      <div class="slide"><img src=" /imgs/3rd.png" alt="2"></div>
+      <div class="slide"><img src="/imgs/2nd.png " alt="3"></div>
+      <div class="slide"><img src="/imgs/1st.png" alt="1"></div> <!-- ^^ Added this (Duplication of the first one)-->
     </div>
-    
-    <div class="buttons">
-      <button id="prevBtn" disabled> ⬅</button>
-      <button id="nextBtn" disabled> ⮕ </button>
-    </div>
-    
+  </div>
+
+  <div class="buttons">
+    <button id="prevBtn" disabled> ⬅</button>
+    <button id="nextBtn" disabled> ⮕ </button>
+  </div>
+
 
   </div>
 
-<div class="story">
+  <div class="story">
     <div style="flex-direction: column">
-<h1 class="merienda">About Us </h1>
-<!--<img  class="place"  src="restraunt.png" alt="puns">-->
-<p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
+      <h1 class="merienda">About Us </h1>
+      <!--<img  class="place"  src="restraunt.png" alt="puns">-->
+      <p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
         flavor revolution.
-</p>
+      </p>
 
-  <p class="pargraph"> Founded with a passion for flame-grilled perfection and handcrafted quality,
+      <p class="pargraph"> Founded with a passion for flame-grilled perfection and handcrafted quality,
         Buns & Blaze was born from the idea that every burger should be an experience.
-         Our name reflects our essence: "Buns" that are freshly baked, soft yet bold, and "Blaze" 
-         that symbolizes our signature open-flame grilling, where every patty meets fire and flavor in perfect harmony.
-</p>     
+        Our name reflects our essence: "Buns" that are freshly baked, soft yet bold, and "Blaze"
+        that symbolizes our signature open-flame grilling, where every patty meets fire and flavor in perfect harmony.
+      </p>
 
 
-<p class="pargraph">We’re proud to be among the first restaurants in New York City to offer 100% halal certified meat a mission we pursued with dedication and purpose. In a city as diverse as NYC, we recognized the need for a burger experience that’s not only bold and unforgettable, but also inclusive and accessible to everyone.
-</p>
-<p class="pargraph">
-       From locally sourced ingredients to innovative recipes that push the boundaries of tradition, our mission is simple to deliver burgers that are memorable, mouthwatering, and made with uncompromising quality.
-   
-</p>
-<p class="pargraph"> Whether you're here for a quick bite or a shared moment with friends, Buns & Blaze is where good food meets good fire and everyone is welcome at the table.
-</p>
-        </div>
-    <img src="istockphoto-2044524147-612x612.jpg" class="teamImg"/>
-</div>
+      <p class="pargraph">We’re proud to be among the first restaurants in New York City to offer 100% halal certified
+        meat a mission we pursued with dedication and purpose. In a city as diverse as NYC, we recognized the need for a
+        burger experience that’s not only bold and unforgettable, but also inclusive and accessible to everyone.
+      </p>
+      <p class="pargraph">
+        From locally sourced ingredients to innovative recipes that push the boundaries of tradition, our mission is
+        simple to deliver burgers that are memorable, mouthwatering, and made with uncompromising quality.
 
-    
-    
-    
-    
-    
-    <section class="story">
-        <div style="flex-direction: column">
-<h1 class="merienda">Our Vision  </h1>
-<!--<img  class="place"  src="restraunt.png" alt="puns">-->
-<p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
+      </p>
+      <p class="pargraph"> Whether you're here for a quick bite or a shared moment with friends, Buns & Blaze is where
+        good food meets good fire and everyone is welcome at the table.
+      </p>
+    </div>
+    <img src="istockphoto-2044524147-612x612.jpg" class="teamImg" />
+  </div>
+
+
+
+
+
+
+  <section class="story">
+    <div style="flex-direction: column">
+      <h1 class="merienda">Our Vision </h1>
+      <!--<img  class="place"  src="restraunt.png" alt="puns">-->
+      <p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
         flavor revolution.
-</p>
+      </p>
 
-  <p class="pargraph"> Founded with a passion for flame-grilled perfection and handcrafted quality,
+      <p class="pargraph"> Founded with a passion for flame-grilled perfection and handcrafted quality,
         Buns & Blaze was born from the idea that every burger should be an experience.
-         Our name reflects our essence: "Buns" that are freshly baked, soft yet bold, and "Blaze" 
-         that symbolizes our signature open-flame grilling, where every patty meets fire and flavor in perfect harmony.
-</p>     
+        Our name reflects our essence: "Buns" that are freshly baked, soft yet bold, and "Blaze"
+        that symbolizes our signature open-flame grilling, where every patty meets fire and flavor in perfect harmony.
+      </p>
 
 
-<p class="pargraph">We’re proud to be among the first restaurants in New York City to offer 100% halal certified meat✅✅ a mission we pursued with dedication and purpose. In a city as diverse as NYC, we recognized the need for a burger experience that’s not only bold and unforgettable, but also inclusive and accessible to everyone.
-</p>
-<p class="pargraph">
-       From locally sourced ingredients to innovative recipes that push the boundaries of tradition, our mission is simple to deliver burgers that are memorable, mouthwatering, and made with uncompromising quality.
-   
-</p>
-<p class="pargraph"> Whether you're here for a quick bite or a shared moment with friends, Buns & Blaze is where good food meets good fire and everyone is welcome at the table.
-</p>
-            </div>
- <img src="istockphoto-2198128344-612x612.jpg" class="teamImg"/>
-</section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     <section class="story2">
-<h1 class="merienda">See More   </h1>
-<!--<img  class="place"  src="restraunt.png" alt="puns">-->
-<p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
-        flavor revolution.
-</p>
+      <p class="pargraph">We’re proud to be among the first restaurants in New York City to offer 100% halal certified
+        meat✅✅ a mission we pursued with dedication and purpose. In a city as diverse as NYC, we recognized the need for
+        a burger experience that’s not only bold and unforgettable, but also inclusive and accessible to everyone.
+      </p>
+      <p class="pargraph">
+        From locally sourced ingredients to innovative recipes that push the boundaries of tradition, our mission is
+        simple to deliver burgers that are memorable, mouthwatering, and made with uncompromising quality.
 
- <iframe width="700" height="315" class="myVideo"
- src="https://www.youtube.com/embed/V5w1OGknhlc?si=X_AulFujJ8dwDL87 " >
-</iframe>
+      </p>
+      <p class="pargraph"> Whether you're here for a quick bite or a shared moment with friends, Buns & Blaze is where
+        good food meets good fire and everyone is welcome at the table.
+      </p>
+    </div>
+    <img src="istockphoto-2198128344-612x612.jpg" class="teamImg" />
+  </section>
 
 
-</section>
-    
-    
-    
 
-<h2 class="merienda">What our customers say ??</h2>
-       <section class="counter">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="story2">
+    <h1 class="merienda">See More </h1>
+    <!--<img  class="place"  src="restraunt.png" alt="puns">-->
+    <p class="pargraph">At Buns & Blaze, we're not just serving burgers we're igniting a
+      flavor revolution.
+    </p>
+
+    <iframe width="700" height="315" class="myVideo"
+      src="https://www.youtube.com/embed/V5w1OGknhlc?si=X_AulFujJ8dwDL87 ">
+    </iframe>
+
+
+  </section>
+
+
+
+
+  <h2 class="merienda">What our customers say ??</h2>
+  <section class="counter">
     <div class="review">
-        <h3>Mohammed Kareem</h3>
+      <h3>Mohammed Kareem</h3>
 
-        <div class="star"> ★★★★☆</div>
-        
-        <p class="pargraph">Buns & Blaze is not just food, it’s an experience. I always leave full and happy😍😍.highly recommend the spicy flame burger💯 </p>
-    </div >
-        <h3>Lela H.</h3>
-        <div class="star"> ★★★★★</div>
+      <div class="star"> ★★★★☆</div>
 
-    <p class="pargraph">I love how fresh everything tastes😋. The buns are soft, the grill marks on the patty are perfect, and the sauces wow!</p>
+      <p class="pargraph">Buns & Blaze is not just food, it’s an experience. I always leave full and happy😍😍.highly
+        recommend the spicy flame burger💯 </p>
+    </div>
+    <h3>Lela H.</h3>
+    <div class="star"> ★★★★★</div>
+
+    <p class="pargraph">I love how fresh everything tastes😋. The buns are soft, the grill marks on the patty are
+      perfect, and the sauces wow!</p>
 
 
     <h3>Mostafa.E</h3>
     <div class="star"> ★★★☆☆</div>
-    <p class="pargraph">Finally, a place in NYC with halal burgers🙏🙏 that taste incredible. Super friendly staff and the vibe is amazing. 10/10!</p>
-<h3>John</h3>
-     <div class="star">  ★★★☆☆</div>
-     <p class="pargraph">          I absolutely love eating at Buns and Blaze! The food is always fresh, delicious, and full of flavor. 
-      The atmosphere is cozy and the staff are super friendly💖💖 . It's definitely my top choice whenever I'm craving a good meal!
-</p>
+    <p class="pargraph">Finally, a place in NYC with halal burgers🙏🙏 that taste incredible. Super friendly staff and
+      the vibe is amazing. 10/10!</p>
+    <h3>John</h3>
+    <div class="star"> ★★★☆☆</div>
+    <p class="pargraph"> I absolutely love eating at Buns and Blaze! The food is always fresh, delicious, and full of
+      flavor.
+      The atmosphere is cozy and the staff are super friendly💖💖 . It's definitely my top choice whenever I'm craving a
+      good meal!
+    </p>
     <section class="review-section">
-<!--       <imsg class="photo4"  src="C:\Users\hesha\Downloads\ن.png">-->
-       <h2>Review Us</h2>
-       <div class="stars">
-       <span class="stary" data-value="1">&#9733;</span>
-       <span class="stary" data-value="2">&#9733;</span>
-       <span class="stary" data-value="3">&#9733;</span>
-       <span class="stary" data-value="4">&#9733;</span>
-       <span class="stary" data-value="5">&#9733;</span>
+      <!--       <imsg class="photo4"  src="C:\Users\hesha\Downloads\ن.png">-->
+      <h2>Review Us</h2>
+      <div class="stars">
+        <!-- ^^ duplicated the first 1 to the end and the last to the beginning -->
+        <span class="stary" data-value="1">&#9733;</span>
+        <span class="stary" data-value="2">&#9733;</span>
+        <span class="stary" data-value="3">&#9733;</span>
+        <span class="stary" data-value="4">&#9733;</span>
+        <span class="stary" data-value="5">&#9733;</span>
 
-     </div>
+      </div>
 
-       <textarea id="reviewInput" placeholder="write your comment"></textarea><br>
-       <button class="click" onclick="submitReview()">Submit</button>
-   
-       <div class="submitted-reviews" id="reviewList">
-              <!-- Reviews will appear here -->
-       </div>
+      <textarea id="reviewInput" placeholder="write your comment"></textarea><br>
+      <button class="click" onclick="submitReview()">Submit</button>
+
+      <div class="submitted-reviews" id="reviewList">
+        <!-- Reviews will appear here -->
+      </div>
     </section>
     <script>
 
-        
-const track = document.getElementById('carouselTrack');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
 
-let index = 0;
-let canClick = false;
+      const track = document.getElementById('carouselTrack');
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
 
-function updateCarousel() {
-  track.style.transform = `translateX(-${index * 100}%)`;
-}
+      let index = 0;
+      let canClick = false;
+      // let animate = false;
+      console.log("Index is: " + index.toString());
+      function updateCarousel(animate = true) {
+        if (!animate) {
+          track.style.transition = 'none'; // ^^ disable animation for jump
+        } else {
+          track.style.transition = 'transform 1s ease-in-out'; // ^^ normal slide if not jumping
+        }
+        console.log("Index is: " + index.toString());
 
-function enableButtonsAfterDelay() {
-  canClick = false;
-  prevBtn.disabled = true;
-  nextBtn.disabled = true;
-
-  setTimeout(() => {
-    canClick = true;
-    prevBtn.disabled = false;
-    nextBtn.disabled = false;
-  }, 3000);
-}
-
-function autoSlide() {
-  index = (index + 1) % slides.length;
-  updateCarousel();
-  enableButtonsAfterDelay();
-}
-
-let interval = setInterval(autoSlide, 3000);
-enableButtonsAfterDelay();
-
-nextBtn.addEventListener('click', () => {
-  if (canClick) {
-    clearInterval(interval);
-    index = (index + 1) % slides.length;
-    updateCarousel();
-    enableButtonsAfterDelay();
-    interval = setInterval(autoSlide, 3000);
-  }
-});
-
-prevBtn.addEventListener('click', () => {
-  if (canClick) {
-    clearInterval(interval);
-    index = (index - 1 + slides.length) % slides.length;
-    updateCarousel();
-    enableButtonsAfterDelay();
-    interval = setInterval(autoSlide, 3000);
-  }
-});
-
-      
-
-
-
-       function submitReview() {
-         const input = document.getElementById('reviewInput');
-const reviewText=input .value .trim() ; 
-if (reviewText) {
-        const reviewList = document.getElementById('reviewList');
-        const newReview = document.createElement('div');
-        newReview.className = 'review-item';
-        newReview.textContent = reviewText;
-        reviewList.prepend(newReview); // Add to top
-        input.value = ''; // Clear the input
-      } else {
-       alert("Please write something before submitting.");
+        track.style.transform = `translateX(-${index * 100}%)`;
       }
-    }
-    let selectedRating = 0;
-const stars = document.querySelectorAll('.stary');
 
-stars.forEach(stary => {
-  stary.addEventListener('click', function () {
-    selectedRating = parseInt(this.getAttribute('data-value'));
-    stars.forEach(s => {
-      const val = parseInt(s.getAttribute('data-value'));
-      s.classList.toggle('selected', val <= selectedRating);
-    });
-  });
-});
+      track.addEventListener('transitionend', () => {
+        if (index === 0) {
+          index = slides.length - 2; // ^^ jump to real last slide (in case pressed the buttons)
+          updateCarousel(false);
+        }
+        if (index === slides.length - 1) {
+          index = 1; // ^^ jump to real first slide
+          updateCarousel(false);
+        }
+      });
+      function autoSlide() {
+        index++;
+        updateCarousel();
+        enableButtonsAfterDelay();
+      }
+
+      function enableButtonsAfterDelay() {
+        canClick = false;
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+
+        setTimeout(() => {
+          canClick = true;
+          prevBtn.disabled = false;
+          nextBtn.disabled = false;
+        }, 3000);
+      }
+
+
+
+      let interval = setInterval(autoSlide, 3000);
+      enableButtonsAfterDelay();
+
+      nextBtn.addEventListener('click', () => {
+        if (canClick) {
+          clearInterval(interval);
+          index = (index + 1) % slides.length;
+          updateCarousel();
+          enableButtonsAfterDelay();
+          interval = setInterval(autoSlide, 3000);
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (canClick) {
+          clearInterval(interval);
+          index = (index - 1 + slides.length) % slides.length;
+          updateCarousel();
+          enableButtonsAfterDelay();
+          interval = setInterval(autoSlide, 3000);
+        }
+      });
 
 
 
 
-  </script>
+
+      function submitReview() {
+        const input = document.getElementById('reviewInput');
+        const reviewText = input.value.trim();
+        if (reviewText) {
+          const reviewList = document.getElementById('reviewList');
+          const newReview = document.createElement('div');
+          newReview.className = 'review-item';
+          newReview.textContent = reviewText;
+          reviewList.prepend(newReview); // Add to top
+          input.value = ''; // Clear the input
+        } else {
+          alert("Please write something before submitting.");
+        }
+      }
+      let selectedRating = 0;
+      const stars = document.querySelectorAll('.stary');
+
+      stars.forEach(stary => {
+        stary.addEventListener('click', function () {
+          selectedRating = parseInt(this.getAttribute('data-value'));
+          stars.forEach(s => {
+            const val = parseInt(s.getAttribute('data-value'));
+            s.classList.toggle('selected', val <= selectedRating);
+          });
+        });
+      });
 
 
 
-    
+
+    </script>
+
+
+
+
     <hr />
-       </section>
-       <h2 class="ii"> Our accomplishemnt</h2>
-       
-       
-       <p class="pargraph">
-        "We are honored to have received official certification in recognition of our commitment to the highest standards of food quality✔️ , safety✔️ , and service✔️ . This accomplishment reflects the dedication of our entire team to delivering an exceptional dining experience. We remain committed to
-         maintaining these standards as we continue to serve our valued customers."</p>
-<img class="photo4"  src="../imgs/imgs.png">
-<img class="photo5"  src="../imgs/imgs..png">
-<img class="photo6" src="../imgs/imgs...png">
+  </section>
+  <h2 class="ii"> Our accomplishemnt</h2>
+
+
+  <p class="pargraph">
+    "We are honored to have received official certification in recognition of our commitment to the highest standards of
+    food quality✔️ , safety✔️ , and service✔️ . This accomplishment reflects the dedication of our entire team to
+    delivering an exceptional dining experience. We remain committed to
+    maintaining these standards as we continue to serve our valued customers."</p>
+  <img class="photo4" src="../imgs/imgs.png">
+  <img class="photo5" src="../imgs/imgs..png">
+  <img class="photo6" src="../imgs/imgs...png">
 </body>
 
 
-    
+
 
 </body>
-</html>       
+
+</html>
