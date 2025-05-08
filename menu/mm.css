@@ -87,7 +87,6 @@ body {
 
 }
 .compare-table th{
-    background-color: ;
     padding:10px;
     text-align:center;
     font-weight: bold;
@@ -105,7 +104,7 @@ body {
 
 }
 .close-btn{
-    position: absolute;/*يتحرك بالنسبة للصندوق*/
+    position: absolute;
     top:10px;
     right: 10px;
     background-color: none;
@@ -141,7 +140,6 @@ body {
     margin: 19px;
     background-color: transparent;
     overflow: hidden;
-    /*الصورة متطلعش برة*/
     width: 400px;
     border-radius: 50px;
     align-items: center;
@@ -204,7 +202,6 @@ body {
     position: relative;
     display: flex;
     gap: 35px;
-    margin: ;
     justify-content: center;
     border-radius: 20px;
     background-color: rgb(232, 128, 16);
@@ -340,7 +337,6 @@ body {
 }
 
 .counter button {
-    font-size: ;
     color: white;
     background-color: #0b0b0b;
     cursor: pointer;
@@ -353,7 +349,4 @@ body {
 
 .btm1 {
     padding: 2px 8px;
-}
-.hidden{
-    display:none;
 }

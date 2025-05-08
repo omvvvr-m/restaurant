@@ -63,7 +63,8 @@ document.querySelectorAll('.btm2').forEach((button) => {
       const meal={
         name:btn.dataset.name,
         price:btn.dataset.price,
-        calories:btn.dataset.calories
+        calories:btn.dataset.calories,
+        rating:btn.dataset.rating
       };
       const exist=
        selectmeals.some(m=>m.name===meal.name);
@@ -79,6 +80,21 @@ document.querySelectorAll('.btm2').forEach((button) => {
       
     });
   });
+
+  function filltabledata() {
+    const meal1 = selectmeals[0];
+    const meal2 = selectmeals[1];
+  
+    document.getElementById("meal1-name").innerText = meal1.name;
+    document.getElementById("meal1-price").innerText = meal1.price;
+    document.getElementById("meal1-calories").innerText = meal1.calories;
+    document.getElementById("meal1-rating").innerText = meal1.rating;
+  
+    document.getElementById("meal2-name").innerText = meal2.name;
+    document.getElementById("meal2-price").innerText = meal2.price;
+    document.getElementById("meal2-calories").innerText = meal2.calories;
+    document.getElementById("meal2-rating").innerText = meal2.rating;
+  }
   /*-------close---------*/
   const closebtn=
   document.querySelector(".close-btn");
@@ -87,7 +103,8 @@ document.querySelectorAll('.btm2').forEach((button) => {
   const compareoverlay=
   document.querySelector(".compare-overlay");
   closebtn.addEventListener("click",()=>{
-    comparisonbox.classList.add("hidden");
-    compareoverlay.classList.add("hidden");
+    comparisonbox.style.display = 'none';
+    compareoverlay.style.display = 'none';
+    selectmeals = []
 
   });
