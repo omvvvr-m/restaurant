@@ -140,6 +140,33 @@
 
 /* ***************************** LOG IN HANDLING ***************************** */
 
+.quit-login {
+
+    display: flex;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    left: 96%;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    border-radius: var(--main-radius);
+}
+
+.quit-login:hover {
+
+    cursor: pointer;
+    transform: scale(1.3);
+    background-color: rgb(255, 115, 0);
+}
+
 .horizontal-container {
     position: relative;
     flex-direction: row;
@@ -245,7 +272,7 @@
     margin-left: 70px;
 }
 
-.ag {
+.Agreement {
     width: 600px;
     height: 70px;
     display: block;
