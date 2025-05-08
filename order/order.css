@@ -363,7 +363,7 @@ h3 {
 }
 
 #orderlist {
-    font-family: 'Oswald'
+    font-family: 'Oswald';
         display: flex;
     justify-content: center;
     align-items: center;
