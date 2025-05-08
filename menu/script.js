@@ -1,7 +1,9 @@
 document.querySelectorAll('.btm2').forEach((button) => {
     button.addEventListener('click', () => {
-      const countSpan = button.closest('.offer_card').querySelector('.count');
-      let count = parseInt(countSpan.textContent);
+      const countSpan =
+       button.closest('.offer_card').querySelector('.count');
+      let count =
+       parseInt(countSpan.textContent);
       count++;
       countSpan.textContent = count;
     });
@@ -9,8 +11,10 @@ document.querySelectorAll('.btm2').forEach((button) => {
   
   document.querySelectorAll('.btm1').forEach((button) => {
     button.addEventListener('click', () => {
-      const countSpan = button.closest('.offer_card').querySelector('.count');
-      let count = parseInt(countSpan.textContent);
+      const countSpan =
+       button.closest('.offer_card').querySelector('.count');
+      let count =
+       parseInt(countSpan.textContent);
       if (count > 0) {
         count--;
         countSpan.textContent = count;
@@ -20,7 +24,7 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
 
   
-    //----------------------------order------------------------------------//
+    //------------------order------------------//
 
   window.addEventListener("DOMContentLoaded",function(){
     const orderbutton=
@@ -39,7 +43,7 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
         }
       });
-
+  
       const orderstring=
         encodeURIComponent(JSON.stringify(orders));
        window.location.href=`../order/order.html?data=${orderstring}`;
@@ -47,7 +51,9 @@ document.querySelectorAll('.btm2').forEach((button) => {
 
       });
   });
+
   //--------------compare-------------------//
+
   const comparebtns=
   document.querySelectorAll('.compare-btn');
   const overlay=
@@ -79,6 +85,8 @@ document.querySelectorAll('.btm2').forEach((button) => {
       
     });
   });
+
+
   /*-------close---------*/
   const closebtn=
   document.querySelector(".close-btn");

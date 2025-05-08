@@ -150,9 +150,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 //-----------offer-----------------//
+
 window.addEventListener("DOMContentLoaded",function(){
 const querystring=
-this.window.location.search;
+this.window.location.search; 
 const urlparams=new
 URLSearchParams(querystring);
 const data=
@@ -168,7 +169,6 @@ if(!data)
     orders.forEach((order,index)=>{
       const itemdiv=
       document.createElement("div");
-      itemdiv.classList.add("order-item");
       itemdiv.innerHTML=
       `<strong> order ${index+1}:</strong><br> 
       meal:${order.name }<br>
