@@ -73,6 +73,8 @@
     transform: scale(1.1);
 }
 
+/* Home  */
+
 .home {
     align-items: center;
     justify-content: center;
@@ -105,6 +107,10 @@
     padding: 4px;
 }
 
+/* Home */
+
+
+/* about us  */
 .about-us {
     align-items: center;
     justify-content: center;
@@ -138,6 +144,45 @@
     padding: 4px;
 }
 
+/* about us  */
+
+
+/* menu  */
+.menuu {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    z-index: 99;
+}
+
+.nav-links .menuu-sections {
+    position: absolute;
+    display: none;
+    right: -60px;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    border: #251d14;
+
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 16px;
+}
+
+
+
+.menuu:hover .menuu-sections {
+    display: flex;
+}
+
+.menuu .menuu-sections a {
+    padding: 4px;
+}
+
+/* menu  */
+
 /* ***************************** LOG IN HANDLING ***************************** */
 
 .quit-login {
@@ -163,8 +208,7 @@
 .quit-login:hover {
 
     cursor: pointer;
-    transform: scale(1.3);
-    background-color: rgb(255, 115, 0);
+    transform: scale(1.1);
 }
 
 .horizontal-container {
@@ -228,18 +272,6 @@
     top: 50px;
     left: 66px;
 }
-
-/* .login-handler p.sign-in {
-    width: 200px;
-    height: 70px;
-    display: block;
-    font-weight: 50;
-    font-size: 25px;
-    position: relative;
-    top: 500px;
-    left: 76px;
-    
-} */
 
 .login-handler p.sign-up {
     width: 200px;
