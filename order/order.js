@@ -97,17 +97,17 @@ document.addEventListener("DOMContentLoaded",function(){
 
 //reset
 
-let resetBtn=document.getElementById("reset");
-let resetNote=document.getElementById("reset-note")
-resetBtn.onclick=function(){
-    document.getElementById("OrderForm").reset();
-    resetNote.value="";
-}
+// let resetBtn=document.getElementById("reset");
+// let resetNote=document.getElementById("reset-note")
+// resetBtn.onclick=function(){
+//     document.getElementById("OrderForm").reset();
+//     resetNote.value="";
+// }
 
 
 
 
-//storage
+//menu
 
 document.addEventListener('DOMContentLoaded', function() {
     let listdiv = document.getElementById("orderlist");
