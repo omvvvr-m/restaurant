@@ -11,9 +11,12 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '../Navbar/login.js';
+                document.body.appendChild(script);
             });
     </script>
-    <!-------------------- NAVBAR LINES-------------------->
 </head>
 
 <body>
@@ -31,7 +34,7 @@
             <div class="text-container">
 
                 <h2>Our Burgers have a story to tell , <br>
-                AND It all begins with your order.</h2>
+                    AND It all begins with your order.</h2>
 
             </div>
             <!-- -------------------------------------------------- -->
@@ -42,7 +45,7 @@
     <!-- ------------------------------------------------------------section2(بيانات العميل+الدفع)----------------------------------------------------------------------------- -->
 
     <section class="order-form">
-        <form id="OrderForm" >
+        <form id="OrderForm">
             <!---------------------- بيانات العميل ---------------------->
             <div class="customer-info">
                 <h3>Order form</h3>
@@ -68,7 +71,7 @@
 
                 <div class="f">
                     <label class="font">Governorate</label>
-                    <div class="input-governorate" >
+                    <div class="input-governorate">
                         <input list="governorate" name="gov">
                         <img src="icons2/map2-13727442.png" class="icon" alt="governorate icon">
 
@@ -89,7 +92,7 @@
                             <option value="New Jersey">
                             <option value="Virginia">
                         </datalist>
-                        
+
                     </div>
 
                 </div>
@@ -103,60 +106,60 @@
                         <input id="address" type="text" name=" address" placeholder="city,street,building number">
                     </div>
                 </div>
-                        <!-- --------------------بيانات الدفع ---------------------- -->
-            <div class="payment"> 
-                <div class="payment-info">
-                    <label class="paymethod">choose payment method:</label>
-                    <div class="payment-method">
-                        <div class="gap">
-                            <input type="radio" id="cash" name="pay" value="cash"checked >
-                            <label for="cash" class="font1">Cash</label>
+                <!-- --------------------بيانات الدفع ---------------------- -->
+                <div class="payment">
+                    <div class="payment-info">
+                        <label class="paymethod">choose payment method:</label>
+                        <div class="payment-method">
+                            <div class="gap">
+                                <input type="radio" id="cash" name="pay" value="cash" checked>
+                                <label for="cash" class="font1">Cash</label>
+                            </div>
+
+                            <div class="gap">
+                                <input type="radio" id="visa" name="pay" value="visa">
+                                <label for="visa" class="font1">Visa</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ------------------------------------ -->
+                    <div id="visaForm">
+                        <div class="f">
+                            <label for="Card Number" class="font">Card Number</label>
+                            <div class="input-cardnumber">
+                                <img src="icons2/credit-card.png" class="icon" alt="credit icon">
+                                <input id="Card Number" type="tel" name="Card Name">
+                            </div>
                         </div>
 
-                        <div class="gap">
-                            <input type="radio" id="visa" name="pay" value="visa">
-                            <label for="visa" class="font1">Visa</label>
+                        <div class="f">
+                            <label for="Expiry Date" class="font">Expiry Date(MM/YY)</label>
+                            <div class="input-date">
+                                <img src="icons2/calendar-check(1).png" class="icon" alt="calender icon">
+                                <input id="Expiry Date" type="month" name="Expiry Date">
+                            </div>
+                        </div>
+
+                        <div class="f">
+                            <label for="cvv" class="font">CVV</label>
+                            <div class="input-cvv">
+                                <img src="icons2/shield-check.png" class="icon" alt="check icon">
+                                <input id="cvv" type="number" name="CVV">
+                            </div>
+                        </div>
+
+                        <div class="f">
+                            <label for="card-name" class="font">Card Holder Name </label>
+                            <div class="input-cardname">
+                                <img src="icons2/id-card.png" class="icon">
+                                <input id="card-name" type=" text" name="Card Holder Name" alt="card icon">
+                            </div>
                         </div>
 
                     </div>
                 </div>
-
-            <!-- ------------------------------------ -->
-            <div id="visaForm">
-                <div class="f">
-                    <label for="Card Number" class="font">Card Number</label>
-                    <div class="input-cardnumber">
-                        <img src="icons2/credit-card.png" class="icon" alt="credit icon">
-                        <input id="Card Number" type="tel" name="Card Name">
-                    </div>
-                </div>
-
-                <div class="f">
-                    <label for="Expiry Date" class="font">Expiry Date(MM/YY)</label>
-                    <div class="input-date">
-                        <img src="icons2/calendar-check(1).png" class="icon" alt="calender icon">
-                        <input id="Expiry Date" type="month" name="Expiry Date">
-                    </div>
-                </div>
-
-                <div class="f">
-                    <label for="cvv" class="font">CVV</label>
-                    <div class="input-cvv">
-                        <img src="icons2/shield-check.png" class="icon" alt="check icon">
-                        <input id="cvv" type="number" name="CVV">
-                    </div>
-                </div>
-
-                <div class="f">
-                    <label for="card-name" class="font">Card Holder Name </label>
-                    <div class="input-cardname">
-                        <img src="icons2/id-card.png" class="icon">
-                        <input id="card-name" type=" text" name="Card Holder Name" alt="card icon">
-                    </div>
-                </div>
-
-            </div>
-            </div>
 
 
     </section>
@@ -172,28 +175,30 @@
         </div>
 
 
-    <div class="storage"> 
-        <h3 class="summary">summary</h3>
-        <!-- <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
-            <div id="orderlist"> 
-                <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
-            <input type="hidden" class="hiddenSummmary">
+        <div class="storage">
+            <h3 class="summary">summary</h3>
+            <!-- <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
+            <div id="orderlist">
+                <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px"
+                    height="25px" id="clean" onclick="cleanorder(this)">
+                <input type="hidden" class="hiddenSummmary">
+            </div>
         </div>
-    </div>
-        
 
 
 
-    <div class="buttons">
-            
-        <button type="submit"  id="confirm">confirm order</button>
-        <button type="reset" id="reset">Reset</button>
+
+        <div class="buttons">
+
+            <button type="submit" id="confirm">confirm order</button>
+            <button type="reset" id="reset">Reset</button>
         </div>
 
     </section>
-    
+
     </form>
 
     <script src="order.js"></script>
 </body>
+
 </html>
