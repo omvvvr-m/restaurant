@@ -42,7 +42,7 @@
     <!-- ------------------------------------------------------------section2(بيانات العميل+الدفع)----------------------------------------------------------------------------- -->
 
     <section class="order-form">
-        <form id="OrderForm">
+        <form id="OrderForm" >
             <!---------------------- بيانات العميل ---------------------->
             <div class="customer-info">
                 <h3>Order form</h3>
@@ -51,7 +51,7 @@
                 <div class="f">
                     <label for="name" class="font">Name</label>
                     <DIV class="input-name">
-                        <img src="icons2/user.png" class="icon">
+                        <img src="icons2/user.png" class="icon" alt="user icon">
                         <input id="name" type="text" name="username">
                     </dIV>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="f">
                     <label for="num" class="font">Phone Number</label>
                     <div class="input-number">
-                        <img src="icons2/phone-9768623.png" class="icon">
+                        <img src="icons2/phone-9768623.png" class="icon" alt="phone icon">
                         <input id="num" type="tel" name=" number">
                     </div>
                 </div>
@@ -68,11 +68,10 @@
 
                 <div class="f">
                     <label class="font">Governorate</label>
-                    <div class="input-governorate" required>
+                    <div class="input-governorate" >
                         <input list="governorate" name="gov">
-                        <img src="icons2/map2-13727442.png" class="icon">
+                        <img src="icons2/map2-13727442.png" class="icon" alt="governorate icon">
 
-                        
                         <datalist id="governorate">
                             <option value="California">
                             <option value="Texas">
@@ -100,12 +99,12 @@
                 <div class="f">
                     <label for="address" class="font">Address</label>
                     <div class="input-address">
-                        <img src="icons2/home-heart.png" class="icon">
+                        <img src="icons2/home-heart.png" class="icon" alt="home icon">
                         <input id="address" type="text" name=" address" placeholder="city,street,building number">
                     </div>
                 </div>
                         <!-- --------------------بيانات الدفع ---------------------- -->
-                        <div class="payment"> 
+            <div class="payment"> 
                 <div class="payment-info">
                     <label class="paymethod">choose payment method:</label>
                     <div class="payment-method">
@@ -127,7 +126,7 @@
                 <div class="f">
                     <label for="Card Number" class="font">Card Number</label>
                     <div class="input-cardnumber">
-                        <img src="icons2/credit-card.png" class="icon">
+                        <img src="icons2/credit-card.png" class="icon" alt="credit icon">
                         <input id="Card Number" type="tel" name="Card Name">
                     </div>
                 </div>
@@ -135,7 +134,7 @@
                 <div class="f">
                     <label for="Expiry Date" class="font">Expiry Date(MM/YY)</label>
                     <div class="input-date">
-                        <img src="icons2/calendar-check(1).png" class="icon">
+                        <img src="icons2/calendar-check(1).png" class="icon" alt="calender icon">
                         <input id="Expiry Date" type="month" name="Expiry Date">
                     </div>
                 </div>
@@ -143,7 +142,7 @@
                 <div class="f">
                     <label for="cvv" class="font">CVV</label>
                     <div class="input-cvv">
-                        <img src="icons2/shield-check.png" class="icon">
+                        <img src="icons2/shield-check.png" class="icon" alt="check icon">
                         <input id="cvv" type="number" name="CVV">
                     </div>
                 </div>
@@ -152,7 +151,7 @@
                     <label for="card-name" class="font">Card Holder Name </label>
                     <div class="input-cardname">
                         <img src="icons2/id-card.png" class="icon">
-                        <input id="card-name" type=" text" name="Card Holder Name">
+                        <input id="card-name" type=" text" name="Card Holder Name" alt="card icon">
                     </div>
                 </div>
 
@@ -161,7 +160,6 @@
 
 
     </section>
-    </div>
 
 
     <section class="order-summary">
@@ -176,8 +174,10 @@
 
     <div class="storage"> 
         <h3 class="summary">summary</h3>
-        <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
-        <div id="orderlist">
+        <!-- <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
+            <div id="orderlist"> 
+                <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)">
+            <input type="hidden" class="hiddenSummmary">
         </div>
     </div>
         
@@ -192,16 +192,8 @@
 
     </section>
     
-
-
-
-
     </form>
-
-
-
-
-
 
     <script src="order.js"></script>
 </body>
+</html>

@@ -12,7 +12,6 @@ body,html{
 
 .header {
     background-color: #eabb76;
-    border-radius: 36px;
     box-shadow: 5px 5px 5px #e4a74c;
     margin-left: -20px;
     margin-right: -20px;
@@ -21,7 +20,6 @@ body,html{
 
 .header-content {
     display: flex;
-    border-radius: 36px;
     justify-content: space-between;
     margin: -10px;
     padding: 10px;
@@ -35,7 +33,6 @@ body,html{
 .image-container img {
     width: 800px;
     height: 800px;
-    border-radius: 36px;
     justify-content: right;
 }
 
@@ -59,7 +56,7 @@ body,html{
 
 #OrderForm {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 .customer-info {
@@ -83,11 +80,11 @@ h3 {
 }
 
 .font {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .font1 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .gap {
@@ -109,7 +106,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -117,17 +113,11 @@ h3 {
 }
 
 .input-name input {
-    font-size: 16px;
     width: 100%;
     padding-left: 40px;
     height: 40px;
     box-sizing: border-box;
     align-items: center;
-}
-
-
-#number {
-    margin-bottom: 20px;
 }
 
 .input-number {
@@ -143,7 +133,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -151,7 +140,6 @@ h3 {
 }
 
 .input-number input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -174,7 +162,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -182,7 +169,6 @@ h3 {
 }
 
 .input-governorate input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -190,10 +176,6 @@ h3 {
     height: 40px;
     box-sizing: border-box;
     align-items: center;
-}
-
-#address {
-    margin-bottom: 20px;
 }
 
 .input-address {
@@ -209,7 +191,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 15%;
     left: 10px;
@@ -217,7 +198,6 @@ h3 {
 }
 
 .input-address input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -237,7 +217,6 @@ h3 {
     flex: 1;
     padding: auto;
     text-align: center;
-    border-radius: 26px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 200px;
@@ -254,13 +233,10 @@ h3 {
     font-weight: bold;
 }
 
-.payment-method {
+.payment-method
+{
     padding-top: 20px;
 }
-
-/* #cash {display: block;} */
-
-/* #visa {display: block;} */
 
 #visaForm {
     display: none;
@@ -279,7 +255,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -287,7 +262,6 @@ h3 {
 }
 
 .input-cardnumber input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -310,7 +284,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -318,7 +291,6 @@ h3 {
 }
 
 .input-date input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -341,7 +313,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -349,7 +320,6 @@ h3 {
 }
 
 .input-cvv input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -372,7 +342,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 20%;
     left: 10px;
@@ -380,7 +349,6 @@ h3 {
 }
 
 .input-cardname input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
@@ -390,8 +358,6 @@ h3 {
     align-items: center;
 }
 
-
-
 #orderlist
 {
     display: flex;
@@ -399,7 +365,7 @@ h3 {
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-left:750px ;
+    margin-left:700px ;
     margin-bottom: 30px;
     margin-top: 8px;
     border: 2px solid #443627;
@@ -413,12 +379,6 @@ h3 {
     background-color: #f3ede4;
 }
 
-.order-summary{
-    text-align: center;
-}
-
-
-
 .order-summary {
 
     background-color: #f7e7ce;
@@ -428,6 +388,7 @@ h3 {
     box-shadow: 5px 5px 5px #f3ddb9;
     margin-left: -20px;
     margin-right: -20px;
+    text-align: center;
 
 }
 
@@ -464,7 +425,6 @@ h3 {
     position: absolute;
     width: 24px;
     height: 24px;
-    pointer-events: none;
     margin-bottom: 2px;
     top: 10%;
     left: 20px;
@@ -472,7 +432,6 @@ h3 {
 }
 
 .input-note input {
-    font-size: 16px;
     width: 100%;
     padding-left: 45px;
     padding-top: 0px;
