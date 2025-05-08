@@ -50,13 +50,11 @@
 
     <!-- ------------------------------------------------------------section2(بيانات العميل+الدفع)----------------------------------------------------------------------------- -->
 
-    <section class="order-form">
-        <form id="OrderForm">
+    <form id="OrderForm">
+        <section class="order-form">
             <!---------------------- بيانات العميل ---------------------->
             <div class="customer-info">
                 <h3>Order form</h3>
-
-
                 <div class="f">
                     <label for="name" class="font">Name</label>
                     <DIV class="input-name">
@@ -166,41 +164,36 @@
 
                     </div>
                 </div>
-
-
-    </section>
-
-
-    <section class="order-summary">
-        <div class="notes">
-            <h3 class="note">Notes</h3>
-            <div class="input-note">
-                <img src="icons2/journal-alt.png" class="icon">
-                <textarea id="reset-note" placeholder=" write your notes on order"></textarea>
             </div>
-        </div>
 
+        </section>
 
-        <div class="storage">
-            <h3 class="summary">summary</h3>
-            <!-- <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
-            <div id="orderlist">
-                <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px"
-                    height="25px" id="clean" onclick="cleanorder(this)">
-                <input type="hidden" class="hiddenSummmary">
+        <section class="order-summary">
+            <div class="notes">
+                <h3 class="note">Notes</h3>
+                <div class="input-note">
+                    <img src="icons2/journal-alt.png" class="icon">
+                    <textarea id="reset-note" placeholder=" write your notes on order"></textarea>
+                </div>
             </div>
-        </div>
 
+            <div class="storage">
+                <h3 class="summary">summary</h3>
+                <!-- <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px" height="25px" id="clean" onclick="cleanorder(this)"> -->
+                <div id="orderlist">
+                    <img src="images/trash-bin-icon-vector-graphic-element_1533082.webp" class="icon" width="25px"
+                        height="25px" id="clean" onclick="cleanorder(this)">
+                    <input type="hidden" class="hiddenSummmary">
+                </div>
+            </div>
 
+            <div class="buttons">
 
+                <button type="submit" id="confirm">Confirm</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
 
-        <div class="buttons">
-
-            <button type="submit" id="confirm">confirm order</button>
-            <button type="reset" id="reset">Reset</button>
-        </div>
-
-    </section>
+        </section>
 
     </form>
 
