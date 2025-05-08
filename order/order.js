@@ -105,15 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //reset
 
 
-const resetBtn = document.getElementById("reset");
-const resetNote = document.getElementById("reset-note");
-
-resetBtn.addEventListener("click", () => {
-  document.getElementById("OrderForm").reset();
-  resetNote.value = "";
-});
-
-
+// let resetBtn=document.getElementById("reset");
+// let resetNote=document.getElementById("reset-note")
+// resetBtn.onclick=function(){
+//     document.getElementById("OrderForm").reset();
+//     resetNote.value="";
+// }
 
 
 //menu
@@ -179,9 +176,9 @@ window.addEventListener("DOMContentLoaded", function () {
         document.createElement("div");
       itemdiv.innerHTML =
         `<strong> order ${index + 1}:</strong><br> 
-      Meal :${order.name}<br>
-      Price : ${order.price}<br>
-      Quantity : ${order.quantity}`;
+      meal:${order.name}<br>
+      price:${order.price}<br>
+      quantity:${order.quantity}`;
       orderbox.appendChild(itemdiv);
 
     });
