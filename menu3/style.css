@@ -8,38 +8,33 @@ body {
 .page-tittle {
   font-family: "dancing script";
   font-size: 80px;
-  font-weight: 2000;
   text-align: center;
-  margin-bottom: 30px;
   color: #0a0101;
 }
 
 .card {
   width: 350px;
   height: 550px;
-  background-color: rgb(248, 252, 255);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+  background-color: #dee3ac;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgb(0, 0, 0, 1);
   text-align: center;
   padding: 15px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  position: relative;
 }
 .card .counter {
-  display: none;
   position: absolute;
   left: 5px;
   top: 5px;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: 0.5s ease;
+  padding: 5px 15px;
+  opacity: 0;
 }
 
 .card:hover .counter {
-  display: flex;
   gap: 5px;
   align-items: center;
+  opacity: 1;
 }
 .card:hover {
   transform: scale(1.05);
@@ -98,55 +93,44 @@ button {
   width: 89%;
   height: 280px;
   object-fit: cover;
-  display: block;
   margin-left: 30px;
 }
 
 .card img.cake3 {
   height: 320px;
-  object-fit: cover;
-  display: block;
+ 
 }
 .card img.cake4 {
   height: 300px;
   object-fit: cover;
-  display: block;
 }
 
 .card img.cake5 {
   width: 90%;
   height: 300px;
-  object-fit: cover;
-  display: block;
+  
 }
 
 .card img.drink1 {
   width: 90%;
   height: 300px;
-  object-fit: cover;
-  display: block;
+ 
 }
 .card img.drink2 {
   width: 40%;
   height: 300px;
-  object-fit: cover;
-  display: block;
-  justify-self: center;
+ justify-self:center;
 }
 
 .card img.drink3 {
   width: 70%;
   height: 300px;
-  object-fit: cover;
-  display: block;
   justify-self: center;
 }
 .container {
   display: grid;
   grid-template-columns: auto auto auto;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 80px;
-  padding: 15px;
-  margin: 15px;
+  gap: 70px;
+  padding: 60px;
 }
