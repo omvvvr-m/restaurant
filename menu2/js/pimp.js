@@ -48,8 +48,8 @@ function save (btn){
 
 // function Go (){
 //     window.location.href= "../order/order.html"
-function Go (){
-    window.location.href= "../order/order.html"}
+// function Go (){
+//     window.location.href= "../order/order.html"}
 
 
 
