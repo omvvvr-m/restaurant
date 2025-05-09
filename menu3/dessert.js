@@ -1,4 +1,4 @@
-// زرار الطلب
+
 function order(button) {
     let c1 = button.closest(".card");
     let name = c1.querySelector("h2").textContent;
@@ -10,7 +10,6 @@ function order(button) {
     window.location.href = "../order/order.html";
   }
   
-  // أكواد زيادة ونقص الكمية
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".card").forEach(card => {
       let countSpan = card.querySelector(".count");
