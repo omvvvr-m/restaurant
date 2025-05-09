@@ -279,12 +279,6 @@ h1{
   width: 350px;
 }
 
-.search-bar i {
-  font-size: 25px;
-  left: auto;
-  
-}
-
 
 .search-bar input {
   width: 100%;
@@ -306,7 +300,7 @@ h1{
 }
 
 .search-bar button {
-  padding: 10px;
+  padding: 12px;
   background-color: #443627;
   color:#F2F6D0;
   border: none;
@@ -318,6 +312,12 @@ h1{
 .selected {
   /* background-color: red; */
   border: 2px solid orange;
+}
+
+
+.searchButton {
+  padding: 10px;
+  size: 10px;
 }
 
 
