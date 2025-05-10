@@ -22,48 +22,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Navbar/navbar-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <title>Home | Buns & Blaze</title>
-
-
-
 </head>
 
 <body>
 
     <img src="/imgs/palastine.png" alt="free-palastine" class="palastine">
     <div id="navbar"></div>
-    <!-- <div class="nav-container">
-        <nav class="navbar">
-            <a class="logo" id="home" href="index.html">
-                <img src="/imgs/logo-white.png" alt="white-logo" class="logo-img">
-
-
-            </a>
-            <ul class="nav-links">
-                <li>
-                    <div class="home">
-                        <a href="#index.html" class="home-link">HOME</a>
-                        <div class="home-sections">
-                            <a href="#why-us">WHY US</a>
-                            <a href="#chefs-choice">CHEF'S CHOICE</a>
-                            <a href="#light-side">THE LIGHT SIDE</a>
-                        </div>
-                    </div>
-
-
-                </li>
-                <li><a href="" class="offers" target="_blank">OFFERS</a></li>
-                <li><a href="" class="menu" target="_blank">MENU</a></li>
-                <li><a href="" class="order" target="_blank">ORDER</a></li>
-                <li><a href="" class="about-us" target="_blank">ABOUT US</a></li>
-            </ul>
-        </nav>
-    </div> -->
     <!-------------------------- SECTION DIVIDER ---------------------------->
     <section class="main-section">
         <div class="main-blanket">
@@ -121,7 +92,8 @@
                     Double Smash Cheeseburger – two juicy beef patties, layers of melted cheese, and bold, unbeatable
                     flavor in every bite.
                 </p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onclick="window.location.href='../menu2/pimp.html'" onmousedown=""
+                    onmouseover=changeText(this) onmouseout=resetText(this)>
                     10.99$
                 </button>
                 <div class="card-container">
@@ -139,7 +111,8 @@
                     Crafted with a succulent flaky Atlantic Cod fillet, lightly breaded and perfectly fried to a golden
                     crisp and topped with our signature in-house tartar sauce.
                 </p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onclick="window.location.href='../menu2/pimp.html'"
+                    onmouseover=changeText(this) onmouseout=resetText(this)>
                     13.99$
                 </button>
                 <div class="card-container">
@@ -156,7 +129,8 @@
                 <p class="card-description">
                     A celebration in every bite — bold, crave-worthy, and unforgettable. No wonder it’s our best-seller!
                 </p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onclick="window.location.href='../menu2/pimp.html'"
+                    onmouseover=changeText(this) onmouseout=resetText(this)>
                     14.99$
                 </button>
                 <div class="card-container">
@@ -192,7 +166,8 @@
                     A healthy twist with avocado replacing the bun, topped with a perfectly boiled egg. A light,
                     nutritious, and flavorful option that’s as satisfying as it is wholesome.
                 </p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onclick="window.location.href='../menu2/pimp.html#light-side'"
+                    onmouseover=changeText(this) onmouseout=resetText(this)>
                     13.99$
                 </button>
                 <div class="card-container">
@@ -209,7 +184,8 @@
                 <p class="card-description">
                     Fresh, crisp lettuce wraps a tender piece of chicken, with juicy tomatoes and cool cucumber tucked
                     inside. A light, refreshing, and flavorful bite that’s both healthy and satisfying. </p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onmouseover=changeText(this)
+                    onclick="window.location.href='../menu2/pimp.html#light-side'" onmouseout=resetText(this)>
                     15.99$
                 </button>
                 <div class="card-container">
@@ -226,7 +202,8 @@
                 <p class="card-description">
                     Grilled chicken breast on a bed of rice, topped with fresh zucchini, tomatoes, and cucumber. A
                     light, wholesome dish full of flavor.</p>
-                <button class="purchase" onmouseover=changeText(this) onmouseout=resetText(this)>
+                <button class="purchase" onmouseover=changeText(this)
+                    onclick="window.location.href='../menu2/pimp.html#light-side'" onmouseout=resetText(this)>
                     17.99$
                 </button>
                 <div class="card-container">
@@ -287,8 +264,8 @@
             <ul class="links">
                 <li><a href="#home">Home</a></li>
                 <li><a onmousedown="openPrivacyPolicy()">Privacy Policy</a></li>
-                <li><a>Menu</a></li>
-                <li><a>About Us</a></li>
+                <li><a href="../menu2/pimp.html">Menu</a></li>
+                <li><a href="../aboutus/index-2.html">About Us</a></li>
             </ul>
         </div>
 
@@ -368,9 +345,6 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>

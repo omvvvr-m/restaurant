@@ -1,9 +1,21 @@
-/* body {
-    transition: backgroung-color 0.5s, color 0.5s;
-} */
+/* FONTS INITIALIZATION */
+@font-face {
+    font-family: 'Merienda';
+    src: url('../fonts/merienda/Merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-body,html{
-    margin:0;
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
@@ -15,7 +27,7 @@ body,html{
     box-shadow: 5px 5px 5px #e4a74c;
     margin-left: -20px;
     margin-right: -20px;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 .header-content {
@@ -45,6 +57,7 @@ body,html{
     text-shadow: 5px 5px 5px #251d14;
     margin-top: 150PX;
 }
+
 .order-form {
     background-color: #f5deb8;
     padding: 90px;
@@ -207,8 +220,7 @@ h3 {
     align-items: center;
 }
 
-.payment
-{
+.payment {
     display: flex;
     flex-direction: column;
 }
@@ -233,8 +245,7 @@ h3 {
     font-weight: bold;
 }
 
-.payment-method
-{
+.payment-method {
     padding-top: 20px;
 }
 
@@ -358,20 +369,26 @@ h3 {
     align-items: center;
 }
 
-#orderlist
-{
+.order-card {
+    margin: 12px;
+}
+
+#orderlist {
+    font-family: 'Oswald';
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-left:700px ;
+    direction: ltr;
+
+    /* color: red */
     margin-bottom: 30px;
     margin-top: 8px;
     border: 2px solid #443627;
     box-shadow: 0 4px 8px #251d14;
-    padding-left: 50px;
-    padding-top: 15px;
+    /* padding-left: 50px;
+    padding-top: 15px; */
     width: 500px;
     height: 200px;
     border-radius: 36px;
@@ -381,6 +398,7 @@ h3 {
 
 .order-summary {
 
+    display: flex;
     background-color: #f7e7ce;
     border-radius: 36px;
     padding-top: 0;
@@ -389,6 +407,9 @@ h3 {
     margin-left: -20px;
     margin-right: -20px;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -448,40 +469,42 @@ h3 {
 
 #confirm {
     font-family: "Merienda", cursive;
-    font-size: 30px;
+    font-size: 17px;
     color: #443627;
     display: block;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 140px;
+    height: 60px;
+    margin: 32px;
+
     background-color: #f5deb8;
     border-radius: 36px;
     border: 3px solid #443627;
+    transition: 0.3s ease-out;
 }
 
 #confirm:hover {
     background-color: #f5e5cc;
-    transform: scale(1.2);
-    transition-duration: 1s;
-    transition-delay: 0.2s;
+    transform: scale(1.07);
+    cursor: pointer;
+
 }
 
 #reset {
     font-family: "Merienda", cursive;
-    font-size: 30px;
+    font-size: 17px;
     color: #443627;
     display: block;
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 140px;
+    height: 60px;
     background-color: #f5deb8;
     border-radius: 36px;
     border: 3px solid #443627;
+    margin: 32px;
+    transition: 0.3s ease-out;
 }
 
 #reset:hover {
     background-color: #f5e5cc;
-    transform: scale(1.2);
-    transition-duration: 1s;
-    transition-delay: 0.2s;
+    transform: scale(1.07);
+    cursor: pointer;
 }

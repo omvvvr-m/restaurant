@@ -26,7 +26,7 @@ function decrease(btn){
 function save (btn){
     let card=btn.closest(".ph1");
     let name=card.querySelector(".n1").textContent;
-    let price=parseInt(card.querySelector(".p1").textContent);
+    let price=parseFloat(card.querySelector(".p1").textContent);
     let quantity=parseInt(card.querySelector(".q").textContent);
     let neworder={
         name,price,quantity
@@ -48,8 +48,8 @@ function save (btn){
 
 // function Go (){
 //     window.location.href= "../order/order.html"
-function Go (){
-    window.location.href= "../order/order.html"}
+// function Go (){
+//     window.location.href= "../order/order.html"}
 
 
 

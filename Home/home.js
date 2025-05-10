@@ -61,17 +61,17 @@ order_btt.addEventListener('mouseleave', () => {
     order_btt.textContent = 'ORDER NOW';
 });
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
     const cards = document.querySelectorAll('.order-card , .menu-card');
     cards.forEach(el => {
         const rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
             el.classList.add('visible');
-        
+
         } else {
             el.classList.remove('visible');
         }
-        
+
 
     });
 });

@@ -17,7 +17,14 @@ const signInSpan = document.getElementById('signInSpan');
 const signOutSpan = document.getElementById('signOutSpan');
 
 var currentUserFname;
+const exitBut = document.getElementById('exitBut');
 
+
+exitBut.addEventListener('click', () => {
+
+  loginModal.style.display = 'none';
+
+});
 
 signInBtn.addEventListener('click', function () {
 

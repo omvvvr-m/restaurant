@@ -1,9 +1,9 @@
  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet"> -->
     <link rel="stylesheet" href="../Navbar/navbar-style.css" />
 
 </head>
@@ -27,7 +27,17 @@
                     </div>
                 </li>
                 <li><a href="../menu/m.html" class="offers" target="_self">OFFERS</a></li>
-                <li><a href="../menu2/pimp.html" class="menu" target="_self">MENU</a></li>
+
+                <div class="menuu">
+                    <li>
+                        <a href="../menu2/pimp.html" class="menuu-link" target="_self">MENU</a>
+                        <div class="menuu-sections">
+                            <a href="../menu3/index.html" class="desserts&drinks" target="_self">Desserts & Drinks</a>
+                    </li>
+                </div>
+
+
+                <!-- <li><a href="../menu2/pimp.html" class="menu" target="_self">MENU</a></li> -->
                 <li><a href="../order/order.html" class="order" target="_self">ORDER</a></li>
                 <div class="about-us">
                     <li>
@@ -56,6 +66,7 @@
 
 <div class="login-handler" id="loginModal">
     <div class="login-container">
+        <button id="exitBut" class="quit-login">X</button>
         <p class="welcome">Welcome to Bun & Blaze</p>
         <div class="horizontal-container">
             <form class="Login-form" id="loginForm">
@@ -68,7 +79,13 @@
                     <label for="Password">Password</label>
                     <input type="password" id="Password" required>
                 </div>
-                <p class="ag">By logging in, you agree to our Terms & Conditions and Privacy Policy.</p>
+                <div class="Agreement">
+
+                    <input type="checkbox" id="agree_checkbox" required>
+                    <label class="ag" for="agree_checkbox">By logging in, you agree to our Terms & Conditions and
+                        Privacy
+                        Policy.</label>
+                </div>
                 <button class="SubmitBtn login" id="submitLogin" type="submit">Sign in</button>
             </form>
             <!-- //////////////////////// -->

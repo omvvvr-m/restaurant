@@ -11,6 +11,23 @@
     --main-button-color: rgb(232, 50, 50);
 }
 
+/* FONTS INITIALIZATION */
+@font-face {
+    font-family: 'Merienda';
+    src: url('../fonts/merienda/Merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* FONTS INITIALIZATION */
+
 .nav-container {
     z-index: 1000;
     margin: 0px;
@@ -73,6 +90,8 @@
     transform: scale(1.1);
 }
 
+/* Home  */
+
 .home {
     align-items: center;
     justify-content: center;
@@ -105,6 +124,10 @@
     padding: 4px;
 }
 
+/* Home */
+
+
+/* about us  */
 .about-us {
     align-items: center;
     justify-content: center;
@@ -138,7 +161,72 @@
     padding: 4px;
 }
 
+/* about us  */
+
+
+/* menu  */
+.menuu {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    z-index: 99;
+}
+
+.nav-links .menuu-sections {
+    position: absolute;
+    display: none;
+    right: -60px;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    border: #251d14;
+
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 16px;
+}
+
+
+
+.menuu:hover .menuu-sections {
+    display: flex;
+}
+
+.menuu .menuu-sections a {
+    padding: 4px;
+}
+
+/* menu  */
+
 /* ***************************** LOG IN HANDLING ***************************** */
+
+.quit-login {
+
+    display: flex;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    left: 96%;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    border-radius: var(--main-radius);
+}
+
+.quit-login:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 .horizontal-container {
     position: relative;
@@ -202,18 +290,6 @@
     left: 66px;
 }
 
-/* .login-handler p.sign-in {
-    width: 200px;
-    height: 70px;
-    display: block;
-    font-weight: 50;
-    font-size: 25px;
-    position: relative;
-    top: 500px;
-    left: 76px;
-    
-} */
-
 .login-handler p.sign-up {
     width: 200px;
     height: 70px;
@@ -245,7 +321,7 @@
     margin-left: 70px;
 }
 
-.ag {
+.Agreement {
     width: 600px;
     height: 70px;
     display: block;
