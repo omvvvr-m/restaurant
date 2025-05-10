@@ -11,12 +11,7 @@
        .then(res => res.text()) 
         .then(data => { 
           document.getElementById('navbar').innerHTML = data; 
-        }); 
-     fetch('../Navbar/navbar.html')
-       .then(res => res.text())
-       .then(data => {
-         document.getElementById('navbar').innerHTML = data;
- 
+    
          const script = document.createElement('script');
          script.src = '../Navbar/login.js';
          document.body.appendChild(script);
@@ -258,8 +253,8 @@
         />
         <h2>Iced Caramel Macchiato</h2>
         <p>
-          combine our rich, full-bodied espresso with vanilla-flavored syrup,
-          milk and ice, then top it off with a caramel drizzle
+          combine full-bodied espresso with vanilla-flavored syrup,
+          milk
         </p>
         <span class="price">5.40$</span>
         <button class="flip-btn" onclick="order(this)">order now</button>
