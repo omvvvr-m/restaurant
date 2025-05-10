@@ -1,6 +1,17 @@
-/* body {
-    transition: backgroung-color 0.5s, color 0.5s;
-} */
+/* FONTS INITIALIZATION */
+@font-face {
+    font-family: 'Merienda';
+    src: url('../fonts/merienda/Merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body,
 html {
