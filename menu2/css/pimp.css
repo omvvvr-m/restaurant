@@ -9,6 +9,18 @@
   --main-radius: 36px;
   --main-button-color: rgb(232, 50, 50);
 }
+@font-face{
+  font-family: 'Merienda';
+  src: url('..fonts/merienda/Merienda.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Oswald';
+  src: url('..fonts/Oswald/Oswald.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .nav-container {
   z-index: 1000;
