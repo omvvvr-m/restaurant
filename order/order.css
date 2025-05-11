@@ -1,5 +1,306 @@
-/* FONTS INITIALIZATION */
+:root {
+  --main-bg: #f5deb8;
+  --main-dark: #443627;
+  --main-light: #f3ede4;
+  --main-shadow: #251d14;
+  --main-highlight: #eabb76;
+  --main-hover: #f5e5cc;
+  --main-border: #e9cb9b;
+  --main-outline: #e4a74c;
+
+  --font-merienda: "Merienda", cursive;
+  --font-oswald: "Oswald", sans-serif;
+}
+
 @font-face {
+    font-family: 'Merienda';
+    src: url('../fonts/merienda/Merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: var(--main-highlight);
+    box-shadow: 5px 5px 5px var(--main-outline);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px;
+    padding: 10px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    width: 800px;
+    height: 800px;
+    justify-content: right;
+}
+
+.text-container {
+    flex: 1;
+    justify-content: left;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: var(--font-merienda);
+    text-shadow: 5px 5px 5px var(--main-shadow);
+    margin-top: 150PX;
+}
+
+.order-form {
+    background-color: var(--main-bg);
+    padding: 90px;
+    box-shadow: 5px 5px 5px var(--main-border);
+    border-radius: 36px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+#OrderForm {
+    display: flex;
+}
+
+.customer-info {
+    flex: 1;
+    text-align: center;
+    padding: auto;
+    width: 60%;
+    height: 100%;
+    margin: 40px auto;
+    border: 3px solid var(--main-dark);
+    border-radius: 36px;
+}
+
+h3 {
+    font-family: var(--font-merienda);
+    color: var(--main-dark);
+    font-size: 35px;
+}
+
+.font {
+    font-size: 30px;
+}
+
+.font1 {
+    font-size: 45px;
+}
+
+.gap {
+    margin-bottom: 10px;
+    color: #524130;
+}
+
+.input-name,
+.input-number,
+.input-governorate,
+.input-address,
+.input-cardnumber,
+.input-date,
+.input-cvv,
+.input-cardname ,
+.input-note
+{
+    position: relative;
+    width: 300px;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.input-name .icon,
+.input-number .icon,
+.input-governorate .icon,
+.input-address .icon,
+.input-cardnumber .icon,
+.input-date .icon,
+.input-cvv .icon,
+.input-cardname .icon ,
+.input-note .icon 
+{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
+    top: 20%;
+    left: 10px;
+}  
+
+.input-address .icon {
+    top: 15%;
+}
+
+.input-note .icon {
+    top: 10%;
+    left: 20px;
+} 
+
+.input-name input,
+.input-number input,
+.input-governorate input,
+.input-address input,
+.input-cardnumber input,
+.input-date input,
+.input-cvv input,
+.input-cardname input {
+    width: 100%;
+    padding-left: 45px;
+    height: 40px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-info {
+    flex: 1;
+    text-align: center;
+    margin: 40px 200px;
+    padding: 20px 0;
+}
+
+.paymethod {
+    font-family: var(--font-merienda);
+    color: var(--main-dark);
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+}
+
+.payment-method {
+    padding-top: 20px;
+}
+
+#visaForm {
+    display: none;
+}
+
+.order-card {
+    margin: 12px;
+}
+
+#orderlist {
+    font-family: var(--font-oswald);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    direction: ltr;
+    margin: 8px auto 30px;
+    border: 2px solid var(--main-dark);
+    box-shadow: 0 4px 8px var(--main-shadow);
+    width: 500px;
+    height: 200px;
+    border-radius: 36px;
+    background-color: var(--main-light);
+    font-family: var(--font-merienda);
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7e7ce;
+    border-radius: 36px;
+    margin: -30px -20px 0;
+    box-shadow: 5px 5px 5px #f3ddb9;
+    text-align: center;
+}
+
+.notes {
+    text-align: center;
+    color: var(--main-dark);
+}
+
+.input-note {
+    position: relative;
+    width: 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.input-note textarea {
+    width: 400px;
+    height: 150px;
+    border-radius: 36px;
+    font-family: var(--font-merienda);
+    background-color: var(--main-light);
+    border: 2px solid var(--main-dark);
+    resize: none;
+    padding-left: 60px;
+    padding-top: 15px;
+    box-shadow: 0 4px 8px var(--main-shadow);
+}
+
+.input-note input {
+    width: 100%;
+    padding-left: 45px;
+    height: 40px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    background-color: #f7e7ce;
+}
+
+#confirm,
+#reset {
+    font-family: var(--font-merienda);
+    font-size: 17px;
+    color: var(--main-dark);
+    display: block;
+    width: 140px;
+    height: 60px;
+    background-color: var(--main-bg);
+    border-radius: 36px;
+    border: 3px solid var(--main-dark);
+    margin: 32px;
+    transition: 0.3s ease-out;
+}
+
+#confirm:hover,
+#reset:hover {
+    background-color: var(--main-hover);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+
+
+/* FONTS INITIALIZATION */
+/* @font-face {
     font-family: 'Merienda';
     src: url('../fonts/merienda/Merienda.ttf') format('truetype');
     font-weight: normal;
@@ -69,7 +370,6 @@ html {
 
 #OrderForm {
     display: flex;
-    /* gap: 40px; */
 }
 
 .customer-info {
@@ -381,14 +681,10 @@ h3 {
     align-content: center;
     text-align: center;
     direction: ltr;
-
-    /* color: red */
     margin-bottom: 30px;
     margin-top: 8px;
     border: 2px solid #443627;
     box-shadow: 0 4px 8px #251d14;
-    /* padding-left: 50px;
-    padding-top: 15px; */
     width: 500px;
     height: 200px;
     border-radius: 36px;
@@ -507,4 +803,4 @@ h3 {
     background-color: #f5e5cc;
     transform: scale(1.07);
     cursor: pointer;
-}
+} */
